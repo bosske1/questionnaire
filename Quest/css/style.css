@@ -13,6 +13,7 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+/*header*/
 
 .nav {
 	background: #fff;
@@ -21,12 +22,13 @@ body {
 	margin-left: 60%;
 	margin-top: .5%;
 }
+/*main on every page*/
 #main-container {
 	min-height: 100%;
 	width: 100%;
 	position: relative;
 }
-
+/*login page*/
 .row {
 	width: 100%;
 }
@@ -53,14 +55,14 @@ body {
 	margin: -2% 0 0 45%;
 	font-size: 50px;
 }
-.col-xs-5 {
+.col-xs-4-login {
 	margin: 0% 0 0 30%;
 }
-.form-horizontal {
+.form-horizontal-login {
 	color: #039;
 	font-weight: strong;
 	font-size: 22px;
-	padding: 23% 0 23% 4%;
+	padding: 23% 0 32% 0%;
 	border-radius: 35px;
     background-color: rgba(122, 58, 0, 0.25);
     /* IE9, iOS 3.2+ */
@@ -75,10 +77,8 @@ body {
     background-image: -ms-repeating-radial-gradient(center center, ellipse farthest-corner,rgba(244, 116, 0, 0.49) 0%,rgba(0, 0, 0, 0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7df47400",endColorstr="#00000000",GradientType=0);
     }
-.form-group {
-	margin-left: -30%;
-}
-.form-control, .btn-default {
+
+.form-control-login, .btn-default-login {
 	border: 2px solid #fff;
 	color: #fff;
 	background: transparent;
@@ -91,6 +91,31 @@ body {
 	background: transparent;
 }
 
+/*registration page*/
+
+.form-horizontal-registration{
+	width: 70%;
+	margin: 3% 15% 0 15%;
+	background-color: #fff;
+	padding: 5% 0 2% 8%;
+	border: 2px solid #e67008;
+	border-radius: 30px;
+}
+
+.registr {
+	margin-top: -5%;
+	padding: 3% 0;
+}
+.form-control-registration{
+	border: 2px solid #e67008;
+}
+
+.btn-warning {
+	margin-left: 70%;
+	background-color: #e67008;
+}
+
+/*footer on every page*/
 #footer {
 	width: 100%;
 	height: 40px;
