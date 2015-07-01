@@ -32,14 +32,14 @@ body {
 .row {
 	width: 100%;
 }
-.col-xs-9-login {
-	margin-left: 15%;
+.col-xs-6-login {
+	margin: 8% 0 0 44%;
 	position: absolute;
 }
 
 .front-pic {
 	font-family: segoe print;
-	margin: 10% 0 0 45%;
+	margin: 0% 0 0 0%;
 }
 
 .blue {
