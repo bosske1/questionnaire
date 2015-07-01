@@ -9,9 +9,9 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	background-image: url(../img/highway.jpg);
-	background-size: cover;
+	background-image: url(../img/wood1.jpg);
 	background-repeat: no-repeat;
+	background-position: top;
 }
 /*header*/
 
@@ -20,7 +20,7 @@ body {
 }
 .brand  {
 	margin-left: 60%;
-	margin-top: .5%;
+	margin-top: -.3%;
 }
 /*main on every page*/
 #main-container {
@@ -32,74 +32,72 @@ body {
 .row {
 	width: 100%;
 }
+.col-xs-9-login {
+	margin-left: 20%;
+}
 
 .front-pic {
-	font-family: century gothic;
-	margin: 0 0 0 30%;
+	font-family: segoe print;
+	margin: 10% 0 0 40%;
 }
 
 .blue {
 	color: #039;
-	margin: 0 0 0 20%;
-	font-size: 50px;
+	margin: 0 0 0 43%;
+	font-size: 45px;
 }
 
 .orange {
 	color: #e67008;
-	margin: -2% 0 0 45%;
-	font-size: 50px;
+	margin: -2% 0 0 60%;
+	font-size: 45px;
 }
 
 .blue-sec {
 	color: #039;
-	margin: -2% 0 0 45%;
-	font-size: 50px;
+	margin: -2% 0 0 54%;
+	font-size: 45px;
 }
 .col-xs-4-login {
-	margin: 0% 0 0 30%;
+	margin: 0% 0 0 39%;
 }
 .form-horizontal-login {
 	color: #039;
-	font-weight: strong;
+	
 	font-size: 22px;
 	padding: 23% 0 32% 0%;
-	border-radius: 35px;
-    background-color: rgba(122, 58, 0, 0.25);
-    /* IE9, iOS 3.2+ */
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSI1MCUiIGN5PSI1MCUiIHI9IjcwLjcxMDY3ODExODY1NDc2JSI+PHN0b3Agc3RvcC1jb2xvcj0iI2Y0NzQwMCIgc3RvcC1vcGFjaXR5PSIwLjQ5IiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAiIG9mZnNldD0iMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
-    /* Android 2.3- hack (needed for the actual radial gradient) */
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSI1MCUiIGN5PSI1MCUiIHI9IjcwLjcxMDY3ODExODY1NDc2JSI+PHN0b3Agc3RvcC1jb2xvcj0iI2Y0NzQwMCIgc3RvcC1vcGFjaXR5PSIwLjQ5IiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAiIG9mZnNldD0iMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==),
-        -webkit-gradient(radial, center center, 0, center center, 445,color-stop(0, rgba(244, 116, 0, 0.49)),color-stop(1, rgba(0, 0, 0, 0)));
-    /* Android 2.3 */
-    background-image: -webkit-repeating-radial-gradient(center center, ellipse farthest-corner,rgba(244, 116, 0, 0.49) 0%,rgba(0, 0, 0, 0) 100%);
-    /* IE10+ */
-    background-image: repeating-radial-gradient(ellipse farthest-corner at center center,rgba(244, 116, 0, 0.49) 0%,rgba(0, 0, 0, 0) 100%);
-    background-image: -ms-repeating-radial-gradient(center center, ellipse farthest-corner,rgba(244, 116, 0, 0.49) 0%,rgba(0, 0, 0, 0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7df47400",endColorstr="#00000000",GradientType=0);
-    }
-
-.form-control-login, .btn-default-login {
-	border: 2px solid #fff;
-	color: #fff;
-	background: transparent;
+	font-family: segoe print;
+	}
+.control-label {
+	font-weight: strong;
 }
-  
+
+.form-control-login {
+	border-radius: 10px;
+	
+}
+  .btn-default-login {
+  	color: #fff;
+  	background-color: #039;
+  	border-radius: 10px;
+  }
 
 .reg {
-	color: #fff;
+	color: #e67008;
 	font-size: 18px;
-	background: transparent;
+
 }
 
 /*registration page*/
 
 .form-horizontal-registration{
-	width: 70%;
-	margin: 3% 15% 0 15%;
+	width: 55%;
+	margin: 3% 15% 0 23%;
 	background-color: #fff;
 	padding: 5% 0 2% 8%;
 	border: 2px solid #e67008;
 	border-radius: 30px;
+	font-family: segoe print;
 }
 
 .registr {
