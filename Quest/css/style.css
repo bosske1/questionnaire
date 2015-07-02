@@ -1,66 +1,209 @@
 html {
-	width: 100%;
-	height: 100%;
 	margin: 0;
 	padding: 0;
+	min-height: 100%
 }
 body {
 	width: 100%;
-	height: 100%;
+	min-height: 100%;
 	margin: 0;
 	padding: 0;
-	background-image: url(../img/wood1.jpg);
-	background-repeat: no-repeat;
-	background-position: top;
+	
 }
 /*header*/
 
-.nav {
+.nav-tabs {
+	width: 100%;
 	background: #fff;
+	z-index: 9999;
+	position: absolute;
 }
 .brand  {
-	margin-left: 60%;
 	margin-top: -.3%;
+	
 }
 /*main on every page*/
 #main-container {
 	min-height: 100%;
 	width: 100%;
-	position: relative;
+}
+
+#background {
+	width: 80%;
+	height: 100%;
+	margin-left: 10%;
+	min-height: 400px;
+	position: absolute;
+	z-index: -1;
 }
 /*login page*/
+
 .row {
 	width: 100%;
 }
-.col-xs-6-login {
-	margin: 8% 0 0 40%;
-	position: absolute;
+/*extra small screen*/
+@media screen and (min-width: 0px) {
+	.col-xs-5-login {
+		margin: 30% 0 0 57%;
+		position: absolute;
+	}
+	.front-pic {
+		font-family: segoe print;
+		margin: 0% 0 0 3%;
+	}
+	.blue {
+		color: #039;
+		margin: 0 0 0 45%;
+		font-size: 15px;
+}
+	.orange {
+		color: #e67008;
+		margin: -2% 0 0 55%;
+		font-size: 15px;
 }
 
-.front-pic {
-	font-family: segoe print;
-	margin: 0% 0 0 0%;
+	.blue-sec {
+		color: #039;
+		margin: -2% 0 0 30%;
+		font-size: 15px;
+}
+}
+/*small screen*/
+@media screen and (min-width: 400px) {
+	.col-xs-5-login {
+		margin: 25% 0 0 55%;
+		position: absolute;
+	}
+	.front-pic {
+		font-family: segoe print;
+		margin: 0% 0 0 3%;
+	}
+	.blue {
+		color: #039;
+		margin: 0 0 0 45%;
+		font-size: 22px;
+}
+	.orange {
+		color: #e67008;
+		margin: -2% 0 0 55%;
+		font-size: 22px;
 }
 
-.blue {
-	color: #039;
-	margin: 0 0 0 58%;
-	font-size: 45px;
+	.blue-sec {
+		color: #039;
+		margin: -2% 0 0 28%;
+		font-size: 22px;
+}
+}
+/*medium screen*/
+@media screen and (min-width: 500px) {
+	.col-xs-5-login {
+		margin: 15% 0 0 53%;
+		position: absolute;
+	}
+	.front-pic {
+		font-family: segoe print;
+		margin: 0% 0 0 3%;
+	}
+	.blue {
+		color: #039;
+		margin: 0 0 0 35%;
+		font-size: 25px;
+}
+	.orange {
+		color: #e67008;
+		margin: -2% 0 0 55%;
+		font-size: 25px;
 }
 
-.orange {
-	color: #e67008;
-	margin: -2% 0 0 70%;
-	font-size: 45px;
+	.blue-sec {
+		color: #039;
+		margin: -2% 0 0 30%;
+		font-size: 25px;
+}
+}
+/*large screen*/
+@media screen and (min-width: 900px) {
+	.col-xs-5-login {
+		margin: 10% 0 0 52%;
+		position: absolute;
+	}
+	.front-pic {
+		font-family: segoe print;
+		margin: 0% 0 0 3%;
+	}
+	.blue {
+		color: #039;
+		margin: 0 0 0 43%;
+		font-size: 35px;
+}
+	.orange {
+		color: #e67008;
+		margin: -2% 0 0 55%;
+		font-size: 35px;
 }
 
-.blue-sec {
-	color: #039;
-	margin: -2% 0 0 65%;
-	font-size: 45px;
+	.blue-sec {
+		color: #039;
+		margin: -2% 0 0 34%;
+		font-size: 35px;
 }
-.col-xs-4-login {
-	margin: 20% 0 0 39%;
+}
+/*extra large screen*/
+@media screen and (min-width: 1100px) {
+	.col-xs-5-login {
+		margin: 11% 0 0 52%;
+		position: absolute;
+	}
+	.front-pic {
+		font-family: segoe print;
+		margin: 0% 0 0 3%;
+	}
+	.blue {
+		color: #039;
+		margin: 0 0 0 43%;
+		font-size: 40px;
+}
+	.orange {
+		color: #e67008;
+		margin: -2% 0 0 55%;
+		font-size: 40px;
+}
+
+	.blue-sec {
+		color: #039;
+		margin: -2% 0 0 55%;
+		font-size: 40px;
+}
+}
+
+@media screen and (min-width: 0px) {
+	.col-xs-4-login {
+		margin: 55% 0 0 39%;
+	}
+}
+@media screen and (min-width: 500px) {
+	.col-xs-4-login {
+		margin: 45% 0 0 39%;
+	}
+}
+@media screen and (min-width: 700px) {
+	.col-xs-4-login {
+		margin: 35% 0 0 34%;
+		width: 45%;
+	}
+}
+@media screen and (min-width: 900px) {
+	.col-xs-4-login {
+		margin: 25% 0 0 39%;
+		width: 40%;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.col-xs-4-login {
+		margin: 28% 0 0 35%;
+		width: 40%;
+	}
 }
 .form-horizontal-login {
 	color: #039;
@@ -90,14 +233,15 @@ body {
 
 /*registration page*/
 
-.form-horizontal-registration{
+.form-horizontal-registration {
 	width: 55%;
-	margin: 3% 15% 0 23%;
+	margin: 5% 15% 0 23%;
 	background-color: #fff;
-	padding: 5% 0 2% 8%;
+	padding: 3% 0 2% 8%;
 	border: 2px solid #e67008;
 	border-radius: 30px;
 	font-family: segoe print;
+	position: absolute;
 }
 
 .registr {
@@ -117,7 +261,6 @@ body {
 #footer {
 	width: 100%;
 	height: 40px;
-	border-top: 1px solid #fff;
 	left: 0;
 	bottom: 0;
 	background: #fff;

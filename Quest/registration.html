@@ -18,17 +18,19 @@
 </head>
 <body>
 	<div id="main-container">
+		<img class="img-responsive" id="background" src="img/wood1.jpg">
 <!--==============================Header==================================-->
 	<header>
 		<ul class="nav nav-tabs" role="tablist">
 		    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
 		    <li role="presentation"><a href="#aboutus" aria-controls="aboutus" role="tab" data-toggle="tab">About Us</a></li>
 		    <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
-		    <li class="brand"><img alt="Brand" src="img/logo2.png"></li>
+		    <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/logo2.png"></li>
 		</ul>
 	</header>
 
 <!--===========================Main content===============================-->
+	<section>
 		<form class="form-horizontal form-horizontal-registration">
 			<h3 class="registr" >Personliche Daten:</h3>
 			 <div class="form-group form-group-sm form-group-reg">
@@ -46,7 +48,6 @@
 			     <input class="form-control form-control-registration" type="text" id="datepicker">
 			    </div>
 			    </div>
-			  </div>
 
 			  <div class="form-group form-group-sm form-group-reg">
     			<label class="col-sm-2 control-label control-label-registration" for="formGroupInputSmall">Titel:</label>
@@ -108,30 +109,28 @@
 			      <input class="form-control form-control-registration" type="text" id="formGroupInputSmall">
 			    </div>
 			    </div>
+
 			     <div class="form-group form-group-sm form-group-reg">
 			    <label class="col-sm-2 control-label control-label-registration" for="formGroupInputSmall">Email:</label>
 			    <div class="col-sm-4">
 			      <input class="form-control form-control-registration" type="text" id="formGroupInputSmall">
 			    </div>
+			    </div>
 
-			  
-			  
-			    
 			    <button type="button" class="btn btn-warning">Weiter</button>
 		</form>
-	
+	</section>
 		
 	
 <!--==============================Footer=============================-->
-		<div id="footer">
-			<p>2015</p>
-		</div>
+	<div id="footer">
+		<p>2015</p>
+	</div>
 
 </div>
-	
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 
 <script type="text/javascript" src="js/jquery-ui.js"></script>
