@@ -1,0 +1,3 @@
+questionnaire_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: QuestionnaireBundle:Default:index }
