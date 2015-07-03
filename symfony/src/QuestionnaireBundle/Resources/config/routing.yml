@@ -1,3 +1,7 @@
 questionnaire_homepage:
     path:     /hello/{name}
     defaults: { _controller: QuestionnaireBundle:Default:index }
+
+login:
+    path:     /login
+    defaults: { _controller: QuestionnaireBundle:Login:index }
