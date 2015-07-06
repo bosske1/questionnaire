@@ -285,11 +285,11 @@ body {
     font-size: 17px;
 }
 .control-label-form1{
-    margin: 3% 0 0 45%;
+    margin: 3% 45% 0 45%;
     font-size: 17px;
 }
 .col-sm-6-form1 {
-    margin: 2% 0 0 25%;
+    margin: 2% 25% 0 25%;
 }
 .form-control-form1{
     border-radius: 10px;
