@@ -1,0 +1,113 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="main-container">
+        <img class="img-responsive" id="background" src="img/wood1.jpg">
+        <!--==============================Header==================================-->
+        <header>
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                <li role="presentation"><a href="#aboutus" aria-controls="aboutus" role="tab" data-toggle="tab">About Us</a></li>
+                <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
+                <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/logo2.png"></li>
+            </ul>
+        </header>
+
+        <!--===========================Main content===============================-->
+        <section>
+            <form class="form-horizontal form-horizontal-registration">
+                <h3 class="registr" >Personliche Daten:</h3>
+                <div class="form-group form-group-sm form-group-reg">
+                    <label class="col-sm-2 control-label  control-label-registration" for="formGroupInputSmall">Anrede:*</label>
+                    <div class="col-sm-2">
+                        <select class="form-control input-sm form-control-registration">
+                            <option></option>
+                            <option>Frau</option>
+                            <option>Herr</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-group-sm form-group-reg">
+                        <label class="col-sm-3 control-label control-label-registration" for="formGroupInputSmall">Geburtstag:</label>
+                        <div class="col-sm-2">
+                            <input class="form-control form-control-registration" type="text" id="datepicker">
+                        </div>
+                    </div>
+
+                    <div class="form-group form-group-sm form-group-reg">
+                        <label class="col-sm-2 control-label control-label-registration" for="formGroupInputSmall">Titel:</label>
+                        <div class="col-sm-2">
+                            <select class="form-control input-sm form-control-registration">
+                                <option></option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <label class="col-sm-3 control-label control-label-registration" for="formGroupInputSmall">Strasse und Hausnummer:</label>
+                        <div class="col-sm-3">
+                            <input class="form-control form-control-registration" type="text">
+                        </div>
+                    </div>
+
+                    <div class="form-group form-group-sm form-group-reg">
+                        <label class="col-sm-2 control-label control-label-registration" for="formGroupInputSmall">Vorname:*</label>
+                        <div class="col-sm-3">
+                            <input class="form-control form-control-registration" type="text">
+                        </div>
+                        <label class="col-sm-2 control-label control-label-registration" for="formGroupInputSmall">Ort:*</label>
+                        <div class="col-sm-3">
+                            <input class="form-control form-control-registration" type="text">
+                        </div>
+                    </div>
+
+                    <div class="form-group form-group-sm form-group-reg">
+                        <label class="col-sm-2 control-label control-label-registration" for="formGroupInputSmall">Weitere Vornamen:</label>
+                        <div class="col-sm-3">
+                            <input class="form-control form-control-registration" type="text">
+                        </div>
+                        <label class="col-sm-2 control-label control-label-registration" for="formGroupInputSmall">Postleitzahl:*</label>
+                        <div class="col-sm-3">
+                            <input class="form-control form-control-registration" type="text">
+                        </div>
+                    </div>
+
+                    <div class="form-group form-group-sm form-group-reg">
+                        <label class="col-sm-2 control-label control-label-registration" for="formGroupInputSmall">Nachname:</label>
+                        <div class="col-sm-3">
+                            <input class="form-control form-control-registration" type="text">
+                        </div>
+                        <label class="col-sm-2 control-label control-label-registration" for="formGroupInputSmall">Land:</label>
+                        <div class="col-sm-3">
+                            <input class="form-control form-control-registration" type="text">
+                        </div>
+                    </div>
+
+                    <div class="form-group form-group-sm form-group-reg">
+                        <label class="col-sm-2 control-label control-label-registration" for="formGroupInputSmall">Telefon:</label>
+                        <div class="col-sm-3">
+                            <input class="form-control form-control-registration" type="text">
+                        </div>
+                        <label class="col-sm-2 control-label control-label-registration" for="formGroupInputSmall">Mobiltelefon:</label>
+                        <div class="col-sm-3">
+                            <input class="form-control form-control-registration" type="text">
+                        </div>
+                    </div>
+
+                    <div class="form-group form-group-sm form-group-reg">
+                        <label class="col-sm-2 control-label control-label-registration" for="formGroupInputSmall">Email:</label>
+                        <div class="col-sm-4">
+                            <input class="form-control form-control-registration" type="text">
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-warning btn-warning-regisrtation">Weiter</button>
+            </form>
+        </section>
+
+
+        <!--==============================Footer=============================-->
+        <div id="footer">
+            <p>2015</p>
+        </div>
+{% endblock %}

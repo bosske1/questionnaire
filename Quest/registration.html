@@ -1,22 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
+{% extends 'base.html.twig' %}
 
-<title>Questionnaire</title>
-
-    <meta charset="utf-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="css/jquerycss/jquery-ui.css">
-
-	<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
-
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-  
-</head>
-<body>
+{% block body %}
 	<div id="main-container">
 		<img class="img-responsive" id="background" src="img/wood1.jpg">
 <!--==============================Header==================================-->
@@ -120,22 +104,10 @@
 			    <button type="button" class="btn btn-warning btn-warning-regisrtation">Weiter</button>
 		</form>
 	</section>
-		
-	
+
+
 <!--==============================Footer=============================-->
 	<div id="footer">
 		<p>2015</p>
 	</div>
-
-</div>
-
-<script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/bootstrap/bootstrap.min.js"></script>
-
-
-<script type="text/javascript" src="js/jquery-ui.js"></script>
-
-<script type="text/javascript" src="js/main.js"></script>
-
-</body>
-</html>
+{% endblock %}

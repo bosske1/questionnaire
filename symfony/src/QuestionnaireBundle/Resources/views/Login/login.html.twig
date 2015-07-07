@@ -1,92 +1,70 @@
-<!DOCTYPE html>
-<html>
-<head>
+{% extends 'base.html.twig' %}
 
-<title>Questionnaire</title>
+{% block body %}
+    <div id="main-container">
+        <img id="background" src="img/wood1.jpg">
+        <!--==============================Header==================================-->
+        <header>
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                <li role="presentation"><a href="#aboutus" aria-controls="aboutus" role="tab" data-toggle="tab">About Us</a></li>
+                <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
+                <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/logo2.png"></li>
+            </ul>
+        </header>
 
-    <meta charset="utf-8">
+        <!--===========================Main content===============================-->
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/jquerycss/jquery-ui.css">
+        <section>
+            <div class="row row-first">
+                <div class="col-xs-5 col-xs-5-login">
+                    <div class="front-pic">
+                        <h1 class="blue"><strong>Was macht</strong></h1>
+                        <h1 class="orange"><strong>Sie</strong></h1>
+                        <h1 class="blue-sec"><strong>einmalig?</strong></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!--===============Form=============-->
+        <section>
+            <div class="row row-second">
+                <div class="col-xs-4 col-xs-4-login">
+                    <form class="form-horizontal form-horizontal-login">
+                        <div class="form-group">
+                            <label for="inputUsername" class="col-sm-4  control-label">Username</label>
+                            <div class="col-sm-5">
+                                <input type="username" class="form-control form-control-login">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-4 control-label">Password</label>
+                            <div class="col-sm-5">
+                                <input type="password" class="form-control form-control-login">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default btn-default-login">Login</button>
+                                <span class="reg" >or</span>
+                                <a class="reg" href="#">Register</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-  
-</head>
-<body>
-	<div id="main-container">
-		<img id="background" src="img/wood1.jpg">
-<!--==============================Header==================================-->
-	<header>
-		<ul class="nav nav-tabs" role="tablist">
-		    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-		    <li role="presentation"><a href="#aboutus" aria-controls="aboutus" role="tab" data-toggle="tab">About Us</a></li>
-		    <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
-		    <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/logo2.png"></li>
-		</ul>
-	</header>
+        <!--==============================Footer=============================-->
+        <div id="footer">
+            <p>2015</p>
+        </div>
 
-<!--===========================Main content===============================-->
+    </div>
+{% endblock %}
 
-	
-		<section>
-			<div class="row row-first">
-				<div class="col-xs-5 col-xs-5-login">
-					<div class="front-pic">
-						<h1 class="blue"><strong>Was macht</strong></h1> 
-						<h1 class="orange"><strong>Sie</strong></h1>
-						<h1 class="blue-sec"><strong>einmalig?</strong></h1>
-					</div>
-				</div>
-			</div>
-		</section>
 
-		<!--===============Form=============-->
-		<section>
-			<div class="row row-second">
-				<div class="col-xs-4 col-xs-4-login">
-					<form class="form-horizontal form-horizontal-login">
-					  <div class="form-group">
-					    <label for="inputUsername" class="col-sm-4  control-label">Username</label>
-					    <div class="col-sm-5">
-					      <input type="username" class="form-control form-control-login">
-					    </div>
-					  </div>
-					  <div class="form-group">
-					    <label for="inputPassword3" class="col-sm-4 control-label">Password</label>
-					    <div class="col-sm-5">
-					      <input type="password" class="form-control form-control-login">
-					    </div>
-					  </div>
-					  <div class="form-group">
-					    <div class="col-sm-offset-2 col-sm-10">
-					      	<button type="submit" class="btn btn-default btn-default-login">Login</button>
-					      	<span class="reg" >or</span>
-					      	<a class="reg" href="#">Register</a>
-					    </div>
-					  </div>
-					</form>
-				</div>
-			</div>
-		</section>
-	
-<!--==============================Footer=============================-->
-		<div id="footer">
-			<p>2015</p>
-		</div>
 
-</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
-<script type="text/javascript" src="js/jquery-ui.js"></script>
-
-<script type="text/javascript" src="js/main.js"></script>
-
-</body>
-</html>

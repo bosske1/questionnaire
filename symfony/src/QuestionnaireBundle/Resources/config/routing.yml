@@ -5,3 +5,11 @@ questionnaire_homepage:
 login:
     path:     /login
     defaults: { _controller: QuestionnaireBundle:Login:index }
+
+registration:
+    path:     /registration
+    defaults: { _controller: QuestionnaireBundle:Registration:index }
+
+question:
+    path:     /question
+    defaults: { _controller: QuestionnaireBundle:Question:index }
