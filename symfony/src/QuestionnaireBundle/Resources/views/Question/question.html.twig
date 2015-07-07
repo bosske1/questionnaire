@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div id="question"></div>
+
+{% endblock %}
+
+{% block javascripts %}
+    {# note:we are just extending javascript block here#}
+    {{ parent() }}
+
+
+    {# include js files, asset is g-r-e-a-t #}
+    {% javascripts
+    '@QuestionnaireBundle/Resources/public/js/question/module.js'
+    '@QuestionnaireBundle/Resources/public/js/question/app/app.js'
+    '@QuestionnaireBundle/Resources/public/js/question/app/router.js'
+    '@QuestionnaireBundle/Resources/public/js/question/app/models/Question.js'
+
+    %}
+    <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+
+
+{% endblock %}
