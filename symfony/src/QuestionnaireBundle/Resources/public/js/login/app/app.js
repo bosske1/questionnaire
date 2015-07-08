@@ -5,7 +5,7 @@ window.Login = {
     Routers: {},
 
     start: function(data) {
-        var question = new Login.Models.Login(),
+        var login = new Login.Models.Login(),
             router = new Login.Router();
 
 

@@ -99,15 +99,47 @@
                         <div class="col-sm-4">
                             <input class="form-control form-control-registration" type="text">
                         </div>
-                    </div>
+
 
                     <button type="button" class="btn btn-warning btn-warning-regisrtation">Weiter</button>
+                    </div>
             </form>
+            <div id="registration"></div>
         </section>
 
 
         <!--==============================Footer=============================-->
+
         <div id="footer">
             <p>2015</p>
         </div>
+        </div>
+
+
 {% endblock %}
+
+        {% block javascripts %}
+            {# note:we are just extending javascript block here#}
+            {{ parent() }}
+
+
+            {# include js files, asset is g-r-e-a-t #}
+            {% javascripts
+            '@QuestionnaireBundle/Resources/public/js/registration/module.js'
+            '@QuestionnaireBundle/Resources/public/js/registration/app/app.js'
+            '@QuestionnaireBundle/Resources/public/js/registration/app/router.js'
+            '@QuestionnaireBundle/Resources/public/js/registration/app/models/Registration.js'
+            '@QuestionnaireBundle/Resources/public/js/registration/app/views/Registration.js'
+
+            %}
+            <script src="{{ asset_url }}"></script>
+
+
+
+            <script type="text/template" id="tpl-registration">
+                <h2>Registration</h2>
+            </script>
+            {% endjavascripts %}
+
+
+        {% endblock %}
