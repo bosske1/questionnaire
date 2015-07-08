@@ -1,7 +1,7 @@
-Login.Views.Login = Backbone.View.extend({
+Question.Views.Registration = Backbone.View.extend({
 
     initialize: function() {
-        this.template= _.template($('#tpl-login').html());
+        this.template= _.template($('#tpl-registration').html());
     },
 
     render: function() {

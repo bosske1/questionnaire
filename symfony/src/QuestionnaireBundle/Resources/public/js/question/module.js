@@ -8,7 +8,9 @@ window.question = {
         'app/router.js',
         'app/models/Question.js',
         'app/views/Question.js',
-        'app/views/Home.js'
+        'app/views/Home.js',
+        'app/views/Login.js',
+        'app/views/Registration.js'
     ],
     init: function() {
 

@@ -22,6 +22,18 @@ window.Question = {
             $('#question').html(view.render().$el);
         });
 
+        router.on('route:login', function() {
+            var view = new Question.Views.Login();
+
+            $('#question').html(view.render().$el);
+        });
+
+        router.on('route:registration', function() {
+            var view = new Question.Views.Registration();
+
+            $('#question').html(view.render().$el);
+        });
+
         Backbone.history.start();
     }
 };
