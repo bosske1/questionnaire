@@ -1,9 +1,9 @@
-Question.Routers = Backbone.Router.extend({
+Question.Router = Backbone.Router.extend({
     routes: {
-        '': 'index'
+        'home': 'home'
     },
     initialize: function() {
-        alert('router initialized');
+        console.log('router initialized');
     }
 
 });

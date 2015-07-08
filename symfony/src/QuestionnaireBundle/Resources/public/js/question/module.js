@@ -5,7 +5,9 @@ window.question = {
     Routers: {},
     js: [
         'app/app.js',
-        'app/models/Question.js'
+        'app/router.js',
+        'app/models/Question.js',
+        'app/views/Question.js'
     ],
     init: function() {
 
