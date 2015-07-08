@@ -3,6 +3,7 @@
 {% block body %}
     <div id="main-container">
         <img id="background" src="img/wood1.jpg">
+        <div id="login"></div>
         <!--==============================Header==================================-->
         <header>
             <ul class="nav nav-tabs" role="tablist">
@@ -63,6 +64,33 @@
         </div>
 
     </div>
+{% endblock %}
+
+
+{% block javascripts %}
+    {# note:we are just extending javascript block here#}
+    {{ parent() }}
+
+
+    {# include js files, asset is g-r-e-a-t #}
+    {% javascripts
+    '@QuestionnaireBundle/Resources/public/js/login/module.js'
+    '@QuestionnaireBundle/Resources/public/js/login/app/app.js'
+    '@QuestionnaireBundle/Resources/public/js/login/app/router.js'
+    '@QuestionnaireBundle/Resources/public/js/login/app/models/Login.js'
+    '@QuestionnaireBundle/Resources/public/js/login/app/views/Login.js'
+
+    %}
+    <script src="{{ asset_url }}"></script>
+
+
+
+    <script type="text/template" id="tpl-login">
+        <h2 class="page-header text-center">wtf?</h2>
+    </script>
+    {% endjavascripts %}
+
+
 {% endblock %}
 
 
