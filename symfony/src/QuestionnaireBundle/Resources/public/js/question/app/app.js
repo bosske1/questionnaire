@@ -11,9 +11,9 @@ window.Question = {
         router.on("route", function(route, params) {
             view = route.charAt(0).toUpperCase() + route.slice(1);
 
-            var homeView = new Question.Views[view]();
+            var viewClass = new Question.Views[view]();
 
-            $('#question').html(homeView.render().$el);
+            $('#question').html(viewClass.render().$el);
         });
 
         Backbone.history.start();
