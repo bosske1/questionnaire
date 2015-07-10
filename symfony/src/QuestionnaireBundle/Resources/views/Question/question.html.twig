@@ -34,11 +34,186 @@
     </script>
 
     <script type="text/template" id="tpl-login">
-        <h2 class="page-header text-center">Login</h2>
+        <div id="main-container">
+            <img id="background" src="img/wood1.jpg">
+
+            <!--==============================Header==================================-->
+            <header>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                    <li role="presentation"><a href="#aboutus" aria-controls="aboutus" role="tab" data-toggle="tab">About Us</a></li>
+                    <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
+                    <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/logo2.png"></li>
+                </ul>
+            </header>
+
+            <!--===========================Main content===============================-->
+
+
+            <section>
+                <div class="row row-first">
+                    <div class="col-xs-5 col-xs-5-login">
+                        <div class="front-pic">
+                            <h1 class="blue"><strong>Was macht</strong></h1>
+                            <h1 class="orange"><strong>Sie</strong></h1>
+                            <h1 class="blue-sec"><strong>einmalig?</strong></h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===============Form=============-->
+            <section>
+                <div class="row row-second">
+                    <div class="col-xs-4 col-xs-4-login">
+                        <form class="form-horizontal form-horizontal-login">
+                            <div class="form-group">
+                                <label for="inputUsername" class="col-sm-4  control-label">Username</label>
+                                <div class="col-sm-5">
+                                    <input type="username" class="form-control form-control-login">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-4 control-label">Password</label>
+                                <div class="col-sm-5">
+                                    <input type="password" class="form-control form-control-login">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-default btn-default-login">Login</button>
+                                    <span class="reg" >or</span>
+                                    <a class="reg" href="#">Register</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!--==============================Footer=============================-->
+            <div id="footer">
+                <p>2015</p>
+            </div>
+
+        </div>
     </script>
 
     <script type="text/template" id="tpl-registration">
-        <h2 class="page-header text-center">Registration</h2>
+        <div id="main-container">
+            <img class="img-responsive" id="background" src="img/wood1.jpg">
+            <!--==============================Header==================================-->
+            <header>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                    <li role="presentation"><a href="#aboutus" aria-controls="aboutus" role="tab" data-toggle="tab">About Us</a></li>
+                    <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
+                    <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/logo2.png"></li>
+                </ul>
+            </header>
+
+            <!--===========================Main content===============================-->
+            <section>
+                <form class="form-horizontal form-horizontal-registration">
+                    <h3 class="registr" >Personliche Daten:</h3>
+                    <div class="form-group form-group-sm form-group-reg">
+                        <label class="col-sm-2 control-label  control-label-registration" for="formGroupInputSmall">Anrede:*</label>
+                        <div class="col-sm-2">
+                            <select class="form-control input-sm form-control-registration">
+                                <option></option>
+                                <option>Frau</option>
+                                <option>Herr</option>
+                            </select>
+                        </div>
+                        <div class="form-group form-group-sm form-group-reg">
+                            <label class="col-sm-3 control-label control-label-registration" for="formGroupInputSmall">Geburtstag:</label>
+                            <div class="col-sm-2">
+                                <input class="form-control form-control-registration" type="text" id="datepicker">
+                            </div>
+                        </div>
+
+                        <div class="form-group form-group-sm form-group-reg">
+                            <label class="col-sm-2 control-label control-label-registration" for="formGroupInputSmall">Titel:</label>
+                            <div class="col-sm-2">
+                                <select class="form-control input-sm form-control-registration">
+                                    <option></option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <label class="col-sm-3 control-label control-label-registration" for="formGroupInputSmall">Strasse und Hausnummer:</label>
+                            <div class="col-sm-3">
+                                <input class="form-control form-control-registration" type="text">
+                            </div>
+                        </div>
+
+                        <div class="form-group form-group-sm form-group-reg">
+                            <label class="col-sm-2 control-label control-label-registration" for="formGroupInputSmall">Vorname:*</label>
+                            <div class="col-sm-3">
+                                <input class="form-control form-control-registration" type="text">
+                            </div>
+                            <label class="col-sm-2 control-label control-label-registration" for="formGroupInputSmall">Ort:*</label>
+                            <div class="col-sm-3">
+                                <input class="form-control form-control-registration" type="text">
+                            </div>
+                        </div>
+
+                        <div class="form-group form-group-sm form-group-reg">
+                            <label class="col-sm-2 control-label control-label-registration" for="formGroupInputSmall">Weitere Vornamen:</label>
+                            <div class="col-sm-3">
+                                <input class="form-control form-control-registration" type="text">
+                            </div>
+                            <label class="col-sm-2 control-label control-label-registration" for="formGroupInputSmall">Postleitzahl:*</label>
+                            <div class="col-sm-3">
+                                <input class="form-control form-control-registration" type="text">
+                            </div>
+                        </div>
+
+                        <div class="form-group form-group-sm form-group-reg">
+                            <label class="col-sm-2 control-label control-label-registration" for="formGroupInputSmall">Nachname:</label>
+                            <div class="col-sm-3">
+                                <input class="form-control form-control-registration" type="text">
+                            </div>
+                            <label class="col-sm-2 control-label control-label-registration" for="formGroupInputSmall">Land:</label>
+                            <div class="col-sm-3">
+                                <input class="form-control form-control-registration" type="text">
+                            </div>
+                        </div>
+
+                        <div class="form-group form-group-sm form-group-reg">
+                            <label class="col-sm-2 control-label control-label-registration" for="formGroupInputSmall">Telefon:</label>
+                            <div class="col-sm-3">
+                                <input class="form-control form-control-registration" type="text">
+                            </div>
+                            <label class="col-sm-2 control-label control-label-registration" for="formGroupInputSmall">Mobiltelefon:</label>
+                            <div class="col-sm-3">
+                                <input class="form-control form-control-registration" type="text">
+                            </div>
+                        </div>
+
+                        <div class="form-group form-group-sm form-group-reg">
+                            <label class="col-sm-2 control-label control-label-registration" for="formGroupInputSmall">Email:</label>
+                            <div class="col-sm-4">
+                                <input class="form-control form-control-registration" type="text">
+                            </div>
+
+
+                            <button type="button" class="btn btn-warning btn-warning-regisrtation">Weiter</button>
+                        </div>
+                </form>
+
+            </section>
+
+
+            <!--==============================Footer=============================-->
+
+            <div id="footer">
+                <p>2015</p>
+            </div>
+        </div>
+
     </script>
     {% endjavascripts %}
 
