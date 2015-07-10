@@ -234,8 +234,8 @@ body {
 /*registration page*/
 
 .form-horizontal-registration {
-	width: 55%;
-	margin: 7% 15% 0 23%;
+	width: 100%;
+	margin: 3% 0% 0 0%;
 	background-color: #fff;
 	padding: 3% 0 2% 8%;
 	border: 2px solid #e67008;
@@ -244,17 +244,12 @@ body {
 	position: absolute;
 }
 
-.registr {
-	margin-top: -5%;
-	padding: 3% 0;
-}
 .form-control-registration{
 	border: 2px solid #e67008;
 }
 
-.btn-warning {
-	margin-left: 70%;
-	background-color: #e67008;
+.btn-trigger {
+    margin: 30% 0 0 45%;
 }
 
 /*footer on every page*/
