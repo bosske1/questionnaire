@@ -10,6 +10,6 @@ registration:
     path:     /registration
     defaults: { _controller: QuestionnaireBundle:Registration:index }
 
-question:
-    path:     /question
-    defaults: { _controller: QuestionnaireBundle:Question:index }
+question_get:
+    path:     /question/get
+    defaults: { _controller: QuestionnaireBundle:Question:get }

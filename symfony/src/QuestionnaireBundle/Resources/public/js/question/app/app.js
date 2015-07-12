@@ -13,7 +13,9 @@ window.Question = {
 
             var viewClass = new Question.Views[view]();
 
-            $('#question').html(viewClass.render().$el);
+            if(route != 'question'){
+                $('#question').html(viewClass.render().$el);
+            }
         });
 
         Backbone.history.start();

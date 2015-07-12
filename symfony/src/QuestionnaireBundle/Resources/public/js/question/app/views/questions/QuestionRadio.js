@@ -1,7 +1,7 @@
-Question.Views.Question = Backbone.View.extend({
+Question.Views.QuestionRadio = Backbone.View.extend({
 
     initialize: function() {
-        this.template= _.template($('#tpl-question').html());
+        this.template= _.template($('#tpl-question-radio').html());
     },
 
     render: function() {

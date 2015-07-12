@@ -1,9 +1,9 @@
 Question.Models.Question = Backbone.Model.extend({
     defaults: {
-        name: null,
-        number: null,
-        id: null,
-        version: null
+        type: null,
+        question: null,
+        answers: null,
+        correct: null
     },
 
     initialize: function() {
