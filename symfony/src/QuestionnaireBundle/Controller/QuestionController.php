@@ -10,7 +10,7 @@ class QuestionController extends Controller
     public function getAction()
     {
         $toReturn = array(
-            'type' => 'input',
+            'type' => 'checkbox',
             'question' => 'Ajmo mala da pravimo lom?',
             'answers' => array(
                 1 => 'sto da neeee',
