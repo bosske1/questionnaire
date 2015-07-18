@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2876107-1874-4f8c-8b94-2e372e8d42e6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/AppBundle/Entity/Questionnaire.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/AppBundle/Entity/Answer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/AppBundle/Entity/PotentialAnswer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/AppBundle/Entity/Question.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/AppBundle/Entity/QuestionAttachment.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/AppBundle/Entity/QuestionnaireCategory.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/AppBundle/Entity/User.php" afterPath="$PROJECT_DIR$/symfony/src/AppBundle/Entity/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="questionnaire.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -109,11 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Entity/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9721707" vertical-offset="2567" max-vertical-offset="3750">
-              <caret line="241" column="5" selection-start-line="241" selection-start-column="5" selection-end-line="241" selection-end-column="5" />
+            <state vertical-scroll-proportion="-30.625" vertical-offset="45" max-vertical-offset="3750">
+              <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
               <folding>
                 <element signature="e#35#83#0#PHP" expanded="true" />
               </folding>
@@ -121,11 +124,61 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Question.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Entity/Question.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="210">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PotentialAnswer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Entity/PotentialAnswer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="210">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionAttachment.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Entity/QuestionAttachment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="210">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Answer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Entity/Answer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="210">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionnaireCategory.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Entity/QuestionnaireCategory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1078">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Questionnaire.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Entity/Questionnaire.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="2730">
-              <caret line="16" column="19" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="19" />
+            <state vertical-scroll-proportion="-25.625" vertical-offset="0" max-vertical-offset="2730">
+              <caret line="46" column="7" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -754,19 +807,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Entity/Questionnaire.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="2730">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="19" />
+        <state vertical-scroll-proportion="-25.625" vertical-offset="0" max-vertical-offset="2730">
+          <caret line="46" column="7" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9721707" vertical-offset="2567" max-vertical-offset="3750">
-          <caret line="241" column="5" selection-start-line="241" selection-start-column="5" selection-end-line="241" selection-end-column="5" />
+        <state vertical-scroll-proportion="-30.625" vertical-offset="45" max-vertical-offset="3750">
+          <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
           <folding>
             <element signature="e#35#83#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Entity/Question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1102">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Entity/PotentialAnswer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1102">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Entity/QuestionAttachment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1102">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Entity/Answer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1102">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Entity/QuestionnaireCategory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1102">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

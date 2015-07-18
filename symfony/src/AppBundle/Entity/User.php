@@ -50,7 +50,7 @@ class User implements UserInterface, \Serializable
 	private $isActive;
 
 	/**
-	 * @OneToMany(targetEntity="Questionnaire", mappedBy="user")
+	 * @ORM\OneToMany(targetEntity="Questionnaire", mappedBy="user")
 	 **/
 	private $questionnaires;
 
