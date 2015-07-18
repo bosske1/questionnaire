@@ -1,6 +1,7 @@
 <?php
 namespace AppBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 
@@ -48,9 +49,15 @@ class User implements UserInterface, \Serializable
 	 */
 	private $isActive;
 
+	/**
+	 * @OneToMany(targetEntity="Questionnaire", mappedBy="user")
+	 **/
+	private $questionnaires;
+
 	public function __construct()
 	{
 		$this->isActive = true;
+		$this->questionnaires = new ArrayCollection();
 	}
 
 	public function getSalt()
@@ -214,6 +221,24 @@ class User implements UserInterface, \Serializable
 			$this->password,
 			$this->salt
 			) = unserialize($serialized);
+	}
+
+	/**
+	 * @return mixed
+	 */
+	public function getQuestionnaires()
+	{
+		return $this->questionnaires;
+	}
+
+	/**
+	 * @param mixed $questionnaires
+	 */
+	public function setQuestionnaires($questionnaires)
+	{
+		$this->questionnaires = $questionnaires;
+
+		return $this;
 	}
 
 }
