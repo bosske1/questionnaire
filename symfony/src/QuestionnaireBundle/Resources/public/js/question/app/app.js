@@ -18,6 +18,11 @@ window.Question = {
             }
         });
 
+        router.on("routes:question", function() {
+
+        });
+
+
         Backbone.history.start();
     }
 };
