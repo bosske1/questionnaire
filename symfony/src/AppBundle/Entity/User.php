@@ -241,4 +241,27 @@ class User implements UserInterface, \Serializable
 		return $this;
 	}
 
+
+    /**
+     * Add questionnaires
+     *
+     * @param \AppBundle\Entity\Questionnaire $questionnaires
+     * @return User
+     */
+    public function addQuestionnaire(\AppBundle\Entity\Questionnaire $questionnaires)
+    {
+        $this->questionnaires[] = $questionnaires;
+
+        return $this;
+    }
+
+    /**
+     * Remove questionnaires
+     *
+     * @param \AppBundle\Entity\Questionnaire $questionnaires
+     */
+    public function removeQuestionnaire(\AppBundle\Entity\Questionnaire $questionnaires)
+    {
+        $this->questionnaires->removeElement($questionnaires);
+    }
 }

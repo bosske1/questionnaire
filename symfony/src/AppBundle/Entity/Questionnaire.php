@@ -51,6 +51,17 @@ class Questionnaire
 	protected $user;
 
 	/**
+	 * @ORM\Column(type="integer")
+	 */
+	protected $categoryId;
+
+	/**
+	 * @ORM\ManyToOne(targetEntity="QuestionnaireCategory", inversedBy="questionnaires")
+	 * @ORM\JoinColumn(name="category_id", referencedColumnName="id")
+	 */
+	protected $category;
+
+	/**
 	 * @ORM\OneToMany(targetEntity="Question", mappedBy="questionnaire")
 	 **/
 	private $questions;
@@ -206,5 +217,74 @@ class Questionnaire
     public function getUser()
     {
         return $this->user;
+    }
+
+    /**
+     * Set categoryId
+     *
+     * @param integer $categoryId
+     * @return Questionnaire
+     */
+    public function setCategoryId($categoryId)
+    {
+        $this->categoryId = $categoryId;
+
+        return $this;
+    }
+
+    /**
+     * Get categoryId
+     *
+     * @return integer 
+     */
+    public function getCategoryId()
+    {
+        return $this->categoryId;
+    }
+
+    /**
+     * Set category
+     *
+     * @param \AppBundle\Entity\QuestionnaireCategory $category
+     * @return Questionnaire
+     */
+    public function setCategory(\AppBundle\Entity\QuestionnaireCategory $category = null)
+    {
+        $this->category = $category;
+
+        return $this;
+    }
+
+    /**
+     * Get category
+     *
+     * @return \AppBundle\Entity\QuestionnaireCategory 
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    /**
+     * Add questions
+     *
+     * @param \AppBundle\Entity\Question $questions
+     * @return Questionnaire
+     */
+    public function addQuestion(\AppBundle\Entity\Question $questions)
+    {
+        $this->questions[] = $questions;
+
+        return $this;
+    }
+
+    /**
+     * Remove questions
+     *
+     * @param \AppBundle\Entity\Question $questions
+     */
+    public function removeQuestion(\AppBundle\Entity\Question $questions)
+    {
+        $this->questions->removeElement($questions);
     }
 }
