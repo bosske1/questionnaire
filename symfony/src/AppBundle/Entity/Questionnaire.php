@@ -8,6 +8,7 @@
 
 namespace AppBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -48,6 +49,34 @@ class Questionnaire
 	 * @ORM\JoinColumn(name="created_by", referencedColumnName="id")
 	 */
 	protected $user;
+
+	/**
+	 * @ORM\OneToMany(targetEntity="Question", mappedBy="questionnaire")
+	 **/
+	private $questions;
+
+	public function __construct()
+	{
+		$this->questions = new ArrayCollection();
+	}
+
+	/**
+	 * @return mixed
+	 */
+	public function getQuestions()
+	{
+		return $this->questions;
+	}
+
+	/**
+	 * @param mixed $questions
+	 */
+	public function setQuestions($questions)
+	{
+		$this->questions = $questions;
+
+		return $this;
+	}
 
     /**
      * Get id
