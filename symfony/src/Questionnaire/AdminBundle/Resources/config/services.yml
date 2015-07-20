@@ -1,0 +1,4 @@
+services:
+#    questionnaire_admin.example:
+#        class: Questionnaire\AdminBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -10,6 +10,10 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 
 class QuestionController extends Controller
 {
+	/**
+	 * @param $questionnaireId
+	 * @return JsonResponse
+	 */
     public function getAction($questionnaireId)
     {
 		// Let's load based on questionnaire:

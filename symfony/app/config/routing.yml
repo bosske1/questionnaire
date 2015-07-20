@@ -1,3 +1,7 @@
+questionnaire_admin:
+    resource: "@QuestionnaireAdminBundle/Resources/config/routing.yml"
+    prefix:   /
+
 questionnaire:
     resource: "@QuestionnaireBundle/Resources/config/routing.yml"
     prefix:   /
