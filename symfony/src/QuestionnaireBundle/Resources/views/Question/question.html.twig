@@ -17,13 +17,13 @@
             <div class="box">
                 <div class="img-box"></div>
                 <div class="question">
-                    <strong>Aussage</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</strong>
+                    <strong><%= question.title %></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <strong><%= question.content %></strong>
                 </div>
                 <form>
                     <label  class="control-label control-label-form1">Antwort:</label>
                     <div class="col-sm-6-form1">
-                        <input type="text" class="form-control form-control-form1">
+                        <input type="text" class="form-control form-control-form1" id="answer_<%= question.id %>">
                     </div>
                 </form>
                 <button type="button" class="btn btn-warning btn-form1">Weiter</button>
@@ -62,39 +62,23 @@
             <div class="box">
                 <div class="img-box"></div>
                 <div class="question">
-                    <strong>Aussage</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</strong>
+                    <strong><%= question.title %></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <strong><%= question.content %></strong>
                 </div>
                 <form>
                     <label  class="col-sm-2 control-label control-label-form2">Antwort:</label>
                     <div class="radio-form2">
+                        <% _.each(question.potentialAnswers, function(answer){ %>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                <strong>Lorem ipsum dolor</strong>
+                                <input type="radio" name="optionsRadios_<%= answer.id %>" id="optionsRadios_<%= answer.id %>" value="<%= answer.id %>" checked>
+                                <strong><%= answer.answer %></strong>
                             </label>
                         </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                <strong>Lorem ipsum dolor</strong>
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" >
-                                <strong>Lorem ipsum dolor</strong>
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4" >
-                                <strong>Lorem ipsum dolor</strong>
-                            </label>
-                        </div>
+                        <% }); %>
                     </div>
                 </form>
-                <button type="button" class="btn btn-warning btn-form2">Weiter</button>
+                <button type="button" class="btn btn-warning btn-form1">Weiter</button>
 
                 <div class="timer"></div>
                 <div class="warning">
@@ -156,7 +140,7 @@
                         </div>
                     </div>
                 </form>
-                <button type="button" class="btn btn-warning btn-form2">Weiter</button>
+                <button type="button" class="btn btn-warning btn-form1">Weiter</button>
 
                 <div class="timer"></div>
                 <div class="warning">

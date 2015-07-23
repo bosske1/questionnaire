@@ -4,8 +4,8 @@ Question.Views.Question = Backbone.View.extend({
         this.template= _.template($('#tpl-question-input').html());
     },
 
-    render: function() {
-        var html = this.template();
+    render: function(question) {
+        var html = this.template({question:question});
         this.$el.html(html);
 
         return this;

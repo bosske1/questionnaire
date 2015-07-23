@@ -60,6 +60,11 @@ class Question
 	protected $questionnaireId;
 
 	/**
+	 * @ORM\Column(type="integer")
+	 */
+	protected $nextQuestionId;
+
+	/**
 	 * @ORM\ManyToOne(targetEntity="User", inversedBy="questionnaires")
 	 * @ORM\JoinColumn(name="created_by", referencedColumnName="id")
 	 */
@@ -414,5 +419,28 @@ class Question
     public function getAnswers()
     {
         return $this->answers;
+    }
+
+    /**
+     * Set nextQuestionId
+     *
+     * @param integer $nextQuestionId
+     * @return Question
+     */
+    public function setNextQuestionId($nextQuestionId)
+    {
+        $this->nextQuestionId = $nextQuestionId;
+
+        return $this;
+    }
+
+    /**
+     * Get nextQuestionId
+     *
+     * @return integer 
+     */
+    public function getNextQuestionId()
+    {
+        return $this->nextQuestionId;
     }
 }

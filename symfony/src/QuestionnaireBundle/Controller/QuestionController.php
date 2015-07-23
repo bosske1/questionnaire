@@ -14,7 +14,7 @@ class QuestionController extends Controller
 	 * @param $questionnaireId
 	 * @return JsonResponse
 	 */
-    public function getAction($questionnaireId)
+    public function getQuestionnaireAction($questionnaireId)
     {
 		// Let's load based on questionnaire:
 		$repository = $this->getDoctrine()
@@ -26,13 +26,27 @@ class QuestionController extends Controller
 
 		$preparedData = $this->prepareQuestions($questions);
 
-        $toReturn = array(
-            'status' => 'success',
-            'data' => $preparedData
-        );
-
-        return new JsonResponse($toReturn);
+        return new JsonResponse($preparedData);
     }
+
+	/**
+	 * @param $questionId
+	 * @return JsonResponse
+	 */
+	public function getAction($questionId)
+	{
+		// Let's load based on questionnaire:
+		$repository = $this->getDoctrine()
+			->getRepository('AppBundle:Question');
+
+		$questions = $repository->findBy(array(
+			'id' => $questionId
+		));
+
+		$preparedData = $this->prepareQuestions($questions);
+
+		return new JsonResponse($preparedData);
+	}
 
 	/**
 	 * @param $questions
@@ -52,14 +66,16 @@ class QuestionController extends Controller
 			$questionData['title'] 		= $question->getTitle();
 			$questionData['content'] 	= $question->getContent();
 			$questionData['type'] 		= $question->getType();
+			$questionData['nextQuestionId']	= $question->getNextQuestionId();
 
 			/**
 			 * @var PotentialAnswer $potentialAnswer
 			 */
 			foreach ($question->getPotentialAnswers() as $potentialAnswer) {
 				$questionData['potentialAnswers'][] = array(
-					'id' => $potentialAnswer->getId(),
-					'answer' => $potentialAnswer->getAnswer()
+					'id' 			=> $potentialAnswer->getId(),
+					'answer' 		=> $potentialAnswer->getAnswer(),
+					'questionId' 	=> $question->getId()
 				);
 			}
 
@@ -68,9 +84,11 @@ class QuestionController extends Controller
 			 */
 			foreach ($question->getAttachments() as $attachment) {
 				$questionData['attachments'][] = array(
-					'id' => $attachment->getId(),
-					'title' => $attachment->getTitle(),
-					'path' =>$attachment->getPath()
+					'id' 			=> $attachment->getId(),
+					'title' 		=> $attachment->getTitle(),
+					'path' 			=> $attachment->getPath(),
+					'description' 	=> $attachment->getDescription(),
+					'questionId' 	=> $question->getId()
 				);
 			}
 

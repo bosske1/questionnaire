@@ -12,27 +12,31 @@ Question.Router = Backbone.Router.extend({
     question: function() {
         var me = this;
 
-        var question = new Question.Collections.Question();
+        var question = new Question.Models.Question({id: 2});
         question.fetch({
-            reset: true,
-            success: function(collection, response, options) {
-                var viewType = response.type;
+            success: function(model, response, options) {
+                var questionResponse = response[0];
+                var viewType = questionResponse.type;
 
                 switch(viewType) {
                     case 'input':
+                        console.log('we have input');
                         viewClass = new Question.Views.Question();
                         break;
                     case 'radio':
+                        console.log('we have radio');
                         viewClass = new Question.Views.QuestionRadio();
                         break;
                     case 'checkbox':
+                        console.log('we have checkbox');
                         viewClass = new Question.Views.QuestionCheckbox();
                         break;
                     default:
+                        console.log('we have default');
                         viewClass = new Question.Views.Question();
                 }
 
-                $('#question').html(viewClass.render().$el);
+                $('#question').html(viewClass.render({question: questionResponse}).$el);
 
                 return me;
             }

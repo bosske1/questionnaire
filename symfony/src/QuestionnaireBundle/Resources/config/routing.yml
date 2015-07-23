@@ -15,5 +15,9 @@ registration_register:
     defaults: { _controller: QuestionnaireBundle:Registration:register }
 
 question_get:
-    path:     /question/get/{questionnaireId}
+    path:     /question/get/{questionId}
     defaults: { _controller: QuestionnaireBundle:Question:get }
+
+questionnaire_get:
+    path:     /question/getQuestionnaire/{questionnaireId}
+    defaults: { _controller: QuestionnaireBundle:Question:getQuestionnaire }
