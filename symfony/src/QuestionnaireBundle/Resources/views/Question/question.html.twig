@@ -23,10 +23,10 @@
                 <form>
                     <label  class="control-label control-label-form1">Antwort:</label>
                     <div class="col-sm-6-form1">
-                        <input type="text" class="form-control form-control-form1" id="answer_<%= question.id %>">
+                        <input name="answer" type="text" class="form-control form-control-form1" id="answer_<%= question.id %>">
                     </div>
                 </form>
-                <button type="button" class="btn btn-warning btn-form1">Weiter</button>
+                <button type="button" id="nextQuestionBtn" class="btn btn-warning btn-form1">Weiter</button>
 
                 <div class="timer"></div>
                 <div class="warning">
@@ -68,17 +68,21 @@
                 <form>
                     <label  class="col-sm-2 control-label control-label-form2">Antwort:</label>
                     <div class="radio-form2">
-                        <% _.each(question.potentialAnswers, function(answer){ %>
+                        <% _.each(question.potentialAnswers, function(answer, key){ %>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="optionsRadios_<%= answer.id %>" id="optionsRadios_<%= answer.id %>" value="<%= answer.id %>" checked>
+                                <input type="radio" name="answer" id="optionsRadios_<%= answer.id %>" value="<%= answer.id %>"
+                                <% if (key == 0) { %>
+                                checked
+                                <% } %>
+                                >
                                 <strong><%= answer.answer %></strong>
                             </label>
                         </div>
                         <% }); %>
                     </div>
                 </form>
-                <button type="button" class="btn btn-warning btn-form1">Weiter</button>
+                <button type="button" id="nextQuestionBtn" class="btn btn-warning btn-form1">Weiter</button>
 
                 <div class="timer"></div>
                 <div class="warning">
@@ -112,35 +116,22 @@
             <div class="box">
                 <div class="img-box"></div>
                 <div class="question">
-                    <strong>Aussage</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</strong>
+                    <strong><%= question.title %></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <strong><%= question.content %></strong>
                 </div>
                 <form>
                     <label  class="col-sm-2 control-label control-label-form2">Antwort:</label>
                     <div class="check-form3">
+                        <% _.each(question.potentialAnswers, function(answer, key){ %>
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox"> Check me out
+                                <input type="checkbox" name="answer" id="optionsRadios_<%= answer.id %>" value="<%= answer.id %>"> <strong><%= answer.answer %></strong>
                             </label>
                         </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> Check me out
-                            </label>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> Check me out
-                            </label>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> Check me out
-                            </label>
-                        </div>
+                        <% }); %>
                     </div>
                 </form>
-                <button type="button" class="btn btn-warning btn-form1">Weiter</button>
+                <button type="button" id="nextQuestionBtn" class="btn btn-warning btn-form1">Weiter</button>
 
                 <div class="timer"></div>
                 <div class="warning">

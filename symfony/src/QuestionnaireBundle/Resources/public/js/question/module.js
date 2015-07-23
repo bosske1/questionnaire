@@ -6,9 +6,10 @@ window.question = {
     js: [
         'app/app.js',
         'app/router.js',
-        'app/models/Question.js',
-        'app/collections/Question.js',
+        'app/models/QuestionInput.js',
+        'app/collections/QuestionInput.js',
         'app/views/questions/Question.js',
+        'app/views/questions/QuestionInput.js',
         'app/views/questions/QuestionRadio.js',
         'app/views/questions/QuestionCheckbox.js',
         'app/views/Home.js',

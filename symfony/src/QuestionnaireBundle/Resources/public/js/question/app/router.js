@@ -9,19 +9,29 @@ Question.Router = Backbone.Router.extend({
         console.log('router initialized');
     },
 
-    question: function() {
-        var me = this;
+    question: function(questionId) {
+        var me = this,
+            questionId = questionId;
 
-        var question = new Question.Models.Question({id: 2});
+        if(questionId == null){
+            questionId = 1; //yo yo :)
+        }
+
+        var question = new Question.Models.Question({id: questionId});
         question.fetch({
             success: function(model, response, options) {
+                if(response.length == 0){
+                    console.error('Could not find question with id of ' + questionId);
+                    return;
+                }
+
                 var questionResponse = response[0];
                 var viewType = questionResponse.type;
 
                 switch(viewType) {
                     case 'input':
                         console.log('we have input');
-                        viewClass = new Question.Views.Question();
+                        viewClass = new Question.Views.QuestionInput();
                         break;
                     case 'radio':
                         console.log('we have radio');
@@ -33,9 +43,10 @@ Question.Router = Backbone.Router.extend({
                         break;
                     default:
                         console.log('we have default');
-                        viewClass = new Question.Views.Question();
+                        viewClass = new Question.Views.QuestionInput();
                 }
 
+                viewClass.question = questionResponse;
                 $('#question').html(viewClass.render({question: questionResponse}).$el);
 
                 return me;
