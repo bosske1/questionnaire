@@ -1,0 +1,52 @@
+
+<script type="text/template" id="tpl-questions">
+    <div id="main-container">
+        <img class="img-responsive" id="background" src="img/wood1.jpg">
+        <!--==============================Header==================================-->
+        <header>
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                <li role="presentation"><a href="#aboutus" aria-controls="aboutus" role="tab" data-toggle="tab">About Us</a></li>
+                <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
+                <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/logo2.png"></li>
+            </ul>
+        </header>
+
+        <!--===========================Main content===============================-->
+        <section>
+            <div class="box">
+                <div class="img-box"></div>
+                <table class="table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Question</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <% _.each(questions.models, function(question, key){ %>
+                        <tr>
+                            <td><%= question.get('id') %></td>
+                            <td><%= question.get('title') %></td>
+                            <td><%= question.get('content') %></td>
+                            <td>
+                                <button class="btn btn-xs" id="edit-btn" value="<%= question.get('id') %>">Edit</button>
+                                <button class="btn btn-xs" id="remove-btn" value="<%= question.get('id') %>">Remove</button>
+                            </td>
+                        </tr>
+                    <% }) %>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!--==============================Footer=============================-->
+        <div id="footer">
+            <p>2015</p>
+        </div>
+
+    </div>
+
+</script>

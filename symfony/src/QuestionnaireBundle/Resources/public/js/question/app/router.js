@@ -3,7 +3,8 @@ Question.Router = Backbone.Router.extend({
         'home': 'home',
         'question': 'question',
         'registration': 'registration',
-        'login': 'login'
+        'login': 'login',
+        'admin': 'adminPage'
     },
     initialize: function() {
         console.log('router initialized');
@@ -50,6 +51,22 @@ Question.Router = Backbone.Router.extend({
                 $('#question').html(viewClass.render({question: questionResponse}).$el);
 
                 return me;
+            }
+        });
+    },
+
+    adminPage: function() {
+        var me = this;
+        var questionnaireId = 1;
+
+        var questions = new Question.Collections.Question();
+        //questions.setQuestionnaireId(questionnaireId);
+        questions.url += "/" + questionnaireId;
+        questions.fetch({
+            reset: true,
+            success: function(collection, response, options) {
+                var questionsView = new Question.Views.QuestionsAdmin();
+                $('#question').html(questionsView.render(collection).$el);
             }
         });
     }

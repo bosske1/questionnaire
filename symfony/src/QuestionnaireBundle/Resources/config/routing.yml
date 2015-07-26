@@ -21,3 +21,7 @@ question_get:
 questionnaire_get:
     path:     /question/getQuestionnaire/{questionnaireId}
     defaults: { _controller: QuestionnaireBundle:Question:getQuestionnaire }
+
+admin_home:
+    path:     /admin
+    defaults: { _controller: QuestionnaireBundle:AdminIndex:index }

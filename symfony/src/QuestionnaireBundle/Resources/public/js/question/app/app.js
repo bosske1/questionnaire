@@ -5,22 +5,7 @@ window.Question = {
     Routers: {},
 
     start: function(data) {
-        var question = new Question.Models.Question(),
-            router = new Question.Router();
-
-        router.on("route", function(route, params) {
-            view = route.charAt(0).toUpperCase() + route.slice(1);
-
-            var viewClass = new Question.Views[view]();
-
-            if(route != 'question'){
-                $('#question').html(viewClass.render().$el);
-            }
-        });
-
-        router.on("routes:question", function() {
-
-        });
+        var router = new Question.Router();
 
 
         Backbone.history.start();

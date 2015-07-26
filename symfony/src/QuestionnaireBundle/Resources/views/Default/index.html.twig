@@ -7,6 +7,7 @@
     {% include 'QuestionnaireBundle:Login:login.html.twig' %}
     {% include 'QuestionnaireBundle:Registration:registration.html.twig' %}
     {% include 'QuestionnaireBundle:Question:question.html.twig' %}
+    {% include 'QuestionnaireBundle:Admin:questions.html.twig' %}
 
 {% endblock %}
 
@@ -35,6 +36,8 @@
     '@QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionCheckbox.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/views/Login.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/views/Registration.js'
+    '@QuestionnaireBundle/Resources/public/js/question/app/views/admin/QuestionnairesAdmin.js'
+    '@QuestionnaireBundle/Resources/public/js/question/app/views/admin/QuestionsAdmin.js'
 
     %}
     <script src="{{ asset_url }}"></script>
