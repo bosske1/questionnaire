@@ -15,23 +15,23 @@
         <!--===========================Main content===============================-->
         <section>
             <div class="box">
-                <div class="img-box"></div>
+
                 <table class="table-striped table-bordered">
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Title</th>
-                            <th>Question</th>
-                            <th>Action</th>
+                            <th class="mid">ID</th>
+                            <th class="mid">Title</th>
+                            <th class="mid">Question</th>
+                            <th class="mid">Action</th>
                         </tr>
                     </thead>
                     <tbody>
                     <% _.each(questions.models, function(question, key){ %>
                         <tr>
-                            <td><%= question.get('id') %></td>
-                            <td><%= question.get('title') %></td>
-                            <td><%= question.get('content') %></td>
-                            <td>
+                            <td class="mid"><%= question.get('id') %></td>
+                            <td class="som"><%= question.get('title') %></td>
+                            <td class="som"><%= question.get('content') %></td>
+                            <td class="som">
                                 <button class="btn btn-xs" id="edit-btn" value="<%= question.get('id') %>">Edit</button>
                                 <button class="btn btn-xs" id="remove-btn" value="<%= question.get('id') %>">Remove</button>
                             </td>

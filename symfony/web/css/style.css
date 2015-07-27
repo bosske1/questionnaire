@@ -326,6 +326,31 @@ body {
 .check-form3 {
 	margin: 2% 0 0 35%;
 }
+/*admin page*/
+.table-bordered {
+	width: 100%;
+	border-radius: 10px;
+	border-spacing: 0;
+	overflow: hidden;
+}
+
+.mid {
+	text-align: center;
+	color: #e67008;
+	padding: 1%;
+}
+
+.som {
+	text-align: center;
+}
+
+.btn-xs {
+	background: #e67008;
+	border-radius: 5px;
+	color: #fff;
+	margin-left: 1%;
+}
+
 
 /*footer on every page*/
 
