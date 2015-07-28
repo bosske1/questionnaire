@@ -6,7 +6,7 @@ window.Question = {
 
     start: function(data) {
         var router = new Question.Router();
-
+        this.mainRouter = router;
 
         Backbone.history.start();
     }

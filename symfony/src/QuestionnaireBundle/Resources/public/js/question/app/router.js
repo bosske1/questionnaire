@@ -4,7 +4,8 @@ Question.Router = Backbone.Router.extend({
         'question': 'question',
         'registration': 'registration',
         'login': 'login',
-        'admin': 'adminPage'
+        'admin': 'adminPage',
+        'editView': 'openEditView'
     },
     initialize: function() {
         console.log('router initialized');
@@ -69,6 +70,10 @@ Question.Router = Backbone.Router.extend({
                 $('#question').html(questionsView.render(collection).$el);
             }
         });
+    },
+    openEditView: function() {
+        var editView = new Question.Views.AddView();
+        $('#question').html(editView.render().$el);
     }
 
 });

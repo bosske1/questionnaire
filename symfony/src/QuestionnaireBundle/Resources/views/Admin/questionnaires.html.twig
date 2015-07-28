@@ -1,5 +1,5 @@
 
-<script type="text/template" id="tpl-question-input">
+<script type="text/template" id="tpl-questionnaires">
     <div id="main-container">
         <img class="img-responsive" id="background" src="img/wood1.jpg">
         <!--==============================Header==================================-->
@@ -15,23 +15,30 @@
         <!--===========================Main content===============================-->
         <section>
             <div class="box">
-                <div class="img-box"></div>
-                <div class="question">
-                    <strong><%= question.title %></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <strong><%= question.content %></strong>
-                </div>
-                <form>
-                    <label  class="control-label control-label-form1">Antwort:</label>
-                    <div class="col-sm-6-form1">
-                        <input name="answer" type="text" class="form-control form-control-form1" id="answer_<%= question.id %>">
-                    </div>
-                </form>
-                <button type="button" id="nextQuestionBtn" class="btn btn-warning btn-form1">Weiter</button>
 
-                <div class="timer"></div>
-                <div class="warning">
-                    <p><strong>Bitte beantworten Sie die Frage innerhalb von 30 Sekunden!</strong></p>
-                </div>
+                <table class="table-striped table-bordered">
+                    <thead>
+                    <tr>
+                        <th class="mid">ID</th>
+                        <th class="mid">Name</th>
+                        <th class="mid">Category</th>
+                        <th class="mid">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <% _.each(questionnaires.models, function(questionnaire, key){ %>
+                    <tr>
+                        <td class="mid"><%= questionnaire.get('id') %></td>
+                        <td class="som"><%= questionnaire.get('name') %></td>
+                        <td class="som"><%= questionnaire.get('catregory') %></td>
+                        <td class="som">
+                            <button class="btn btn-xs" id="edit-btn" value="<%= questionnaire.get('id') %>">Edit</button>
+                            <button class="btn btn-xs" id="remove-btn" value="<%= questionnaire.get('id') %>">Remove</button>
+                        </td>
+                    </tr>
+                    <% }) %>
+                    </tbody>
+                </table>
             </div>
         </section>
 
