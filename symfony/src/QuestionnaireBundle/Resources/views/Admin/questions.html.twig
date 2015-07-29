@@ -67,10 +67,10 @@
         <section>
             <div class="box">
 
-                <form role="form">
+                <form role="form" class="fedit">
                     <div class="form-group">
                         <label for="title">Title:</label>
-                        <input type="text" class="form-control" id="title" name="title" value="<%= question.get('title') %>">
+                        <strong><input type="text" class="form-control" id="title" name="title" value="<%= question.get('title') %>"></strong>
                     </div>
                     <div class="form-group">
                         <label for="content">Question:</label>
@@ -82,13 +82,13 @@
                     </div>
                     <div class="form-group">
                         <label for="type">Type:</label>
-                        <select class="form-control" id="type" name="type">
-                            <option value="input" <% if(question.get('type') == 'input') { %>selected<% } %> >input</option>
-                            <option value="radio" <% if(question.get('type') == 'radio') { %>selected<% } %> >radio</option>
-                            <option value="checkbox" <% if(question.get('type') == 'checkbox') { %>selected<% } %> >checkbox</option>
+                        <select class="form-control optied" id="type" name="type">
+                            <option value="input" <% if(question.get('type') == 'input') { %>selected<% } %> >Input</option>
+                            <option value="radio" <% if(question.get('type') == 'radio') { %>selected<% } %> >Radio</option>
+                            <option value="checkbox" <% if(question.get('type') == 'checkbox') { %>selected<% } %> >Checkbox</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" class="btn btn-warning btn-edit">Edit</button>
                 </form>
             </div>
         </section>
@@ -119,10 +119,10 @@
         <section>
             <div class="box">
 
-                <form role="form">
+                <form role="form" class="fedit">
                     <div class="form-group">
                         <label for="title">Title:</label>
-                        <input type="text" class="form-control" id="title" name="title">
+                        <strong><input type="text" class="form-control" id="title" name="title"></strong>
                     </div>
                     <div class="form-group">
                         <label for="content">Description:</label>
@@ -134,13 +134,13 @@
                     </div>
                     <div class="form-group">
                         <label for="type">Type:</label>
-                        <select class="form-control" id="type" name="type">
-                            <option>input</option>
-                            <option>radio</option>
-                            <option>checkbox</option>
+                        <select class="form-control optied" id="type" name="type">
+                            <option>Input</option>
+                            <option>Radio</option>
+                            <option>Checkbox</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" class="btn btn-warning btn-edit">Add!</button>
                 </form>
             </div>
         </section>

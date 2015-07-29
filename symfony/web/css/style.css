@@ -351,6 +351,24 @@ body {
 	margin-left: 1%;
 }
 
+/*edit form*/
+
+.fedit {
+	width: 80%;
+	margin: 5% 10% 0 10%;
+	color: #e67008;
+}
+.btn-edit {
+	color: #fff;
+	background: #e67008;
+	margin-left: 40%;
+	width: 15%;
+}
+
+.optied {
+	color: #039;
+}
+
 
 /*footer on every page*/
 
