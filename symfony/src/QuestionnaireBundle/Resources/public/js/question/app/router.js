@@ -5,7 +5,8 @@ Question.Router = Backbone.Router.extend({
         'registration': 'registration',
         'login': 'login',
         'admin': 'adminPage',
-        'editView': 'openEditView'
+        'editView': 'openEditView',
+        'questionnaireAdmin': 'openQuestionnaireAdminPage'
     },
     initialize: function() {
         console.log('router initialized');
@@ -74,6 +75,19 @@ Question.Router = Backbone.Router.extend({
     openEditView: function() {
         var editView = new Question.Views.AddView();
         $('#question').html(editView.render().$el);
+    },
+
+    openQuestionnaireAdminPage: function() {
+        var me = this;
+        var questionnaires = new Question.Collections.Questionnaire();
+
+        questionnaires.fetch({
+            reset: true,
+            success: function(collection, response, options) {
+                var questionnairesView = new Question.Views.QuestionnairesAdmin();
+                $('#question').html(questionnairesView.render(collection).$el);
+            }
+        });
     }
 
 });

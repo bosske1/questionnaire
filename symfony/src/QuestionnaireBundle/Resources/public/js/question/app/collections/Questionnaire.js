@@ -1,4 +1,4 @@
-Question.Collections.Question = Backbone.Collection.extend({
+Question.Collections.Questionnaire = Backbone.Collection.extend({
     model: Question.Models.Questionnaire,
-    url: '/question/getQuestionnaire'
+    url: '/questionnaire/getQuestionnaires'
 });
