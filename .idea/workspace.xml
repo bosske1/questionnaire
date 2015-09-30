@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2876107-1874-4f8c-8b94-2e372e8d42e6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Controller/QuestionnaireController.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony/web/img/Logo2.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Quest/img/Logo2.png" afterPath="$PROJECT_DIR$/Quest/img/logo2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/collections/Questionnaire.js" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/collections/Questionnaire.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/models/Questionnaire.js" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/models/Questionnaire.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/admin/QuestionnairesAdmin.js" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/admin/QuestionnairesAdmin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" afterPath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/questionnaire.iml" afterPath="$PROJECT_DIR$/.idea/questionnaire.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/questionnaires.html.twig" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/questionnaires.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/router.js" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question.html.twig" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/questions.html.twig" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/questions.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="questionnaire.iws" />
@@ -46,7 +31,7 @@
       <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="55" selection-start="408" selection-end="408" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="1080">
+            <state line="10" column="55" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1080">
               <folding />
             </state>
           </provider>
@@ -55,7 +40,7 @@
       <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/symfony/web/bundles/questionnaire/js/question/app/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="47" selection-start="2882" selection-end="2882" vertical-scroll-proportion="0.0" vertical-offset="1237" max-vertical-offset="1782">
+            <state line="82" column="0" selection-start="2836" selection-end="2836" vertical-scroll-proportion="0.0" vertical-offset="1219" max-vertical-offset="1764">
               <folding />
             </state>
           </provider>
@@ -73,7 +58,7 @@
       <file leaf-file-name="QuestionController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Controller/QuestionController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1115" selection-end="1115" vertical-scroll-proportion="-3.3333333" vertical-offset="666" max-vertical-offset="1818">
+            <state line="46" column="0" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.0" vertical-offset="828" max-vertical-offset="1890">
               <folding />
             </state>
           </provider>
@@ -82,7 +67,7 @@
       <file leaf-file-name="QuestionnaireController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Controller/QuestionnaireController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="36" selection-start="1095" selection-end="1095" vertical-scroll-proportion="-7.0740743" vertical-offset="583" max-vertical-offset="1044">
+            <state line="43" column="36" selection-start="1095" selection-end="1095" vertical-scroll-proportion="0.0" vertical-offset="583" max-vertical-offset="1044">
               <folding>
                 <marker date="1440855841707" expanded="true" signature="49:225" placeholder="..." />
               </folding>
@@ -110,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="question.html.twig" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="question.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2790">
+            <state line="30" column="45" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.63584906" vertical-offset="203" max-vertical-offset="2898">
               <folding />
             </state>
           </provider>
@@ -122,7 +107,7 @@
       <file leaf-file-name="Question.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/Question.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1116">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1116">
               <folding />
             </state>
           </provider>
@@ -131,7 +116,7 @@
       <file leaf-file-name="QuestionsAdmin.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/admin/QuestionsAdmin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+            <state line="14" column="0" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
@@ -164,10 +149,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="router.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1764">
+            <state line="5" column="21" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1764">
               <folding />
             </state>
           </provider>
@@ -185,7 +170,7 @@
       <file leaf-file-name="EditView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/form/EditView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="39" selection-start="118" selection-end="135" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
+            <state line="3" column="39" selection-start="118" selection-end="135" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="324">
               <folding />
             </state>
           </provider>
@@ -203,7 +188,7 @@
       <file leaf-file-name="questions.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/questions.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="142" selection-start="3697" selection-end="3697" vertical-scroll-proportion="-4.185185" vertical-offset="1183" max-vertical-offset="2862">
+            <state line="98" column="14" selection-start="5208" selection-end="5208" vertical-scroll-proportion="-12.259259" vertical-offset="1433" max-vertical-offset="2862">
               <folding />
             </state>
           </provider>
@@ -221,7 +206,7 @@
       <file leaf-file-name="questionnaires.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/questionnaires.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="44" selection-start="1259" selection-end="1273" vertical-scroll-proportion="-8.592592" vertical-offset="236" max-vertical-offset="990">
+            <state line="26" column="44" selection-start="1259" selection-end="1273" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="990">
               <folding />
             </state>
           </provider>
@@ -230,7 +215,7 @@
       <file leaf-file-name="Questionnaire.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/models/Questionnaire.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="22" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
+            <state line="6" column="22" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="324">
               <folding />
             </state>
           </provider>
@@ -239,7 +224,7 @@
       <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/symfony/src/Questionnaire/AdminBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="26.25926" vertical-offset="709" max-vertical-offset="1026">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="709" max-vertical-offset="1026">
               <folding />
             </state>
           </provider>
@@ -257,7 +242,7 @@
       <file leaf-file-name="Question.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/collections/Question.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="30" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+            <state line="3" column="30" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="270">
               <folding />
             </state>
           </provider>
@@ -286,6 +271,8 @@
         <option value="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/router.js" />
         <option value="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/collections/Questionnaire.js" />
         <option value="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Controller/QuestionnaireController.php" />
+        <option value="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/questions.html.twig" />
+        <option value="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question.html.twig" />
       </list>
     </option>
   </component>
@@ -324,6 +311,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1744,7 +1732,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1797,19 +1784,19 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949513" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32820514" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949513" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31660232" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2818533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949513" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19393939" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1963,9 +1950,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/symfony/web/bundles/questionnaire/js/question/app/views/questions/QuestionRadio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/symfony/web/bundles/questionnaire/js/question/app/views/admin/QuestionsAdmin.js">
@@ -2010,13 +1995,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/form/AddView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -2026,7 +2004,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/symfony/web/bundles/questionnaire/js/question/app/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="47" selection-start="2882" selection-end="2882" vertical-scroll-proportion="0.0" vertical-offset="1237" max-vertical-offset="1782">
+        <state line="82" column="0" selection-start="2836" selection-end="2836" vertical-scroll-proportion="0.0" vertical-offset="1219" max-vertical-offset="1764">
           <folding />
         </state>
       </provider>
@@ -2040,7 +2018,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Controller/QuestionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1115" selection-end="1115" vertical-scroll-proportion="-3.3333333" vertical-offset="666" max-vertical-offset="1818">
+        <state line="46" column="0" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.0" vertical-offset="828" max-vertical-offset="1890">
           <folding />
         </state>
       </provider>
@@ -2054,14 +2032,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/symfony/src/Questionnaire/AdminBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="26.25926" vertical-offset="709" max-vertical-offset="1026">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="709" max-vertical-offset="1026">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="55" selection-start="408" selection-end="408" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="1080">
+        <state line="10" column="55" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1080">
           <folding />
         </state>
       </provider>
@@ -2075,7 +2053,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/questionnaires.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="44" selection-start="1259" selection-end="1273" vertical-scroll-proportion="-8.592592" vertical-offset="236" max-vertical-offset="990">
+        <state line="26" column="44" selection-start="1259" selection-end="1273" vertical-scroll-proportion="0.0" vertical-offset="236" max-vertical-offset="990">
           <folding />
         </state>
       </provider>
@@ -2105,7 +2083,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Controller/QuestionnaireController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="36" selection-start="1095" selection-end="1095" vertical-scroll-proportion="-7.0740743" vertical-offset="583" max-vertical-offset="1044">
+        <state line="43" column="36" selection-start="1095" selection-end="1095" vertical-scroll-proportion="0.0" vertical-offset="583" max-vertical-offset="1044">
           <folding>
             <marker date="1440855841707" expanded="true" signature="49:225" placeholder="..." />
           </folding>
@@ -2114,21 +2092,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Quest/form2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="12" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.4868421" vertical-offset="338" max-vertical-offset="1782">
-          <folding />
-        </state>
+        <state line="27" column="12" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.4868421" vertical-offset="338" max-vertical-offset="1782" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/form/EditView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="39" selection-start="118" selection-end="135" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/questions.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="142" selection-start="3697" selection-end="3697" vertical-scroll-proportion="-4.185185" vertical-offset="1183" max-vertical-offset="2862">
           <folding />
         </state>
       </provider>
@@ -2140,9 +2109,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/questions.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="14" selection-start="5208" selection-end="5208" vertical-scroll-proportion="-12.259259" vertical-offset="1433" max-vertical-offset="2862">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1764">
+        <state line="5" column="21" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1764">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="45" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.63584906" vertical-offset="203" max-vertical-offset="2898">
           <folding />
         </state>
       </provider>
