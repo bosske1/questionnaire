@@ -50,3 +50,105 @@
     </div>
 
 </script>
+<script type="text/template" id="tpl-edit-question">
+    <div id="main-container">
+        <img class="img-responsive" id="background" src="img/wood1.jpg">
+        <!--==============================Header==================================-->
+        <header>
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                <li role="presentation"><a href="#aboutus" aria-controls="aboutus" role="tab" data-toggle="tab">About Us</a></li>
+                <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
+                <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/logo2.png"></li>
+            </ul>
+        </header>
+
+        <!--===========================Main content===============================-->
+        <section>
+            <div class="box">
+
+                <form role="form" class="fedit">
+                    <div class="form-group">
+                        <label for="title">Title:</label>
+                        <strong><input type="text" class="form-control" id="title" name="title" value="<%= question.get('title') %>"></strong>
+                    </div>
+                    <div class="form-group">
+                        <label for="content">Question:</label>
+                        <textarea class="form-control" rows="3" id="content" name="content"><%= question.get('content') %></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea class="form-control" rows="5" id="description" name="description"><%= question.get('description') %></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="type">Type:</label>
+                        <select class="form-control optied" id="type" name="type">
+                            <option value="input" <% if(question.get('type') == 'input') { %>selected<% } %> >Input</option>
+                            <option value="radio" <% if(question.get('type') == 'radio') { %>selected<% } %> >Radio</option>
+                            <option value="checkbox" <% if(question.get('type') == 'checkbox') { %>selected<% } %> >Checkbox</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-warning btn-edit">Edit</button>
+                </form>
+            </div>
+        </section>
+
+        <!--==============================Footer=============================-->
+        <div id="footer">
+            <p>2015</p>
+        </div>
+
+    </div>
+</script>
+
+
+<script type="text/template" id="tpl-add-question">
+    <div id="main-container">
+        <img class="img-responsive" id="background" src="img/wood1.jpg">
+        <!--==============================Header==================================-->
+        <header>
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                <li role="presentation"><a href="#aboutus" aria-controls="aboutus" role="tab" data-toggle="tab">About Us</a></li>
+                <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
+                <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/logo2.png"></li>
+            </ul>
+        </header>
+
+        <!--===========================Main content===============================-->
+        <section>
+            <div class="box">
+
+                <form role="form" class="fedit">
+                    <div class="form-group">
+                        <label for="title">Title:</label>
+                        <strong><input type="text" class="form-control" id="title" name="title"></strong>
+                    </div>
+                    <div class="form-group">
+                        <label for="content">Question:</label>
+                        <textarea class="form-control" rows="3" id="content" name="content"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea class="form-control" rows="5" id="description" name="description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="type">Type:</label>
+                        <select class="form-control optied" id="type" name="type">
+                            <option>Input</option>
+                            <option>Radio</option>
+                            <option>Checkbox</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-warning btn-edit">Add!</button>
+                </form>
+            </div>
+        </section>
+
+        <!--==============================Footer=============================-->
+        <div id="footer">
+            <p>2015</p>
+        </div>
+
+    </div>
+</script>

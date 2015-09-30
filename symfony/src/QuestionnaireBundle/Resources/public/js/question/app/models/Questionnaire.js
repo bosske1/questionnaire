@@ -3,7 +3,8 @@ Question.Models.Questionnaire = Backbone.Model.extend({
         id: null,
         name: null,
         description: null,
-        categoryId: null
+        categoryId: null,
+        category: null
     },
 
     initialize: function() {
