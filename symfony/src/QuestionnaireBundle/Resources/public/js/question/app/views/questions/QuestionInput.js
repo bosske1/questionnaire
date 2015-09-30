@@ -7,7 +7,7 @@ Question.Views.QuestionInput = Question.Views.Question.extend({
     },
 
     isValid: function(){
-        var answer = this.$("input[name='answer']")[0],
+        var answer = this.$("input[name='answer']"),
             isInputValid = true;
 
         if(answer.value == ''){
