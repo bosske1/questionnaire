@@ -11,7 +11,7 @@ Question.Views.QuestionInput = Question.Views.Question.extend({
             isInputValid = true;
 
         if(answer.value == ''){
-            this.errorMessage = 'Please answer the question';
+            this.setErrorMessage('Please answer the question');
             isInputValid = false;
         }
 

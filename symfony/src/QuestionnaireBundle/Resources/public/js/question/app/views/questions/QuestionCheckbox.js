@@ -20,7 +20,7 @@ Question.Views.QuestionCheckbox = Question.Views.Question.extend({
         }
 
         if(!isSomethingChecked){
-            this.errorMessage = 'Please select at least one answer';
+            this.setErrorMessage('Please select at least one answer');
         }
 
         return isSomethingChecked;

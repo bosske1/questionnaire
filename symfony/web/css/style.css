@@ -301,8 +301,6 @@ body {
 .timer {
 	width: 80%;
 	height: 7px;
-	border: 1px solid #666;
-	border-radius: 10px;
 	margin: 2% 0 0 10%;
 }
 .warning {

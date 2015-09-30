@@ -22,13 +22,15 @@ Question.Views.Question = Backbone.View.extend({
         var nextQuestionId = this.question.nextQuestionId,
             router = new Question.Router;
 
-        if(!this.isValid()){
-            console.log(this.errorMessage); // alert or something
+        if(this.getTimeLimitReached()){
+            //time limit was reached before answering
+            this.setErrorMessage('time limit reached before answering').showErrorMessage();
             return false;
         }
 
-        if(this.timeLimitReached){
-            //time limit was reached before answering
+        if(!this.isValid()){
+            this.showErrorMessage();
+            return false;
         }
 
         router.question(nextQuestionId);
@@ -39,19 +41,62 @@ Question.Views.Question = Backbone.View.extend({
     },
 
     startCountdown: function(duration){
-        var timer = duration;
+        var me = this,
+            timer = duration;
 
         countdownInterval = setInterval(function () {
             if (--timer < 0) {
                 timer = duration;
             }
 
+            var secondsLeft = me.timeLimit - timer;
+            var progressBarValue = secondsLeft * 100 / me.timeLimit;
+            me.setProgressBarValue(progressBarValue);
+
             if(timer == 0){
-                this.timeLimitReached = true;
+                me.setTimeLimitReached(true);
 
                 clearInterval(countdownInterval);
             }
 
         }, 1000);
+    },
+
+    setTimeLimitReached: function(isReached){
+        this.timeLimitReached = isReached;
+
+        return this;
+    },
+
+    getTimeLimitReached: function(){
+        return this.timeLimitReached;
+    },
+
+    setErrorMessage: function(message){
+        this.errorMessage = message;
+
+        return this;
+    },
+
+    getErrorMessage: function(){
+        return this.errorMessage;
+    },
+
+    showErrorMessage: function(){
+        this.getErrorMessageContainer().text(this.getErrorMessage());
+
+        return this;
+    },
+
+    getErrorMessageContainer: function(){
+        return this.$('#error-message-container');
+    },
+
+    getProgressBar: function(){
+        return this.$('#progress-bar');
+    },
+
+    setProgressBarValue: function(val){
+        this.getProgressBar().css('width', val + '%');
     }
 });
