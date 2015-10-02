@@ -14,9 +14,13 @@
         <!--===========================Main content===============================-->
         <section>
             <div class="box">
-
-                <div id="error-message-container"></div>
                 <img class="img-responsive inquest" alt="Brand" src="img/logo2.png">
+                <div id="error-message-container"></div>
+                <% if (typeof question.attachments !== 'undefined' && question.attachments.length > 0) { %>
+                <div class="img-box" id="img-attachment">
+                    <img alt="Brand" src="<%= question.attachments[0].path %>">
+                </div>
+                <% } %>
                 <div class="question">
                 <div class="quesnum col-sm-2">
                     <h5><strong><%= question.title %></strong></h5>
@@ -26,16 +30,13 @@
                     <strong><%= question.content %></strong>
                 </div>
                 <form class="questansw col-sm-10">
-                    <select class="form-control grey">
-                        <option>2860</option>
-                        <option>3350</option>
-                        <option>2500</option>
-                        <option>2731</option>
-                    </select>
+                    <input name="answer" type="text" class="form-control form-control-form1" id="answer_<%= question.id %>">
                 </form>
 
 
                 </div>
+
+                <button type="button" id="nextQuestionBtn" class="btn btn-warning btn-form1">Weiter</button>
 
                 <div class="timer">
 
@@ -49,7 +50,6 @@
                 <div class="warning">
                     <p><strong>Bitte beantworten Sie die Frage innerhalb von 30 Sekunden!</strong></p>
                 </div>
-                <button type="button" id="nextQuestionBtn" class="btn btn-default btn-form1">Weiter</button>
             </div>
         </section>
 
@@ -77,8 +77,13 @@
         <!--===========================Main content===============================-->
         <section>
             <div class="box">
-                <div class="img-box"></div>
+                <img class="img-responsive inquest" alt="Brand" src="img/logo2.png">
                 <div id="error-message-container"></div>
+                <% if (typeof question.attachments !== 'undefined' && question.attachments.length > 0) { %>
+                <div class="img-box" id="img-attachment">
+                    <img alt="Brand" src="<%= question.attachments[0].path %>">
+                </div>
+                <% } %>
                 <div class="question">
                     <strong><%= question.title %></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <strong><%= question.content %></strong>
@@ -139,8 +144,13 @@
         <!--===========================Main content===============================-->
         <section>
             <div class="box">
-                <div class="img-box"></div>
+                <img class="img-responsive inquest" alt="Brand" src="img/logo2.png">
                 <div id="error-message-container"></div>
+                <% if (typeof question.attachments !== 'undefined' && question.attachments.length > 0) { %>
+                <div class="img-box" id="img-attachment">
+                    <img alt="Brand" src="<%= question.attachments[0].path %>">
+                </div>
+                <% } %>
                 <div class="question">
                     <strong><%= question.title %></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <strong><%= question.content %></strong>

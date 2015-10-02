@@ -9,7 +9,6 @@ Question.Router = Backbone.Router.extend({
         'questionnaireAdmin': 'openQuestionnaireAdminPage'
     },
     initialize: function() {
-        console.log('router initialized');
     },
 
     question: function(questionId) {
@@ -33,19 +32,15 @@ Question.Router = Backbone.Router.extend({
 
                 switch(viewType) {
                     case 'input':
-                        console.log('we have input');
                         viewClass = new Question.Views.QuestionInput();
                         break;
                     case 'radio':
-                        console.log('we have radio');
                         viewClass = new Question.Views.QuestionRadio();
                         break;
                     case 'checkbox':
-                        console.log('we have checkbox');
                         viewClass = new Question.Views.QuestionCheckbox();
                         break;
                     default:
-                        console.log('we have default');
                         viewClass = new Question.Views.QuestionInput();
                 }
 

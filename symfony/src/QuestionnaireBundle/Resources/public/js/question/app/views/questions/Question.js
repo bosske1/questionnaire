@@ -10,7 +10,9 @@ Question.Views.Question = Backbone.View.extend({
     },
 
     render: function(question) {
+        this.question = question.question;
         var html = this.template({question:question.question});
+
         this.$el.html(html);
 
         this.startCountdown(this.timeLimit);
@@ -28,12 +30,20 @@ Question.Views.Question = Backbone.View.extend({
             return false;
         }
 
+        this.submitAnswer();
+
+
+
         if(!this.isValid()){
             this.showErrorMessage();
             return false;
         }
 
         router.question(nextQuestionId);
+    },
+
+    submitAnswer: function() {
+        //basically does nothing, should be overwritten in the child classes...
     },
 
     isValid: function(){

@@ -16,5 +16,11 @@ Question.Views.QuestionInput = Question.Views.Question.extend({
         }
 
         return isInputValid;
+    },
+
+    submitAnswer: function() {
+        var answer = this.$('#answer_' + this.question.id).val();
+
+        $.post('/question/submitAnswer', {questionId: this.question.id, answer: answer, type: this.type});
     }
 });

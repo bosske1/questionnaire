@@ -2,11 +2,13 @@
 
 namespace QuestionnaireBundle\Controller;
 
+use AppBundle\Entity\Answer;
 use AppBundle\Entity\PotentialAnswer;
 use AppBundle\Entity\Question;
 use AppBundle\Entity\QuestionAttachment;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
 
 class QuestionController extends Controller
 {
@@ -46,6 +48,45 @@ class QuestionController extends Controller
 		$preparedData = $this->prepareQuestions($questions);
 
 		return new JsonResponse($preparedData);
+	}
+
+	public function submitAnswerAction(Request $request)
+	{
+		$answer = $request->get('answer');
+		$questionId = $request->get('questionId');
+		$type = $request->get('type');
+
+		if (!empty($questionId) && !empty($answer) && !empty($type)) {
+
+			$repository = $this->getDoctrine()
+				->getRepository('AppBundle:Question');
+
+			$question = $repository->findOneBy(array(
+				'id' => $questionId
+			));
+
+			$repository = $this->getDoctrine()
+				->getRepository('AppBundle:User');
+
+			$user = $repository->findOneBy(array(
+				'id' => 1
+			));
+
+			$questionAnswer = new Answer();
+			$questionAnswer->setAnswer($answer);
+			$questionAnswer->setCreatedAt(new \DateTime());
+			$questionAnswer->setQuestion($question);
+			$questionAnswer->setUser($user);
+
+			$em = $this->getDoctrine()->getManager();
+			$em->persist($questionAnswer);
+			$em->flush();
+
+
+			return new JsonResponse(array($questionId, $answer, $type));
+		}
+
+		return new JsonResponse(array('success' => 0, 'message'=> 'some data is missing'));
 	}
 
 	/**
