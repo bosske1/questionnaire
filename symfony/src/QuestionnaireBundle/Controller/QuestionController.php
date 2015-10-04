@@ -83,10 +83,51 @@ class QuestionController extends Controller
 			$em->flush();
 
 
-			return new JsonResponse(array($questionId, $answer, $type));
+			return new JsonResponse(array('success' => 1, 'message'=> 'answer saved'));
 		}
 
 		return new JsonResponse(array('success' => 0, 'message'=> 'some data is missing'));
+	}
+
+	public function saveQuestionAction(Request $request)
+	{
+		$questionnaireId = $request->request->getInt('questionnaireId');
+
+		if (!empty($questionnaireId)) {
+			$repository = $this->getDoctrine()
+				->getRepository('AppBundle:Questionnaire');
+
+			$questionnaire = $repository->findOneBy(array(
+				'id' => $questionnaireId
+			));
+
+			// Save user:
+			$repository = $this->getDoctrine()
+				->getRepository('AppBundle:User');
+
+			$user = $repository->findOneBy(array(
+				'id' => 1
+			));
+
+			$question = new Question();
+
+			$question->setUser($user);
+			$question->setCreatedAt(new \DateTime());
+			$question->setContent($request->get('content'));
+			$question->setDescription($request->get('description'));
+			$question->setQuestionnaire($questionnaire);
+			$question->setTitle($request->get('title'));
+			$question->setType($request->get('type'));
+
+			$em = $this->getDoctrine()->getManager();
+			$em->persist($question);
+
+			// Now let's deal with potential answers and a potential file:
+
+			$em->flush();
+
+			return new JsonResponse(array('success' => 1, 'message'=> 'question saved'));
+		}
 	}
 
 	/**
