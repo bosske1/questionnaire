@@ -27,7 +27,7 @@ questionnaires_get:
 
 admin_home:
     path:     /admin
-    defaults: { _controller: QuestionnaireBundle:AdminIndex:index }
+    defaults: { _controller: QuestionnaireBundle:Admin:index }
 
 question_submit:
     path:     /question/submitAnswer
