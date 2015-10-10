@@ -30,15 +30,14 @@ Question.Views.Tree = Backbone.View.extend({
             mainNodeId = nodeId;
         }
 
-        nodeModel = this.collection.findByNodeId(nodeId).set('checked', checked);
+        nodeModel = this.collection.findByNodeId(nodeId);
+        nodeModel.set('checked', checked);
     },
 
     onSelectAll: function(){
         var checkboxes = this.$el.find(':checkbox').not(":disabled");
         checkboxes.prop('checked', true);
         this.collection.selectAll();
-
-        console.log(this.collection);
     },
 
     onDeselectAll: function(){
