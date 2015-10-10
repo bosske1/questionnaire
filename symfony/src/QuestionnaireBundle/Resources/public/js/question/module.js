@@ -14,7 +14,11 @@ window.question = {
         'app/views/questions/QuestionCheckbox.js',
         'app/views/Home.js',
         'app/views/Login.js',
-        'app/views/Registration.js'
+        'app/views/Registration.js',
+
+        'app/collections/Tree',
+        'app/models/Tree',
+        'app/views/Tree'
     ],
     init: function() {
 

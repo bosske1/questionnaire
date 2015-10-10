@@ -179,4 +179,56 @@ class QuestionController extends Controller
 
 		return $preparedData;
 	}
+
+    /**
+     * @return JsonResponse
+     */
+    public function getTreeAction()
+    {
+        $data = array(
+            array(
+                'id' => 1,
+                'name' => 'name1',
+                'leaf' => false,
+                'items' => array(
+                    array(
+                        'id' => 12,
+                        '_main_node_id' => 1,
+                        'name' => 'name12',
+                        'leaf' => true
+                    ),
+                    array(
+                        'id' => 13,
+                        'name' => 'name13',
+                        '_main_node_id' => 1,
+                        'items' => array(
+                            array(
+                                'id' => 121,
+                                '_main_node_id' => 1,
+                                'name' => 'name121',
+                                'leaf' => false,
+                                'checked' => true,
+                                'disabled' => true,
+                                'items' => array(
+                                    array(
+                                        'id' => 1211,
+                                        '_main_node_id' => 1,
+                                        'name' => 'name1211',
+                                        'leaf' => true
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            ),
+            array(
+                'id' => 2,
+                'leaf' => true,
+                'name' => 'name2'
+            )
+        );
+
+        return new JsonResponse($data);
+    }
 }

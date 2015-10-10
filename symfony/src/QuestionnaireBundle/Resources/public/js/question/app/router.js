@@ -7,7 +7,8 @@ Question.Router = Backbone.Router.extend({
         'admin': 'adminPage',
         'editView': 'openEditView',
         'addView': 'openAddView',
-        'questionnaireAdmin': 'openQuestionnaireAdminPage'
+        'questionnaireAdmin': 'openQuestionnaireAdminPage',
+        'tree' : 'tree'
     },
     initialize: function() {
     },
@@ -87,6 +88,21 @@ Question.Router = Backbone.Router.extend({
             success: function(collection, response, options) {
                 var questionnairesView = new Question.Views.QuestionnairesAdmin();
                 $('#question').html(questionnairesView.render(collection).$el);
+            }
+        });
+    },
+
+    tree: function(){
+        var me = this;
+        var treeItems = new Question.Collections.Tree();
+
+        treeItems.fetch({
+            reset: true,
+            success: function(collection, response, options) {
+                var treeView = new Question.Views.Tree({
+                    collection: collection
+                });
+                $('#question').html(treeView.render().$el);
             }
         });
     }

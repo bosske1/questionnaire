@@ -18,6 +18,10 @@ question_get:
     path:     /question/get/{questionId}
     defaults: { _controller: QuestionnaireBundle:Question:get }
 
+question_get_tree:
+    path:     /question/getTree
+    defaults: { _controller: QuestionnaireBundle:Question:getTree }
+
 questionnaire_get:
     path:     /question/getQuestionnaire/{questionnaireId}
     defaults: { _controller: QuestionnaireBundle:Question:getQuestionnaire }

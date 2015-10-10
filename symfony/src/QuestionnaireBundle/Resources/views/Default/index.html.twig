@@ -9,6 +9,7 @@
     {% include 'QuestionnaireBundle:Question:question.html.twig' %}
     {% include 'QuestionnaireBundle:Admin:questions.html.twig' %}
     {% include 'QuestionnaireBundle:Admin:questionnaires.html.twig' %}
+    {% include 'QuestionnaireBundle:Tree:tree.html.twig' %}
 
 {% endblock %}
 
@@ -42,7 +43,9 @@
     '@QuestionnaireBundle/Resources/public/js/question/app/views/form/AddView.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/views/form/EditView.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/controller/QuestionsController.js'
-
+    '@QuestionnaireBundle/Resources/public/js/question/app/views/Tree.js'
+    '@QuestionnaireBundle/Resources/public/js/question/app/models/Tree.js'
+    '@QuestionnaireBundle/Resources/public/js/question/app/collections/Tree.js'
     %}
     <script src="{{ asset_url }}"></script>
 

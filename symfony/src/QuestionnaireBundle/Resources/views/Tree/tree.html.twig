@@ -1,0 +1,29 @@
+<script type="text/template" id="tpl-tree">
+        <div class="getSelected">GET SELECTED</div>
+        <ul>
+            <% items.each(function(model) { %>
+                <li>
+                    <input
+                        class="node-checkbox"
+                        type="checkbox"
+                        data-parent-id="<%= model.get('_parent_id') %>"
+                        data-main-node-id="<%= model.get('_main_node_id') %>"
+                        value="<%= model.get('id') %>"
+                        <% if (model.get('disabled')) {  %> disabled <% } %>
+                        <% if (model.get('checked'))  {   %>checked  <% } %>
+                    >
+                    <%= model.get('name') %>
+                </li>
+
+
+                <ul><%= templateFn({items: model.get('items'), templateFn: templateFn}) %> </ul>
+            <% }); %>
+        </ul>
+</script>
+
+
+
+
+
+
+
