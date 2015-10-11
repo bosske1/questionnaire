@@ -30,8 +30,9 @@ Question.Views.Tree = Backbone.View.extend({
             mainNodeId = nodeId;
         }
 
-        nodeModel = this.collection.findByNodeId(nodeId);
-        nodeModel.set('checked', checked);
+        nodeModel = this.collection.findByNodeId(nodeId).set('checked', checked);
+
+        console.log(nodeModel.getSelectedChildren())
     },
 
     onSelectAll: function(){
@@ -47,6 +48,6 @@ Question.Views.Tree = Backbone.View.extend({
     },
 
     getSelected: function(){
-        this.collection.getSelected();
+        return this.collection.getSelected();
     }
 });

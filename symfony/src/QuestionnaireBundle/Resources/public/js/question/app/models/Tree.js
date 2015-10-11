@@ -11,8 +11,6 @@ Question.Models.Tree = Backbone.Model.extend({
         items: []
     },
 
-    parentCollection: null,
-
     initialize: function() {
         var me = this;
         if (Array.isArray(this.get('items'))) {
@@ -22,17 +20,24 @@ Question.Models.Tree = Backbone.Model.extend({
             this.get('items').each(function(nestedModel){
                 nestedModel.set('_parent_id', me.get('id'));
                 nestedModel.set('_parent_collection', me.collection);
+                nestedModel.set('_parent_model', me);
             });
         }
     },
 
     getParent: function(){
-        if(this.get('_parent_collection')){
-            return this.get('_parent_collection').findByNodeId(this.get('_parent_id'));
+        if(this.get('_parent_model')){
+            return this.get('_parent_model');
         }
     },
 
     getChildren: function(){
         return this.get('items');
+    },
+
+    getSelectedChildren: function(){
+        if(this.get('items')){
+            return this.collection.getSelectedChildren(this.get('items'));
+        }
     }
 });
