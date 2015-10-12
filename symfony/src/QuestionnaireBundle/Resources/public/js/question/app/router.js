@@ -42,8 +42,12 @@ Question.Router = Backbone.Router.extend({
                     case 'checkbox':
                         viewClass = new Question.Views.QuestionCheckbox();
                         break;
+                    case 'select':
+                        viewClass = new Question.Views.QuestionSelect();
+                        break;
                     default:
                         viewClass = new Question.Views.QuestionInput();
+
                 }
 
                 viewClass.question = questionResponse;
