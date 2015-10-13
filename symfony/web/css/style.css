@@ -326,6 +326,22 @@ body {
 .check-form3 {
 	margin: 2% 0 0 35%;
 }
+
+/*form4 page with select*/
+
+.img-box-sel {
+	margin-left: 20%;
+	margin-top: 1%;
+}
+.btn-form4 {
+	margin: 2% 0 0 85% ;
+	color: #ac2925;
+}
+.form-control-4 {
+	margin-left: -5%;
+}
+
+
 /*admin page*/
 .table-bordered {
 	width: 100%;
