@@ -20,6 +20,10 @@ Question.Views.Question = Backbone.View.extend({
         return this;
     },
 
+    postRender: function() {
+
+    },
+
     getQuestion: function(){
         var nextQuestionId = this.question.nextQuestionId,
             router = new Question.Router;

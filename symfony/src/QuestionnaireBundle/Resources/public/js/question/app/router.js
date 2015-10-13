@@ -48,6 +48,9 @@ Question.Router = Backbone.Router.extend({
                     case 'select':
                         viewClass = new Question.Views.QuestionSelect();
                         break;
+                    case 'slider':
+                        viewClass = new Question.Views.QuestionSlider();
+                        break;
                     default:
                         viewClass = new Question.Views.QuestionInput();
 
@@ -55,6 +58,8 @@ Question.Router = Backbone.Router.extend({
 
                 viewClass.question = questionResponse;
                 $('#question').html(viewClass.render({question: questionResponse}).$el);
+
+                viewClass.postRender();
 
                 return me;
             }
