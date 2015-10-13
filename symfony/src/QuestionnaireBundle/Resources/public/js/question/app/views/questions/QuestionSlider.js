@@ -8,10 +8,17 @@ Question.Views.QuestionSlider = Question.Views.Question.extend({
     },
 
     postRender: function() {
-        var slider = new Slider('#ex1', {
-            formatter: function(value) {
-                return 'Current value: ' + value;
-            }
+        var ticks = new Array();
+        var tickLabels = new Array();
+        _.each(this.question.potentialAnswers, function(answer, key){
+            ticks.push(answer.answer);
+            tickLabels.push(answer.answer);
+        });
+
+        var slider = new Slider("#ex1", {
+            ticks: ticks,
+            ticks_labels: tickLabels,
+            ticks_snap_bounds: 15
         });
     }
 });
