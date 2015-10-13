@@ -62,6 +62,53 @@
 
 </script>
 
+<script type="text/template" id="tpl-question-feedback">
+    <div id="main-container">
+        <!--==============================Header==================================-->
+        <header>
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                <li role="presentation"><a href="#aboutus" aria-controls="aboutus" role="tab" data-toggle="tab">About Us</a></li>
+                <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
+                <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/logo2.png"></li>
+            </ul>
+        </header>
+
+        <!--===========================Main content===============================-->
+        <section>
+            <div class="box">
+                <img class="img-responsive inquest" alt="Brand" src="img/logo2.png">
+                <div id="error-message-container"></div>
+                <% if (typeof question.attachments !== 'undefined' && question.attachments.length > 0) { %>
+                <div class="img-box" id="img-attachment">
+                    <img alt="Brand" src="<%= question.attachments[0].path %>">
+                </div>
+                <% } %>
+                <div class="question">
+                    <div class="quesnum col-sm-2">
+                        <h5><strong><%= question.title %></strong></h5>
+                    </div>
+
+                    <div class="questitle col-sm-10">
+                        <strong><%= question.content %></strong>
+                    </div>
+
+
+                </div>
+
+                <button type="button" id="nextQuestionBtn" class="btn btn-warning btn-form1">Weiter</button>
+            </div>
+        </section>
+
+        <!--==============================Footer=============================-->
+        <div id="footer">
+            <p>2015</p>
+        </div>
+
+    </div>
+
+</script>
+
 <script type="text/template" id="tpl-question-radio">
     <div id="main-container">
         <!--==============================Header==================================-->

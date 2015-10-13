@@ -39,6 +39,9 @@ Question.Router = Backbone.Router.extend({
                     case 'radio':
                         viewClass = new Question.Views.QuestionRadio();
                         break;
+                    case 'feedback':
+                        viewClass = new Question.Views.QuestionFeedback();
+                        break;
                     case 'checkbox':
                         viewClass = new Question.Views.QuestionCheckbox();
                         break;
