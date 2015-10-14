@@ -17,8 +17,8 @@
                 <img class="img-responsive inquest" alt="Brand" src="img/logo2.png">
                 <div id="error-message-container"></div>
                 <% if (typeof question.attachments !== 'undefined' && question.attachments.length > 0) { %>
-                <div class="img-box" id="img-attachment">
-                    <img alt="Brand" src="<%= question.attachments[0].path %>">
+                <div class="img-responsive col-xs-12 img-box" id="img-attachment">
+                    <img class="img-responsive col-xs-12" src="<%= question.attachments[0].path %>">
                 </div>
                 <% } %>
                 <div class="question">
@@ -127,8 +127,8 @@
                 <img class="img-responsive inquest" alt="Brand" src="img/logo2.png">
                 <div id="error-message-container"></div>
                 <% if (typeof question.attachments !== 'undefined' && question.attachments.length > 0) { %>
-                <div class="img-box" id="img-attachment">
-                    <img alt="Brand" src="<%= question.attachments[0].path %>">
+                <div class="img-responsive  img-box" id="img-attachment">
+                    <img class="img-responsive" src="<%= question.attachments[0].path %>">
                 </div>
                 <% } %>
                 <div class="question">
@@ -194,21 +194,21 @@
                 <img class="img-responsive inquest" alt="Brand" src="img/logo2.png">
                 <div id="error-message-container"></div>
                 <% if (typeof question.attachments !== 'undefined' && question.attachments.length > 0) { %>
-                <div class="img-box-sel" id="img-attachment">
-                    <img alt="Brand" src="<%= question.attachments[0].path %>">
+                <div class="img-responsive  img-box" id="img-attachment">
+                    <img class="img-responsive" src="<%= question.attachments[0].path %>">
                 </div>
                 <% } %>
-                <div class="question">
+                <div class="question-slider">
                     <strong><%= question.title %></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <strong><%= question.content %></strong>
                 </div>
                 <form>
                     <label  class="col-sm-2 control-label control-label-form2">Antwort:</label>
-                    <div class="radio-form2">
-                        <input style="width: 650px;" id="ex1" data-slider-id='ex1Slider' type="text"/>
+                    <div class="class="form-control form-control-4 col-md-6 col-sm-6 col-xs-6"">
+                        <input style="width: 60%; margin: 5% 0 0 2%;" id="ex1" data-slider-id='ex1Slider' type="text"/>
                     </div>
                 </form>
-                <button type="button" id="nextQuestionBtn" class="btn btn-warning btn-form4">Weiter</button>
+                <button type="button" id="nextQuestionBtn" class="btn btn-warning btn-form1">Weiter</button>
 
                 <div class="timer">
 
@@ -250,8 +250,8 @@
                 <img class="img-responsive inquest" alt="Brand" src="img/logo2.png">
                 <div id="error-message-container"></div>
                 <% if (typeof question.attachments !== 'undefined' && question.attachments.length > 0) { %>
-                <div class="img-box-sel" id="img-attachment">
-                    <img alt="Brand" src="<%= question.attachments[0].path %>">
+                <div class="img-responsive  img-box" id="img-attachment">
+                    <img class="img-responsive" src="<%= question.attachments[0].path %>">
                 </div>
                 <% } %>
                 <div class="question">
@@ -261,7 +261,7 @@
                 <form>
                     <label  class="col-sm-2 control-label control-label-form2">Antwort:</label>
                     <div class="radio-form2">
-                        <select class="form-control form-control-4">
+                        <select class="form-control form-control-4 col-md-6 col-sm-6 col-xs-6">
                         <% _.each(question.potentialAnswers, function(answer, key){ %>
 
                             <option value="<%= answer.answer %>"><%= answer.answer %></option>
@@ -270,7 +270,7 @@
                         </select>
                     </div>
                 </form>
-                <button type="button" id="nextQuestionBtn" class="btn btn-warning btn-form4">Weiter</button>
+                <button type="button" id="nextQuestionBtn" class="btn btn-warning btn-form1">Weiter</button>
 
                 <div class="timer">
 
