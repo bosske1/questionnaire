@@ -80,16 +80,10 @@
                 <img class="img-responsive inquest" alt="Brand" src="img/logo2.png">
                 <div id="error-message-container"></div>
                 <% if (typeof question.attachments !== 'undefined' && question.attachments.length > 0) { %>
-                <div class="img-box" id="img-attachment">
-                    <img alt="Brand" src="<%= question.attachments[0].path %>">
-                </div>
                 <% } %>
-                <div class="question">
-                    <div class="quesnum col-sm-2">
-                        <h5><strong><%= question.title %></strong></h5>
-                    </div>
+                <div class="question-feed">
 
-                    <div class="questitle col-sm-10">
+                    <div class="questitle-feed col-sm-10">
                         <strong><%= question.content %></strong>
                     </div>
 

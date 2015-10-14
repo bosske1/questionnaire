@@ -350,6 +350,23 @@ body {
 	padding-bottom: 4%;
 }
 
+.question-feed {
+	width: 70%;
+	height: 350px;
+	border-radius: 10px;
+	border: 2px solid #039;
+	color: #e67008;
+	text-align: center;
+	padding: 3%;
+	margin: 2% 0 0 15%;
+	background: #039;
+}
+.questitle-feed {
+	margin: 10% 0 0 10%;
+	font-size: 25px;
+	text-align: center;
+}
+
 
 /*admin page*/
 .table-bordered {
