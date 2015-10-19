@@ -32,29 +32,7 @@ Question.Router = Backbone.Router.extend({
                 var questionResponse = response[0];
                 var viewType = questionResponse.type;
 
-                switch(viewType) {
-                    case 'input':
-                        viewClass = new Question.Views.QuestionInput();
-                        break;
-                    case 'radio':
-                        viewClass = new Question.Views.QuestionRadio();
-                        break;
-                    case 'feedback':
-                        viewClass = new Question.Views.QuestionFeedback();
-                        break;
-                    case 'checkbox':
-                        viewClass = new Question.Views.QuestionCheckbox();
-                        break;
-                    case 'select':
-                        viewClass = new Question.Views.QuestionSelect();
-                        break;
-                    case 'slider':
-                        viewClass = new Question.Views.QuestionSlider();
-                        break;
-                    default:
-                        viewClass = new Question.Views.QuestionInput();
-
-                }
+                viewClass = Question.getService('QuestionBuilder').get(viewType);
 
                 viewClass.question = questionResponse;
                 $('#question').html(viewClass.render({question: questionResponse}).$el);

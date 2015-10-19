@@ -3,8 +3,13 @@ window.Question = {
     Collections: {},
     Views: {},
     Routers: {},
+    Services: {},
 
     controllers: ['QuestionsController'],
+
+    getService: function(service){
+        return this.Services[service];
+    },
 
     start: function(data) {
         var router = new Question.Router();
