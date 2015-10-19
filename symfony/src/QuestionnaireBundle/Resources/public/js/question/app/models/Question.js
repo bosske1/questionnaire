@@ -14,6 +14,16 @@ Question.Models.Question = Backbone.Model.extend({
     initialize: function() {
         this.potentialAnswers = new Question.Collections.PotentialAnswer();
         this.attachments = new Question.Collections.Attachment;
+    },
+
+    updateData: function(data){
+        var me = this;
+
+        $.each(data, function(name, value){
+            me.set(name, value);
+        });
+
+        return this;
     }
 /*
     parse: function(response) {

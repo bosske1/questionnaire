@@ -16,9 +16,11 @@ Question.Views.QuestionsAdmin = Backbone.View.extend({
         return this;
     },
 
-    openEditView: function() {
-        //this.router.navigate("editView", {trigger : true});
-        window.Question.eventManager.trigger('question:edit', {id:1});
+    openEditView: function(e) {
+        var id = e.currentTarget.value;
+
+        this.router.navigate("editView/"+id, {trigger : true});
+        //window.Question.eventManager.trigger('question:edit', {id:1});
     },
 
     openAddView: function() {

@@ -25,6 +25,7 @@ question_get_tree:
 questionnaire_get:
     path:     /question/getQuestionnaire/{questionnaireId}
     defaults: { _controller: QuestionnaireBundle:Question:getQuestionnaire }
+
 questionnaires_get:
     path:     /questionnaire/getQuestionnaires
     defaults: { _controller: QuestionnaireBundle:Questionnaire:getQuestionnaires }
@@ -36,3 +37,7 @@ admin_home:
 question_submit:
     path:     /question/submitAnswer
     defaults: { _controller: QuestionnaireBundle:Question:submitAnswer }
+
+question_create:
+    path:     /question/create
+    defaults: { _controller: QuestionnaireBundle:Question:create }

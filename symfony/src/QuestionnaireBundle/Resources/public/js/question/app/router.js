@@ -5,7 +5,7 @@ Question.Router = Backbone.Router.extend({
         'registration': 'registration',
         'login': 'login',
         'admin': 'adminPage',
-        'editView': 'openEditView',
+        'editView/:id': 'openEditView',
         'addView': 'openAddView',
         'questionnaireAdmin': 'openQuestionnaireAdminPage',
         'tree' : 'tree'
@@ -59,9 +59,20 @@ Question.Router = Backbone.Router.extend({
             }
         });
     },
-    openEditView: function() {
-        var editView = new Question.Views.AddView();
-        $('#question').html(editView.render().$el);
+
+    openEditView: function(id) {
+        var editView = new Question.Views.EditView(),
+            question = new Question.Models.Question({id: id});
+
+        question.fetch({
+            reset:true,
+            success: function(model, response, options){
+                $('#question').html(editView.render({question: model}).$el);
+            },
+            failure: function(){
+                $('#question').html('well sh**').$el;
+            }
+        });
     },
 
     openAddView: function() {

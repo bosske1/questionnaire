@@ -37,15 +37,16 @@ class QuestionController extends Controller
 	 */
 	public function getAction($questionId)
 	{
-		// Let's load based on questionnaire:
+		// GU: changed because of the RESTful backbone integration :P
+        // Now, on question.fetch() question/get/{id} will be called which will return only one question :)
 		$repository = $this->getDoctrine()
 			->getRepository('AppBundle:Question');
 
-		$questions = $repository->findBy(array(
+		$question = $repository->findOneBy(array(
 			'id' => $questionId
 		));
 
-		$preparedData = $this->prepareQuestions($questions);
+		$preparedData = $this->prepareQuestion($question);
 
 		return new JsonResponse($preparedData);
 	}
@@ -89,7 +90,7 @@ class QuestionController extends Controller
 		return new JsonResponse(array('success' => 0, 'message'=> 'some data is missing'));
 	}
 
-	public function saveQuestionAction(Request $request)
+	public function createAction(Request $request)
 	{
 		$questionnaireId = $request->request->getInt('questionnaireId');
 
@@ -130,6 +131,45 @@ class QuestionController extends Controller
 		}
 	}
 
+    /**
+     * @param $question
+     */
+    private function prepareQuestion($question){
+        $questionData = array();
+
+        $questionData['id'] 		= $question->getId();
+        $questionData['title'] 		= $question->getTitle();
+        $questionData['content'] 	= $question->getContent();
+        $questionData['type'] 		= $question->getType();
+        $questionData['nextQuestionId']	= $question->getNextQuestionId();
+
+        /**
+         * @var PotentialAnswer $potentialAnswer
+         */
+        foreach ($question->getPotentialAnswers() as $potentialAnswer) {
+            $questionData['potentialAnswers'][] = array(
+                'id' 			=> $potentialAnswer->getId(),
+                'answer' 		=> $potentialAnswer->getAnswer(),
+                'questionId' 	=> $question->getId()
+            );
+        }
+
+        /**
+         * @var QuestionAttachment $attachment
+         */
+        foreach ($question->getAttachments() as $attachment) {
+            $questionData['attachments'][] = array(
+                'id' 			=> $attachment->getId(),
+                'title' 		=> $attachment->getTitle(),
+                'path' 			=> $attachment->getPath(),
+                'description' 	=> $attachment->getDescription(),
+                'questionId' 	=> $question->getId()
+            );
+        }
+
+        return $questionData;
+    }
+
 	/**
 	 * @param $questions
 	 * @return array
@@ -142,37 +182,7 @@ class QuestionController extends Controller
 		 * @var Question $question
 		 */
 		foreach ($questions as $question) {
-			$questionData = array();
-
-			$questionData['id'] 		= $question->getId();
-			$questionData['title'] 		= $question->getTitle();
-			$questionData['content'] 	= $question->getContent();
-			$questionData['type'] 		= $question->getType();
-			$questionData['nextQuestionId']	= $question->getNextQuestionId();
-
-			/**
-			 * @var PotentialAnswer $potentialAnswer
-			 */
-			foreach ($question->getPotentialAnswers() as $potentialAnswer) {
-				$questionData['potentialAnswers'][] = array(
-					'id' 			=> $potentialAnswer->getId(),
-					'answer' 		=> $potentialAnswer->getAnswer(),
-					'questionId' 	=> $question->getId()
-				);
-			}
-
-			/**
-			 * @var QuestionAttachment $attachment
-			 */
-			foreach ($question->getAttachments() as $attachment) {
-				$questionData['attachments'][] = array(
-					'id' 			=> $attachment->getId(),
-					'title' 		=> $attachment->getTitle(),
-					'path' 			=> $attachment->getPath(),
-					'description' 	=> $attachment->getDescription(),
-					'questionId' 	=> $question->getId()
-				);
-			}
+			$questionData = $this->prepareQuestion($question);
 
 			$preparedData[] = $questionData;
 		}
