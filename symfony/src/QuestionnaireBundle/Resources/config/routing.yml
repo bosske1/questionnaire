@@ -34,6 +34,10 @@ admin_home:
     path:     /admin
     defaults: { _controller: QuestionnaireBundle:Admin:index }
 
+landing_page:
+    path:     /home
+    defaults: { _controller: QuestionnaireBundle:Home:index }
+
 question_submit:
     path:     /question/submitAnswer
     defaults: { _controller: QuestionnaireBundle:Question:submitAnswer }
