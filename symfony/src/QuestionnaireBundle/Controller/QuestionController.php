@@ -134,7 +134,7 @@ class QuestionController extends Controller
     /**
      * @param $question
      */
-    private function prepareQuestion($question){
+    private function prepareQuestion(Question $question){
         $questionData = array();
 
         $questionData['id'] 		= $question->getId();
@@ -142,6 +142,7 @@ class QuestionController extends Controller
         $questionData['content'] 	= $question->getContent();
         $questionData['type'] 		= $question->getType();
         $questionData['nextQuestionId']	= $question->getNextQuestionId();
+		$questionData['tickLength']	= $question->getTickLength();
 
         /**
          * @var PotentialAnswer $potentialAnswer

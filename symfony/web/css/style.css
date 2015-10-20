@@ -432,3 +432,7 @@ body {
 #ex1Slider .slider-selection {
     background: #BABABA;
 }
+
+.timerbutton {
+    padding-top: 15px;
+}

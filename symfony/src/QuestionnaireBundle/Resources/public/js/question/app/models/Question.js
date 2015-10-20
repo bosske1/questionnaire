@@ -7,7 +7,8 @@ Question.Models.Question = Backbone.Model.extend({
         content: null,
         nextQuestionId: null,
         potentialAnswers: null,
-        attachments: null
+        attachments: null,
+        tickLength: null
     },
     urlRoot: '/question/get',
 

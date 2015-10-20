@@ -29,7 +29,7 @@ Question.Router = Backbone.Router.extend({
                     return;
                 }
 
-                var questionResponse = response[0];
+                var questionResponse = response;
                 var viewType = questionResponse.type;
 
                 viewClass = Question.getService('QuestionBuilder').get(viewType);

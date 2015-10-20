@@ -15,7 +15,14 @@ Question.Views.Question = Backbone.View.extend({
 
         this.$el.html(html);
 
-        this.startCountdown(this.timeLimit);
+        var timeLimit = this.question.tickLength;
+
+        if (isNaN(timeLimit) || timeLimit == 0) {
+            timeLimit = this.timeLimit;
+        }
+
+
+        this.startCountdown(timeLimit);
 
         return this;
     },
