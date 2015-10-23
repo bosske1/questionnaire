@@ -10,11 +10,9 @@ Question.Router = Backbone.Router.extend({
         'adminQuestionnaire/add' : 'openAddQuestionnaireView',
         'adminQuestionnaire/edit/:id' : 'openEditQuestionnaireView',
 
-        'adminQuestions/:id' : 'openAdminQuestionsView', //id == questionnaire id
-        'adminQuestion/edit/:id': 'openEditQuestionView',
         'adminQuestion': 'openAddQuestionView',
-
-        'tree' : 'tree'
+        'adminQuestions/:id' : 'openAdminQuestionsView', //id == questionnaire id
+        'adminQuestion/edit/:id': 'openEditQuestionView'
     },
     initialize: function() {
     },
@@ -54,9 +52,11 @@ Question.Router = Backbone.Router.extend({
         });
     },
 
+    /**
+     * admin index page
+     */
     adminPage: function() {
         var me = this;
-        var questionnaireId = 1;
 
         var adminView = new Question.Views.Admin();
         $('#question').html(adminView.render().$el);
@@ -64,7 +64,6 @@ Question.Router = Backbone.Router.extend({
 
     openAdminQuestionsView: function(questionnaireId){
         var questions = new Question.Collections.Question();
-
 
         questions.fetch({
             reset: true,
@@ -116,21 +115,5 @@ Question.Router = Backbone.Router.extend({
 
     openEditQuestionnaireView: function(id){
         console.log('edit');
-    },
-
-    tree: function(){
-        var me = this;
-        var treeItems = new Question.Collections.Tree();
-
-        treeItems.fetch({
-            reset: true,
-            success: function(collection, response, options) {
-                var treeView = new Question.Views.Tree({
-                    collection: collection
-                });
-                $('#question').html(treeView.render().$el);
-            }
-        });
     }
-
 });
