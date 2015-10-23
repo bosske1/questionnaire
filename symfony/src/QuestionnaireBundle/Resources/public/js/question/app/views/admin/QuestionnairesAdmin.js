@@ -1,6 +1,8 @@
 Question.Views.QuestionnairesAdmin = Backbone.View.extend({
     events: {
-        'click #edit-btn' : 'openEditView'
+        'click .show-questions-btn' : 'onOpenAdminQuestionsView',
+        'click #edit-btn' : 'openEditView',
+        'click #btn_add_new_questionnaire': 'openAddView'
     },
     initialize: function() {
         this.template = _.template($('#tpl-questionnaires').html());
@@ -13,7 +15,19 @@ Question.Views.QuestionnairesAdmin = Backbone.View.extend({
         return this;
     },
 
-    openEditView: function() {
-        this.router.navigate("editView", {trigger : true});
+    openAddView: function(){
+        this.router.navigate("adminQuestionnaire/add", {trigger : true});
+    },
+
+    openEditView: function(e) {
+        var id = e.currentTarget.value;
+
+        this.router.navigate("adminQuestionnaire/edit/"+id, {trigger : true});
+    },
+
+    onOpenAdminQuestionsView: function(e){
+        var questionnaireId = e.currentTarget.value;
+
+        this.router.navigate("adminQuestions/"+questionnaireId, {trigger: true})
     }
 });

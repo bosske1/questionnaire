@@ -1,3 +1,7 @@
+admin_home:
+    path:     /admin
+    defaults: { _controller: QuestionnaireBundle:Admin:index }
+
 questionnaire_homepage:
     path:     /
     defaults: { _controller: QuestionnaireBundle:Index:index }
@@ -14,25 +18,25 @@ registration_register:
     path:     /registration/register
     defaults: { _controller: QuestionnaireBundle:Registration:register }
 
+questionnaires_get:
+    path:     /questionnaires/get
+    defaults: { _controller: QuestionnaireBundle:Questionnaires:get }
+
+questionnaire_create:
+    path:     /questionnaire/create
+    defaults: { _controller: QuestionnaireBundle:Questionnaire:create }
+
+questionnaire_categories_get:
+    path:     /questionnaire_categories/getQuestionnaireCategories
+    defaults: { _controller: QuestionnaireBundle:QuestionnaireCategory:getQuestionnaireCategories}
+
+questions_get:
+    path:     /questions/get/{questionnaireId}
+    defaults: { _controller: QuestionnaireBundle:Questions:get }
+
 question_get:
     path:     /question/get/{questionId}
     defaults: { _controller: QuestionnaireBundle:Question:get }
-
-question_get_tree:
-    path:     /question/getTree
-    defaults: { _controller: QuestionnaireBundle:Question:getTree }
-
-questionnaire_get:
-    path:     /question/getQuestionnaire/{questionnaireId}
-    defaults: { _controller: QuestionnaireBundle:Question:getQuestionnaire }
-
-questionnaires_get:
-    path:     /questionnaire/getQuestionnaires
-    defaults: { _controller: QuestionnaireBundle:Questionnaire:getQuestionnaires }
-
-admin_home:
-    path:     /admin
-    defaults: { _controller: QuestionnaireBundle:Admin:index }
 
 question_submit:
     path:     /question/submitAnswer
