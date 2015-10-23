@@ -38,6 +38,8 @@ Question.Services.CollectionDataContainer = {
 
         collection.fetch({
             data: opts.additionalFilters,
+            async: false,
+            reset: true,
             success: function(collection, response){
                 //now cache collection for future
                 me.collectionContainer[collectionName] = collection;
