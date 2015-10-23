@@ -15,37 +15,40 @@ Question.Services.CollectionDataContainer = {
      *  get and cache collection
      *
      * @param collectionName
-     * @param url
-     * @param additionalFilters
      * @param opts
      */
-    get: function(collectionName, url, additionalFilter, opts){
+    get: function(collectionName, opts){
         var me = this,
             collectionClass = this.buildCollectionClass(collectionName);
 
+        if(typeof opts == 'undefined' && opts.success == 'undefined'){
+            console.error('opts.success method must be assigned');
+            return false;
+        }
+
         if(this.collectionContainer[collectionName]){
-            return this.collectionContainer[collectionName];
+            return opts.success(this.collectionContainer[collectionName]);
         }
 
         var collection = new Question.Collections[collectionClass]();
 
-        if(url != null && url != ''){
+        if(opts.url != null && opts.url != ''){
             collection.url = url;
         }
 
         collection.fetch({
-            data: additionalFilters,
-            success: function(collection){
+            data: opts.additionalFilters,
+            success: function(collection, response){
                 //now cache collection for future
                 me.collectionContainer[collectionName] = collection;
 
-                //initialize callback if asked
-                if(opts.success){
-                    return opts.succes;
-                }
+                return opts.success(collection, response);
             },
-            failure: function(){
-
+            failure: function(collection, response){
+                //initialize callback if asked
+                if(typeof opts.failure != 'undefined'){
+                    return opts.failure(collection, response);
+                }
             }
         });
     },

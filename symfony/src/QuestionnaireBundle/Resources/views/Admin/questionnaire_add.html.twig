@@ -27,7 +27,11 @@
                     <div class="form-group">
                         <label for="type">Category:</label>
                         <select class="form-control" id="category" name="category">
+                            <!--
+                                <%= this.populateCategories() %> cannot work,
+                                as backbone is s*** and this method is NOT fired after render process, which doesn't make sense at all!
 
+                            populated with this.populateCategories() in postRender() -->
                         </select>
                     </div>
                     <button type="submit" class="btn btn-warning btn-add">Add!</button>

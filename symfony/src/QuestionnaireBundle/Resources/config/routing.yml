@@ -27,8 +27,8 @@ questionnaire_create:
     defaults: { _controller: QuestionnaireBundle:Questionnaire:create }
 
 questionnaire_categories_get:
-    path:     /questionnaire_categories/getQuestionnaireCategories
-    defaults: { _controller: QuestionnaireBundle:QuestionnaireCategory:getQuestionnaireCategories}
+    path:     /questionnaire_categories/get
+    defaults: { _controller: QuestionnaireBundle:QuestionnaireCategories:get}
 
 questions_get:
     path:     /questions/get/{questionnaireId}

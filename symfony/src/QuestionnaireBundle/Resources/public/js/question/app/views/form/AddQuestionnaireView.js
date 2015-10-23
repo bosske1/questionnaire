@@ -12,6 +12,8 @@ Question.Views.AddQuestionnaireView = Backbone.View.extend({
     render: function(question) {
         var html = this.template();
         this.$el.html(html);
+
+        this.postRender();
         return this;
     },
 
@@ -24,5 +26,24 @@ Question.Views.AddQuestionnaireView = Backbone.View.extend({
 
         //prevent button default behaviour
         return false;
+    },
+
+    postRender: function(){
+        this.populateCategories();
+    },
+
+    /**
+     * populates $('#category') select
+     *
+     * @param value to be selected
+     */
+    populateCategories: function(value){
+        var me = this;
+        Question.getService('OptionsBuilder').getSingleSelectOptionsString('QuestionnaireCategory',{
+            //value: 'bla',
+            success: function(optionsString){
+                me.$('#category').append(optionsString);
+            }
+        });
     }
 });
