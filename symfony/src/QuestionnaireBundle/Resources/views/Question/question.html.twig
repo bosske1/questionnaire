@@ -7,36 +7,46 @@
                 <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
                 <li role="presentation"><a href="#aboutus" aria-controls="aboutus" role="tab" data-toggle="tab">About Us</a></li>
                 <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
-                <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/logo2.png"></li>
+                <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/Logo-2.jpg"></li>
             </ul>
         </header>
 
         <!--===========================Main content===============================-->
         <section>
             <div class="box">
-                <img class="img-responsive inquest" alt="Brand" src="img/logo2.png">
+                <img class="img-responsive inquest" alt="Brand" src="img/Logo-2.jpg">
                 <div id="error-message-container"></div>
-                <% if (typeof question.attachments !== 'undefined' && question.attachments.length > 0) { %>
-                <div class="img-responsive col-xs-12 img-box" id="img-attachment">
-                    <img class="img-responsive col-xs-12" src="<%= question.attachments[0].path %>">
+                <div class="row">
+                    <% if (typeof question.attachments !== 'undefined' && question.attachments.length > 0) { %>
+                    <div class="img-responsive col-xs-12 img-box" id="img-attachment">
+                        <img class="img-responsive col-xs-8" src="<%= question.attachments[0].path %>">
+                    </div>
+                    <% } %>
                 </div>
-                <% } %>
                 <div class="question">
-                <div class="quesnum col-sm-2">
-                    <h5><strong><%= question.title %></strong></h5>
+                    <div class="row">
+                        <div class="quesnum col-lg-2">
+                            <h5><strong><%= question.title %></strong></h5>
+                        </div>
+
+                        <div class="questitle col-lg-6">
+                            <strong><%= question.content %></strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="quesnum col-lg-2">
+                            <h5><strong>Antwort</strong></h5>
+                        </div>
+
+                        <div class="questitle col-lg-6">
+                            <form >
+                                <input name="answer" type="text" class="form-control form-control-form1" id="answer_<%= question.id %>">
+                            </form>
+                        </div>
+                    </div>
+
+
                 </div>
-
-                <div class="questitle col-sm-10">
-                    <strong><%= question.content %></strong>
-                </div>
-                <form class="questansw col-sm-10">
-                    <input name="answer" type="text" class="form-control form-control-form1" id="answer_<%= question.id %>">
-                </form>
-
-
-                </div>
-
-                <button type="button" id="nextQuestionBtn" class="btn btn-warning btn-form1">Weiter</button>
 
                 <div class="timer">
 
@@ -47,8 +57,16 @@
                     </div>
 
                 </div>
-                <div class="warning">
-                    <p><strong>Bitte beantworten Sie die Frage innerhalb von 30 Sekunden!</strong></p>
+                <div class="timerbutton row">
+                    <div class="quesnum col-lg-8">
+                        <div class="warning">
+                            <p><strong>Bitte beantworten Sie die Frage innerhalb von <%= question.tickLength %> Sekunden!</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="questitle col-lg-2">
+                        <button type="button" id="nextQuestionBtn" class="btn btn-warning btn-form1">Weiter</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -70,27 +88,53 @@
                 <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
                 <li role="presentation"><a href="#aboutus" aria-controls="aboutus" role="tab" data-toggle="tab">About Us</a></li>
                 <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
-                <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/logo2.png"></li>
+                <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/Logo-2.jpg"></li>
             </ul>
         </header>
 
         <!--===========================Main content===============================-->
         <section>
             <div class="box">
-                <img class="img-responsive inquest" alt="Brand" src="img/logo2.png">
-                
-                <% if (typeof question.attachments !== 'undefined' && question.attachments.length > 0) { %>
-                <% } %>
-                <div class="question-feed">
-
-                    <div class="questitle-feed col-sm-10">
-                        <strong><%= question.content %></strong>
+                <img class="img-responsive inquest" alt="Brand" src="img/Logo-2.jpg">
+                <div id="error-message-container"></div>
+                <div class="row">
+                    <% if (typeof question.attachments !== 'undefined' && question.attachments.length > 0) { %>
+                    <div class="img-responsive col-xs-12 img-box" id="img-attachment">
+                        <img class="img-responsive col-xs-8" src="<%= question.attachments[0].path %>">
                     </div>
+                    <% } %>
+                </div>
+                <div class="question">
+                    <div class="row">
+                        <div class="questitle col-lg-1">
 
-
+                        </div>
+                        <div class="questitle col-lg-8">
+                            <strong><%= question.content %></strong>
+                        </div>
+                    </div>
                 </div>
 
-                <button type="button" id="nextQuestionBtn" class="btn btn-warning btn-form1">Weiter</button>
+                <div class="timer">
+
+                    <div class="progress">
+                        <div id="progress-bar" class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
+                             aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="timerbutton row">
+                    <div class="quesnum col-lg-8">
+                        <div class="warning">
+                            <p><strong>Bitte Weiter Button innerhalb von <%= question.tickLength %> Sekunden drucken!</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="questitle col-lg-2">
+                        <button type="button" id="nextQuestionBtn" class="btn btn-warning btn-form1">Weiter</button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -111,14 +155,14 @@
                 <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
                 <li role="presentation"><a href="#aboutus" aria-controls="aboutus" role="tab" data-toggle="tab">About Us</a></li>
                 <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
-                <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/logo2.png"></li>
+                <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/Logo-2.jpg"></li>
             </ul>
         </header>
 
         <!--===========================Main content===============================-->
         <section>
             <div class="box">
-                <img class="img-responsive inquest" alt="Brand" src="img/logo2.png">
+                <img class="img-responsive inquest" alt="Brand" src="img/Logo-2.jpg">
                 <div id="error-message-container"></div>
                 <% if (typeof question.attachments !== 'undefined' && question.attachments.length > 0) { %>
                 <div class="img-responsive  img-box" id="img-attachment">
@@ -146,8 +190,6 @@
                         <% }); %>
                     </div>
                 </form>
-                <button type="button" id="nextQuestionBtn" class="btn btn-warning btn-form1">Weiter</button>
-
                 <div class="timer">
 
                     <div class="progress">
@@ -157,8 +199,16 @@
                     </div>
 
                 </div>
-                <div class="warning">
-                    <p><strong>Bitte beantworten Sie die Frage innerhalb von 30 Sekunden!</strong></p>
+                <div class="timerbutton row">
+                    <div class="quesnum col-lg-8">
+                        <div class="warning">
+                            <p><strong>Bitte Weiter Button innerhalb von <%= question.tickLength %> Sekunden drucken!</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="questitle col-lg-2">
+                        <button type="button" id="nextQuestionBtn" class="btn btn-warning btn-form1">Weiter</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -178,14 +228,14 @@
                 <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
                 <li role="presentation"><a href="#aboutus" aria-controls="aboutus" role="tab" data-toggle="tab">About Us</a></li>
                 <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
-                <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/logo2.png"></li>
+                <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/Logo-2.jpg"></li>
             </ul>
         </header>
 
         <!--===========================Main content===============================-->
         <section>
             <div class="box">
-                <img class="img-responsive inquest" alt="Brand" src="img/logo2.png">
+                <img class="img-responsive inquest" alt="Brand" src="img/Logo-2.jpg">
                 <div id="error-message-container"></div>
                 <% if (typeof question.attachments !== 'undefined' && question.attachments.length > 0) { %>
                 <div class="img-responsive  img-box" id="img-attachment">
@@ -202,20 +252,26 @@
                         <input style="width: 60%; margin: 5% 0 0 2%;" id="ex1" data-slider-id='ex1Slider' type="text"/>
                     </div>
                 </form>
-                <button type="button" id="nextQuestionBtn" class="btn btn-warning btn-form1">Weiter</button>
+            <div class="timer">
 
-                <div class="timer">
-
-                    <div class="progress">
-                        <div id="progress-bar" class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
-                             aria-valuemin="0" aria-valuemax="100" style="width:0%">
-                        </div>
+                <div class="progress">
+                    <div id="progress-bar" class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
+                         aria-valuemin="0" aria-valuemax="100" style="width:0%">
                     </div>
+                </div>
 
+            </div>
+            <div class="timerbutton row">
+                <div class="quesnum col-lg-8">
+                    <div class="warning">
+                        <p><strong>Bitte Weiter Button innerhalb von <%= question.tickLength %> Sekunden drucken!</strong></p>
+                    </div>
                 </div>
-                <div class="warning">
-                    <p><strong>Bitte beantworten Sie die Frage innerhalb von 30 Sekunden!</strong></p>
+
+                <div class="questitle col-lg-2">
+                    <button type="button" id="nextQuestionBtn" class="btn btn-warning btn-form1">Weiter</button>
                 </div>
+            </div>
             </div>
         </section>
 
@@ -234,14 +290,14 @@
                 <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
                 <li role="presentation"><a href="#aboutus" aria-controls="aboutus" role="tab" data-toggle="tab">About Us</a></li>
                 <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
-                <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/logo2.png"></li>
+                <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/Logo-2.jpg"></li>
             </ul>
         </header>
 
         <!--===========================Main content===============================-->
         <section>
             <div class="box">
-                <img class="img-responsive inquest" alt="Brand" src="img/logo2.png">
+                <img class="img-responsive inquest" alt="Brand" src="img/Logo-2.jpg">
                 <div id="error-message-container"></div>
                 <% if (typeof question.attachments !== 'undefined' && question.attachments.length > 0) { %>
                 <div class="img-responsive  img-box" id="img-attachment">
@@ -252,20 +308,24 @@
                     <strong><%= question.title %></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <strong><%= question.content %></strong>
                 </div>
-                <form>
-                    <label  class="col-sm-2 control-label control-label-form2">Antwort:</label>
-                    <div class="radio-form2">
-                        <select class="form-control form-control-4 col-md-6 col-sm-6 col-xs-6">
-                        <% _.each(question.potentialAnswers, function(answer, key){ %>
+                <div class="row">
+                    <form>
+                        <div class="quesnum col-lg-2">
+                            <label  class="col-sm-2 control-label control-label-form2">Antwort:</label>
+                        </div>
+                        <div class="questitle col-lg-6">
+                            <select class="form-control form-control-4 col-md-6 col-sm-6 col-xs-6">
+                                <% _.each(question.potentialAnswers, function(answer, key){ %>
 
-                            <option value="<%= answer.answer %>"><%= answer.answer %></option>
+                                <option value="<%= answer.answer %>"><%= answer.answer %></option>
 
-                        <% }); %>
-                        </select>
-                    </div>
-                </form>
-                <button type="button" id="nextQuestionBtn" class="btn btn-warning btn-form1">Weiter</button>
-
+                                <% }); %>
+                            </select>
+                        </div>
+                        <div class="radio-form2">
+                        </div>
+                    </form>
+                </div>
                 <div class="timer">
 
                     <div class="progress">
@@ -275,8 +335,16 @@
                     </div>
 
                 </div>
-                <div class="warning">
-                    <p><strong>Bitte beantworten Sie die Frage innerhalb von 30 Sekunden!</strong></p>
+                <div class="timerbutton row">
+                    <div class="quesnum col-lg-8">
+                        <div class="warning">
+                            <p><strong>Bitte Weiter Button innerhalb von <%= question.tickLength %> Sekunden drucken!</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="questitle col-lg-2">
+                        <button type="button" id="nextQuestionBtn" class="btn btn-warning btn-form1">Weiter</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -297,14 +365,14 @@
                 <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
                 <li role="presentation"><a href="#aboutus" aria-controls="aboutus" role="tab" data-toggle="tab">About Us</a></li>
                 <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
-                <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/logo2.png"></li>
+                <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/Logo-2.jpg"></li>
             </ul>
         </header>
 
         <!--===========================Main content===============================-->
         <section>
             <div class="box">
-                <img class="img-responsive inquest" alt="Brand" src="img/logo2.png">
+                <img class="img-responsive inquest" alt="Brand" src="img/Logo-2.jpg">
                 <div id="error-message-container"></div>
                 <% if (typeof question.attachments !== 'undefined' && question.attachments.length > 0) { %>
                 <div class="img-box" id="img-attachment">
@@ -327,8 +395,6 @@
                         <% }); %>
                     </div>
                 </form>
-                <button type="button" id="nextQuestionBtn" class="btn btn-warning btn-form1">Weiter</button>
-
                 <div class="timer">
 
                     <div class="progress">
@@ -338,8 +404,16 @@
                     </div>
 
                 </div>
-                <div class="warning">
-                    <p><strong>Bitte beantworten Sie die Frage innerhalb von 30 Sekunden!</strong></p>
+                <div class="timerbutton row">
+                    <div class="quesnum col-lg-8">
+                        <div class="warning">
+                            <p><strong>Bitte Weiter Button innerhalb von <%= question.tickLength %> Sekunden drucken!</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="questitle col-lg-2">
+                        <button type="button" id="nextQuestionBtn" class="btn btn-warning btn-form1">Weiter</button>
+                    </div>
                 </div>
             </div>
         </section>

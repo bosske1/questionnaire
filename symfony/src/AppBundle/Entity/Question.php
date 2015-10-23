@@ -92,6 +92,11 @@ class Question
 	protected $answers;
 
 	/**
+	 * @ORM\Column(type="integer")
+	 */
+	protected $tickLength;
+
+	/**
 	 * Set user
 	 *
 	 * @param \AppBundle\Entity\User $user
@@ -443,4 +448,22 @@ class Question
     {
         return $this->nextQuestionId;
     }
+
+	/**
+	 * @return int
+	 */
+	public function getTickLength()
+	{
+		return $this->tickLength;
+	}
+
+	/**
+	 * @param mixed $tickLength
+	 */
+	public function setTickLength($tickLength)
+	{
+		$this->tickLength = $tickLength;
+
+		return $this;
+	}
 }

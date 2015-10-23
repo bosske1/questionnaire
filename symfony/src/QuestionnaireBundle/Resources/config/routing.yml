@@ -38,6 +38,10 @@ question_get:
     path:     /question/get/{questionId}
     defaults: { _controller: QuestionnaireBundle:Question:get }
 
+landing_page:
+    path:     /home
+    defaults: { _controller: QuestionnaireBundle:Home:index }
+
 question_submit:
     path:     /question/submitAnswer
     defaults: { _controller: QuestionnaireBundle:Question:submitAnswer }

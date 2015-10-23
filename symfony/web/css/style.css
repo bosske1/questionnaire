@@ -305,8 +305,8 @@ body {
 	margin: 2% 0 0 10%;
 }
 .warning {
-	margin: 3.5% 0 0 20%;
-	width: 70%;
+	margin: 3.5% 0 0 25%;
+	width: 80%;
 }
 
 /*form2 page with radio*/
@@ -431,4 +431,8 @@ body {
 
 #ex1Slider .slider-selection {
     background: #BABABA;
+}
+
+.timerbutton {
+    padding-top: 15px;
 }
