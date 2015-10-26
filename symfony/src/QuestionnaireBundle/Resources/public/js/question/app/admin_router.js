@@ -23,7 +23,6 @@ Question.Router = Backbone.Router.extend({
      * admin index page
      */
     adminPage: function() {
-        debugger;
         var me = this;
 
         var adminView = new Question.Views.Dashboard();
@@ -63,7 +62,7 @@ Question.Router = Backbone.Router.extend({
         $('#question').html(editView.render().$el);
     },
 
-    openAdminQuestionnairesView: function() {
+    openAdminQuestionnairesView: function() {s
         var me = this;
         var questionnaires = new Question.Collections.Questionnaire();
 
