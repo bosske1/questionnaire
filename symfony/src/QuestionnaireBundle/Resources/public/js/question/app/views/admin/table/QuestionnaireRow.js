@@ -1,5 +1,6 @@
 Question.Views.QuestionnaireRow = Backbone.View.extend({
     model: null,
+    tagName: 'tr',
     events: {
         'click .show-questions-btn' : 'onOpenAdminQuestionsView',
         'click #edit-btn' : 'openEditView'

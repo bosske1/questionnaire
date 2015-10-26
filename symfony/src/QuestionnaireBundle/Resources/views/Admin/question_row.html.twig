@@ -1,0 +1,9 @@
+<script type="text/template" id="tpl-question-row">
+        <td><%= model.get('id') %></td>
+        <td><%= model.get('title') %></td>
+        <td><%= model.get('content') %></td>
+        <td class="center">
+            <button class="btn btn-xs" id="edit-btn" value="<%= model.get('id') %>">Edit</button>
+            <button class="btn btn-xs" id="remove-btn" value="<%= model.get('id') %>">Remove</button>
+        </td>
+</script>

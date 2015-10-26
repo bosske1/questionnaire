@@ -1,0 +1,109 @@
+
+<script type="text/template" id="tpl-questions-old">
+    <div id="main-container">
+        <img class="img-responsive" id="background" src="img/wood1.jpg">
+        <!--==============================Header==================================-->
+        <header>
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                <li role="presentation"><a href="#aboutus" aria-controls="aboutus" role="tab" data-toggle="tab">About Us</a></li>
+                <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
+                <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/logo2.png"></li>
+            </ul>
+        </header>
+
+        <!--===========================Main content===============================-->
+        <section>
+            <div class="box">
+
+                <div class="btn-group" role="group">
+                    <a class="btn" href="/#adminQuestionnaires">Questionnaires</a>
+                </div>
+
+                <table class="table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="mid">ID</th>
+                            <th class="mid">Title</th>
+                            <th class="mid">Question</th>
+                            <th class="mid">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <% _.each(questions.models, function(question, key){ %>
+                        <tr>
+                            <td class="mid"><%= question.get('id') %></td>
+                            <td class="som"><%= question.get('title') %></td>
+                            <td class="som"><%= question.get('content') %></td>
+                            <td class="som">
+                                <button class="btn btn-xs" id="edit-btn" value="<%= question.get('id') %>">Edit</button>
+                                <button class="btn btn-xs" id="remove-btn" value="<%= question.get('id') %>">Remove</button>
+                            </td>
+                        </tr>
+                    <% }) %>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!--==============================Footer=============================-->
+        <div id="footer">
+            <p>2015</p>
+        </div>
+
+    </div>
+
+</script>
+<script type="text/template" id="tpl-edit-question">
+    <div id="main-container">
+        <img class="img-responsive" id="background" src="img/wood1.jpg">
+        <!--==============================Header==================================-->
+        <header>
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                <li role="presentation"><a href="#aboutus" aria-controls="aboutus" role="tab" data-toggle="tab">About Us</a></li>
+                <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
+                <li role="presentation" class="brand"><img class="img-responsive" alt="Brand" src="img/logo2.png"></li>
+            </ul>
+        </header>
+
+        <!--===========================Main content===============================-->
+        <section>
+            <div class="box">
+
+                <form role="form" class="fedit">
+                    <div class="form-group">
+                        <label for="title">Title:</label>
+                        <strong><input type="text" class="form-control" id="title" name="title" value="<%= question.get('title') %>"></strong>
+                    </div>
+                    <div class="form-group">
+                        <label for="content">Question:</label>
+                        <textarea class="form-control" rows="3" id="content" name="content"><%= question.get('content') %></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea class="form-control" rows="5" id="description" name="description"><%= question.get('description') %></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="type">Type:</label>
+                        <select class="form-control optied" id="type" name="type">
+                            <option value="input" <% if(question.get('type') == 'input') { %>selected<% } %> >Input</option>
+                            <option value="radio" <% if(question.get('type') == 'radio') { %>selected<% } %> >Radio</option>
+                            <option value="checkbox" <% if(question.get('type') == 'checkbox') { %>selected<% } %> >Checkbox</option>
+                            <option value="select" <% if(question.get('type') == 'select') { %>selected<% } %> >Dropdown</option>
+                            <option value="slider" <% if(question.get('type') == 'slider') { %>selected<% } %> >Slider</option>
+                            <option value="feedback" <% if(question.get('type') == 'feedback') { %>selected<% } %> >Feedback</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-warning btn-edit">Edit</button>
+                </form>
+            </div>
+        </section>
+
+        <!--==============================Footer=============================-->
+        <div id="footer">
+            <p>2015</p>
+        </div>
+
+    </div>
+</script>

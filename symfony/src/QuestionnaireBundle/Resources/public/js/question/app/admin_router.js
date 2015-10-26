@@ -36,8 +36,10 @@ Question.Router = Backbone.Router.extend({
             reset: true,
             url: questions.getQuestionsUrl(questionnaireId),
             success: function(collection, response, options) {
-                var questionsView = new Question.Views.QuestionsAdmin();
-                $('#question').html(questionsView.render(collection).$el);
+                var questionsView = new Question.Views.Questions({
+                    collection: collection
+                });
+                $('#wrapper').html(questionsView.render().$el);
             }
         });
     },
@@ -62,15 +64,21 @@ Question.Router = Backbone.Router.extend({
         $('#question').html(editView.render().$el);
     },
 
-    openAdminQuestionnairesView: function() {s
+    openAdminQuestionnairesView: function() {
         var me = this;
         var questionnaires = new Question.Collections.Questionnaire();
 
         questionnaires.fetch({
             reset: true,
             success: function(collection, response, options) {
-                var questionnairesView = new Question.Views.QuestionnairesAdmin();
-                $('#question').html(questionnairesView.render(collection).$el);
+                var questionnairesView = new Question.Views.Questionnaires({
+                    collection: collection
+                });
+
+                var htmlPart = questionnairesView.render().$el;
+                $('#wrapper').html(htmlPart);
+
+                initQuestionnaires();
             }
         });
     },

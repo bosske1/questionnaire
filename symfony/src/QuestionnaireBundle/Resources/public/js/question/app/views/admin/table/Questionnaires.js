@@ -5,7 +5,7 @@ Question.Views.Questionnaires = Backbone.View.extend({
 
     renderOne: function(questionnaire) {
         var itemView = new Question.Views.QuestionnaireRow({model: questionnaire});
-        this.$('#cart_items').append(itemView.render().$el);
+        this.$('#questionnaires-table').append(itemView.render().$el);
     },
 
     initialize: function() {
@@ -13,9 +13,7 @@ Question.Views.Questionnaires = Backbone.View.extend({
         this.router = Question.mainRouter;
     },
 
-    render: function(collection) {
-        this.collection = collection;
-
+    render: function() {
         var html = this.template();
         this.$el.html(html);
 

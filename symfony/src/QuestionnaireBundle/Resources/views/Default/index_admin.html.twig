@@ -7,9 +7,13 @@
     <!-- /#wrapper -->
 
     {% include 'QuestionnaireBundle:Question:question.html.twig' %}
-    {% include 'QuestionnaireBundle:Admin:questions.html.twig' %}
-    {% include 'QuestionnaireBundle:Admin:questionnaires.html.twig' %}
+    {% include 'QuestionnaireBundle:Admin:questions_old.html.twig' %}
+    {% include 'QuestionnaireBundle:Admin:questionnaires_old.html.twig' %}
     {% include 'QuestionnaireBundle:Admin:dashboard.html.twig' %}
+    {% include 'QuestionnaireBundle:Admin:questionnaires.html.twig' %}
+    {% include 'QuestionnaireBundle:Admin:questionnaire_row.html.twig' %}
+    {% include 'QuestionnaireBundle:Admin:questions.html.twig' %}
+    {% include 'QuestionnaireBundle:Admin:question_row.html.twig' %}
 
 {% endblock %}
 
@@ -38,6 +42,10 @@
     '@QuestionnaireBundle/Resources/public/js/question/app/views/Registration.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/views/admin/Admin.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/views/admin/QuestionnairesAdmin.js'
+    '@QuestionnaireBundle/Resources/public/js/question/app/views/admin/table/Questionnaires.js'
+    '@QuestionnaireBundle/Resources/public/js/question/app/views/admin/table/QuestionnaireRow.js'
+    '@QuestionnaireBundle/Resources/public/js/question/app/views/admin/table/Questions.js'
+    '@QuestionnaireBundle/Resources/public/js/question/app/views/admin/table/QuestionRow.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/views/admin/QuestionsAdmin.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/views/admin/Dashboard.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/views/form/AddView.js'

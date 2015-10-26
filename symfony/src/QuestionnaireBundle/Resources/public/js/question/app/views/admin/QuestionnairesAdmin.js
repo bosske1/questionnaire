@@ -5,7 +5,7 @@ Question.Views.QuestionnairesAdmin = Backbone.View.extend({
         'click #btn_add_new_questionnaire': 'openAddView'
     },
     initialize: function() {
-        this.template = _.template($('#tpl-questionnaires').html());
+        this.template = _.template($('#tpl-questionnaires-old').html());
         this.router = Question.mainRouter;
     },
 
