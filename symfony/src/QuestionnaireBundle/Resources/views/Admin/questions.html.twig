@@ -90,6 +90,9 @@
                             <option value="input" <% if(question.get('type') == 'input') { %>selected<% } %> >Input</option>
                             <option value="radio" <% if(question.get('type') == 'radio') { %>selected<% } %> >Radio</option>
                             <option value="checkbox" <% if(question.get('type') == 'checkbox') { %>selected<% } %> >Checkbox</option>
+                            <option value="select" <% if(question.get('type') == 'select') { %>selected<% } %> >Dropdown</option>
+                            <option value="slider" <% if(question.get('type') == 'slider') { %>selected<% } %> >Slider</option>
+                            <option value="feedback" <% if(question.get('type') == 'feedback') { %>selected<% } %> >Feedback</option>
                         </select>
                     </div>
                     <button type="submit" class="btn btn-warning btn-edit">Edit</button>
