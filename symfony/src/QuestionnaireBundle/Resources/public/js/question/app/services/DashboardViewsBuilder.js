@@ -8,10 +8,7 @@ Question.Services.DashboardViewsBuilder = {
     views: [
         //just example here
         {
-            view: 'SomeView1'
-        },
-        {
-            view: 'SomeView2'
+            view: 'QuestionnairesAdmin'
         }
     ],
 
@@ -25,7 +22,8 @@ Question.Services.DashboardViewsBuilder = {
             views = this.getViews();
 
         $.each(views, function(index, view){
-            me.getDashboardView().getDashboardBody().append(view.render().$el);
+            me.getDashboardView().getDashboardBody().append(view.renderDashboard().$el);
+            me.bindDashboardEvents(view);
         });
     },
 
@@ -39,8 +37,9 @@ Question.Services.DashboardViewsBuilder = {
             viewClasses = [];
 
         $.each(me.views, function(index, viewClassName){
-            if(me.buildViewClass(viewClassName.view) !== false){
-                viewClasses.push(me.buildViewClass(viewClassName.view));
+            viewClass = me.buildViewClass(viewClassName.view);
+            if(viewClass !== false){
+                viewClasses.push(viewClass);
             }
         });
 
@@ -116,5 +115,24 @@ Question.Services.DashboardViewsBuilder = {
 
     getDashboardView: function(){
         return this.dashboardView;
+    },
+
+    bindDashboardEvents: function(view){
+        var me = this;
+
+        view.$el.find('.removeView').on('click', me.onRemoveView.bind(view))
+        view.$el.find('.refreshView').on('click', me.onRefreshView.bind(view))
+    },
+
+    onRemoveView: function(){
+        this.$el.remove();
+        //remove from dashboard builder
+
+        return false;
+    },
+
+    onRefreshView: function(){
+        this.renderDashboard();
+        return false;
     }
 };

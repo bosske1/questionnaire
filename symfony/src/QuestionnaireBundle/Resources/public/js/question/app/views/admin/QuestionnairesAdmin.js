@@ -29,5 +29,18 @@ Question.Views.QuestionnairesAdmin = Backbone.View.extend({
         var questionnaireId = e.currentTarget.value;
 
         this.router.navigate("adminQuestions/"+questionnaireId, {trigger: true})
+    },
+
+    renderDashboard: function(){
+        var collection = new Question.Collections.Questionnaire(),
+            viewTemplate = _.template($('#tpl-questionnaires-dashboard').html()),
+            dashboardTemplate = _.template($('#tpl-dashboard-item').html());
+
+        var itemHtml = viewTemplate({questionnaires:collection});
+
+        this.$el.html(dashboardTemplate);
+        this.$el.find('#dashboard-item-body').append(itemHtml);
+
+        return this;
     }
 });
