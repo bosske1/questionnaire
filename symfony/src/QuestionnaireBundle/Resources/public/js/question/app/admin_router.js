@@ -40,21 +40,23 @@ Question.Router = Backbone.Router.extend({
                     collection: collection
                 });
                 $('#wrapper').html(questionsView.render().$el);
+
+                initQuestions();
             }
         });
     },
 
     openEditQuestionView: function(id) {
-        var editView = new Question.Views.EditView(),
+        var editView = new Question.Views.QuestionEdit(),
             question = new Question.Models.Question({id: id});
 
         question.fetch({
             reset:true,
             success: function(model, response, options){
-                $('#question').html(editView.render({question: model}).$el);
+                $('#wrapper').html(editView.render({question: model}).$el);
             },
             failure: function(){
-                $('#question').html('well sh**').$el;
+                $('#wrapper').html('well sh**').$el;
             }
         });
     },
