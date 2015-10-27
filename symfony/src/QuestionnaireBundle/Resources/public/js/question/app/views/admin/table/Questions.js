@@ -24,5 +24,5 @@ Question.Views.Questions = Backbone.View.extend({
 
     openQuestionAddView: function() {
         this.router.navigate("adminQuestion/add", {trigger : true});
-    },
+    }
 });
