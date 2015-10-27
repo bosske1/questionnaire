@@ -17,6 +17,9 @@ Question.Services.DashboardViewsBuilder = {
 
     dashboardView: null,
 
+    /**
+     * render each view to dashboard body
+     */
     render: function(){
         var me = this,
             views = this.getViews();
@@ -26,6 +29,11 @@ Question.Services.DashboardViewsBuilder = {
         });
     },
 
+    /**
+     * collect view objects
+     *
+     * @returns {Array}
+     */
     getViews: function(){
         var me = this,
             viewClasses = [];
@@ -59,6 +67,12 @@ Question.Services.DashboardViewsBuilder = {
         //add view
     },
 
+    /**
+     *  try to create view, if it's not a function return false
+     *
+     * @param viewClass
+     * @returns {boolean}
+     */
     viewExists: function(viewClass){
         try {
             classView = new Question.Views[viewClass];
@@ -68,8 +82,6 @@ Question.Services.DashboardViewsBuilder = {
         catch(err) {
             return false;
         }
-
-        return false;
     },
 
     buildViewClass: function(className){
