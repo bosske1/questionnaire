@@ -9,6 +9,11 @@ Question.Views.QuestionnairesAdmin = Backbone.View.extend({
         this.router = Question.mainRouter;
     },
 
+    renderOne: function(questionnaire) {
+        var itemView = new Question.Views.QuestionnaireRow({model: questionnaire});
+        this.$('#questionnaires-table').append(itemView.render().$el);
+    },
+
     render: function(collection) {
         var html = this.template({questionnaires:collection});
         this.$el.html(html);
@@ -32,14 +37,20 @@ Question.Views.QuestionnairesAdmin = Backbone.View.extend({
     },
 
     renderDashboard: function(){
-        var collection = new Question.Collections.Questionnaire(),
+        var me = this,
             viewTemplate = _.template($('#tpl-questionnaires-dashboard').html()),
             dashboardTemplate = _.template($('#tpl-dashboard-item').html());
 
-        var itemHtml = viewTemplate({questionnaires:collection});
+        Question.getService('CollectionDataContainer').get('Questionnaire', {
+            success: function(collection, options){
+                var itemHtml = viewTemplate({questionnaires:collection});
 
-        this.$el.html(dashboardTemplate);
-        this.$el.find('#dashboard-item-body').append(itemHtml);
+                me.$el.html(dashboardTemplate({title: 'Questionnaire List'}));
+                me.$el.find('#dashboard-item-body').append(itemHtml);
+
+                collection.each(function(model){me.renderOne(model);});
+            }
+        });
 
         return this;
     }
