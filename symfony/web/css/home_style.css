@@ -1,117 +1,216 @@
 body {
-	max-width: 100%;
-	min-height: 100%;
-	background-image: url("../img/inte.jpg.jpg");
-	background-repeat: no-repeat;
-	background-size: 100% 20%;
-	background-position: ;
-	margin: 0;
-	font-family: Calibri;	
+    max-width: 100%;
+    min-height: 100%;
+    background-image: url("../img/inte.jpg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 30%;
+    /*background-position: ;*/
+    margin: 0;
+    font-family: Calibri;
 }
 
 .logo {
-	background-image: url("../img/logo.jpg");
-	background-size: 100% 100%;
-	width: 15%;
-	height: 120px;
-	margin-top: -.7%;
-	margin-left: 15%;
-	background-color: #fff;
-	position: relative;
+    background-image: url("../img/PerScreen-Logo.jpg");
+    background-size: 100% 100%;
+    width: 18%;
+    height: 120px;
+    /*margin-top: %;*/
+    margin-left: 15%;
+    background-color: #fff;
+    position: relative;
 }
 
 .header {
-	min-width: 100%;
-	padding-bottom: %;
-	position: relative;	
+    min-width: 100%;
+    /*padding-bottom: %;*/
+    position: relative;
 }
 
 .top {
-	color: #fff;
-	margin-top: 10%;
-	font-size: 35px;
-	font-weight: lighter;
-	text-align: center;
-	width: 60%;
-	margin-left: 20%;
+    color: #fff;
+    margin-top: 10%;
+    font-size: 35px;
+    font-weight: lighter;
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
 
 }
 
 .reg {
-	text-align: center;
+    text-align: center;
 }
 
 .inp{
-	margin-top: 1%;
-	width: 30%;
-	padding: 1%;
+    margin-top: 1%;
+    width: 30%;
+    padding: 1%;
 }
 
 .btn {
-	margin-top: 1%;
-	padding: 1%;
-	background-color: #e67008;
-	color: #fff;
-	font-size: 19px;
-	width: 15%;
+    margin-top: 1%;
+    padding: 1%;
+    background-color: #e67008;
+    color: #fff;
+    font-size: 19px;
+    width: 15%;
 }
 
 .smt {
-	width: 100%;
-	height: 2500px;
-	background-image: url("../img/Page.jpg");
-	background-repeat: no-repeat;
-	position: relative;
-	background-size: 100% 100%;
-	margin-top: 5%;
+    width: 100%;
+    min-height: 100%;
+    background-color: #24195d;
+    position: relative;
+    margin-top: 5%;
 }
 
 .sec {
-	text-align: center;
-	font-size: 32px;
-	font-weight: lighter;
-	padding-top: 3%;
-	width: 60%;
-	margin-left: 20%;
-	color: #24195d;
-	
+    text-align: center;
+    font-size: 32px;
+    font-weight: lighter;
+    padding-top: 3%;
+    width: 100%;
+    height: 250px;
+    color: #24195d;
+    background-image: url(../img/topPage.jpg);
+    background-size: 100% 100%;
+}
+
+.pre {
+    width: 30%;
+    height: 10%;
+    margin: 0 0 0 15%;
+    color: #fff;
+
+}
+.pre h1, h2, h3, h4 {
+    font-weight: lighter;
+}
+
+#pre8 {
+    font-size: 90px;
+    color: #e6710c;
+    font-weight: lighter;
+    margin: 5% 0 -5% 3%;
+}
+
+.skal {
+    width: 30%;
+    margin: -15% 0 0 55%;
+    color: #fff;
+}
+
+.basic {
+    width: 30%;
+    color: #fff;
+    margin: 10% 0 0 15%;
+}
+
+.ch {
+    width: 30%;
+    margin: -25% 0 0 55%;
+    color: #fff;
+
+}
+
+.ch li {
+    list-style: none;
+    font-size: 20px;
+}
+
+.abl {
+    margin: 20% 0 0 0;
+    color: #fff;
+}
+
+.abl h3 {
+    margin-left: 48%;
+}
+
+.one {
+    width: 20%;
+    padding-top: 1%;
+    margin-left: 27%;
+}
+
+.two {
+    width: 30%;
+    margin-left: 53%;
+    padding-top: 1%;
+}
+
+.three, .seven {
+    width: 20%;
+    padding-top: .7%;
+    margin-left: 29%;
+}
+
+.four, .six {
+    width: 30%;
+    margin-left: 53%;
+    margin-bottom: -.5%;
+}
+
+.five {
+    width: 20%;
+    padding-top: .7%;
+    margin-left: 27%;
+}
+
+img.num {
+    margin: -34.2% 0 15% 48%;
+}
+
+.bas {
+    width: 30%;
+    color: #fff;
+    margin: -5% 0 0 15%;
+}
+
+.das {
+    width: 30%;
+    color: #fff;
+    margin: -15% 0 0 55%;
+}
+.das li {
+    list-style: none;
 }
 
 .up {
-	text-align: center;
-	font-size: 15px;
-	margin-top: 2100px;
-	
+    text-align: center;
+    font-size: 15px;
+    margin-top: 7%;
+    padding-bottom: 7%;
+
 }
 
 .up a {
-	color: #fff;
-	font-size: 20px;
+    color: #fff;
+    font-size: 20px;
 }
 
 .info {
-	background-color: #1d0e46;
-	color: #fff;
-	margin-top: 
+    background-color: #1d0e46;
+    color: #fff;
 }
 
 .vor {
-	margin-left: 20%;
-	padding-top: 5%;
-	width: 30%;
-	font-size: 13px;
+    margin-left: 20%;
+    padding-top: 2%;
+    width: 30%;
+    font-size: 13px;
 }
 
 .nxt {
-	margin-left: 60%;
-	width: 30%;
-	margin-top: -18%;
-	font-size: 13px;
-	padding-bottom: 3%;
+    margin-left: 60%;
+    width: 30%;
+    margin-top: -12%;
+    font-size: 13px;
+    padding-bottom: 3%;
 }
 
 
 .foot {
-	margin-left: 35%;
-	background-color: #fff;
+    margin-left: 35%;
+    background-color: #fff;
 }

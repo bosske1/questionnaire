@@ -7,9 +7,11 @@
     {% include 'QuestionnaireBundle:Login:login.html.twig' %}
     {% include 'QuestionnaireBundle:Registration:registration.html.twig' %}
     {% include 'QuestionnaireBundle:Question:question.html.twig' %}
+    {% include 'QuestionnaireBundle:Admin:admin.html.twig' %}
     {% include 'QuestionnaireBundle:Admin:questions.html.twig' %}
     {% include 'QuestionnaireBundle:Admin:questionnaires.html.twig' %}
     {% include 'QuestionnaireBundle:Admin:question_add.html.twig' %}
+    {% include 'QuestionnaireBundle:Admin:questionnaire_add.html.twig' %}
     {% include 'QuestionnaireBundle:Tree:tree.html.twig' %}
 
 {% endblock %}
@@ -27,10 +29,12 @@
     '@QuestionnaireBundle/Resources/public/js/question/app/models/Question.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/models/Attachment.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/models/Questionnaire.js'
+    '@QuestionnaireBundle/Resources/public/js/question/app/models/QuestionnaireCategory.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/models/PotentialAnswer.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/collections/Question.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/collections/Attachment.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/collections/Questionnaire.js'
+    '@QuestionnaireBundle/Resources/public/js/question/app/collections/QuestionnaireCategory.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/collections/PotentialAnswer.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/views/Home.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/views/questions/Question.js'
@@ -42,15 +46,20 @@
     '@QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionSlider.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/views/Login.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/views/Registration.js'
+    '@QuestionnaireBundle/Resources/public/js/question/app/views/admin/Admin.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/views/admin/QuestionnairesAdmin.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/views/admin/QuestionsAdmin.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/views/form/AddView.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/views/form/EditView.js'
+    '@QuestionnaireBundle/Resources/public/js/question/app/views/form/AddQuestionnaireView.js'
+    '@QuestionnaireBundle/Resources/public/js/question/app/views/form/EditQuestionnaireView.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/controller/QuestionsController.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/views/Tree.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/models/Tree.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/collections/Tree.js'
     '@QuestionnaireBundle/Resources/public/js/question/app/services/QuestionBuilder.js'
+    '@QuestionnaireBundle/Resources/public/js/question/app/services/OptionsBuilder.js'
+    '@QuestionnaireBundle/Resources/public/js/question/app/services/CollectionDataContainer.js'
     %}
     <script src="{{ asset_url }}"></script>
 

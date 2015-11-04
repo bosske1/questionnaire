@@ -5,12 +5,20 @@ Question.Router = Backbone.Router.extend({
         'registration': 'registration',
         'login': 'login',
         'admin': 'adminPage',
-        'editView/:id': 'openEditView',
-        'addView': 'openAddView',
-        'questionnaireAdmin': 'openQuestionnaireAdminPage',
-        'tree' : 'tree'
+
+        'adminQuestionnaires': 'openAdminQuestionnairesView',
+        'adminQuestionnaire/add' : 'openAddQuestionnaireView',
+        'adminQuestionnaire/edit/:id' : 'openEditQuestionnaireView',
+
+        'adminQuestion': 'openAddQuestionView',
+        'adminQuestions/:id' : 'openAdminQuestionsView', //id == questionnaire id
+        'adminQuestion/edit/:id': 'openEditQuestionView'
     },
     initialize: function() {
+    },
+
+    goBack: function(){
+        window.history.back();
     },
 
     question: function(questionId) {
@@ -44,15 +52,22 @@ Question.Router = Backbone.Router.extend({
         });
     },
 
+    /**
+     * admin index page
+     */
     adminPage: function() {
         var me = this;
-        var questionnaireId = 1;
 
+        var adminView = new Question.Views.Admin();
+        $('#question').html(adminView.render().$el);
+    },
+
+    openAdminQuestionsView: function(questionnaireId){
         var questions = new Question.Collections.Question();
-        //questions.setQuestionnaireId(questionnaireId);
-        questions.url += "/" + questionnaireId;
+
         questions.fetch({
             reset: true,
+            url: questions.getQuestionsUrl(questionnaireId),
             success: function(collection, response, options) {
                 var questionsView = new Question.Views.QuestionsAdmin();
                 $('#question').html(questionsView.render(collection).$el);
@@ -60,7 +75,7 @@ Question.Router = Backbone.Router.extend({
         });
     },
 
-    openEditView: function(id) {
+    openEditQuestionView: function(id) {
         var editView = new Question.Views.EditView(),
             question = new Question.Models.Question({id: id});
 
@@ -75,12 +90,12 @@ Question.Router = Backbone.Router.extend({
         });
     },
 
-    openAddView: function() {
+    openAddQuestionView: function() {
         var editView = new Question.Views.AddView();
         $('#question').html(editView.render().$el);
     },
 
-    openQuestionnaireAdminPage: function() {
+    openAdminQuestionnairesView: function() {
         var me = this;
         var questionnaires = new Question.Collections.Questionnaire();
 
@@ -93,19 +108,12 @@ Question.Router = Backbone.Router.extend({
         });
     },
 
-    tree: function(){
-        var me = this;
-        var treeItems = new Question.Collections.Tree();
+    openAddQuestionnaireView: function(){
+        var editView = new Question.Views.AddQuestionnaireView();
+        $('#question').html(editView.render().$el);
+    },
 
-        treeItems.fetch({
-            reset: true,
-            success: function(collection, response, options) {
-                var treeView = new Question.Views.Tree({
-                    collection: collection
-                });
-                $('#question').html(treeView.render().$el);
-            }
-        });
+    openEditQuestionnaireView: function(id){
+        console.log('edit');
     }
-
 });

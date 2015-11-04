@@ -1,0 +1,10 @@
+<script type="text/template" id="tpl-questionnaire-row">
+        <td><%= model.get('id') %></td>
+        <td><%= model.get('name') %></td>
+        <td><%= model.get('category') %></td>
+        <td class="center">
+            <button class="btn btn-xs show-questions-btn" value="<%= model.get('id') %>">Questions</button>
+            <button class="btn btn-xs" id="edit-btn" value="<%= model.get('id') %>">Edit</button>
+            <button class="btn btn-xs" id="remove-btn" value="<%= model.get('id') %>">Remove</button>
+        </td>
+</script>
