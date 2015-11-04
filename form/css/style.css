@@ -1,0 +1,166 @@
+body{
+font-family: Verdana, sans-serif;
+}
+
+.mb-50{
+	margin-bottom: 50px;
+}
+.mb-80{
+	margin-bottom: 80px;
+}
+.mb-100{
+	margin-bottom: 100px;
+}
+.logo{
+	position: absolute;
+	right:0;
+	top:20px;
+}
+.header{
+margin-top:30vh;
+text-align: center;
+}
+.header h1{
+	font-size:5em;
+	color:#30388b;	
+	font-weight: bold;
+	float: right;
+	margin:-10px 0;
+}
+.header h1 span{
+	color:#ff8028;
+	float: right;
+	font-size: 1.5em;
+}
+.header h1:first-child{
+	float:left;
+}
+
+select{
+	min-width: 120px;
+}
+
+
+section.login{
+position: absolute;
+bottom: 40px;	
+width: 100%;
+}
+section.login .weiter input{
+	width: 200px;
+	padding:3px 10px;
+	margin:0px 50px;
+	
+}
+section.login .button{
+	background: #fff;
+	border: none;
+	color:#30388b;
+	padding:3px 20px 4px 20px;
+    outline: 1px solid #999;
+    outline-offset: 2px;
+    text-decoration: none;
+}
+section.login .button:hover{
+	background: #ff8028;
+}
+
+section .col-md-2{
+	font-weight: bold;
+}
+.circle{
+  width:80px;
+height:80px;
+position: absolute;
+bottom: -100px;
+right:50px;
+z-index: -1;
+  border-radius:100%;
+	background-image: radial-gradient(center center, circle cover, #fff, #ff8028);
+	background-image: -o-radial-gradient(center center, circle cover, #fff, #ff8028);
+	background-image: -ms-radial-gradient(center center, circle cover, #fff, #ff8028);
+	background-image: -moz-radial-gradient(center center, circle cover, #fff, #ff8028);
+	background-image: -webkit-radial-gradient(center center, circle cover, #fff, #ff8028);
+	background-size: 100px 160px;
+	background-position: -20px -70px
+
+}
+
+#page2{
+	margin-top: 20vh;
+}
+#page2 strong{
+	color:#30388b;
+	font-weight: normal;
+}
+.bullet{
+	list-style: none;
+	padding: 0;
+	padding-left: 25%;
+	margin:50px 0;
+	color:#30388b;
+}
+
+.bullet i{
+  width:16px;
+height:16px;
+  border-radius:100%;
+	background-image: radial-gradient(center center, circle cover, #fff, #ff8028);
+	background-image: -o-radial-gradient(center center, circle cover, #fff, #ff8028);
+	background-image: -ms-radial-gradient(center center, circle cover, #fff, #ff8028);
+	background-image: -moz-radial-gradient(center center, circle cover, #fff, #ff8028);
+	background-image: -webkit-radial-gradient(center center, circle cover, #fff, #ff8028);
+	display: inline-block;
+	background-size: 32px 32px;
+	background-position: -10px -16px;
+	margin-left: -42px;
+	margin-right: 20px;
+
+}
+.bullet li{
+	margin:10px;
+	padding-left:58px;
+}
+#page3 h2{
+	color: red;
+}
+#page3 legend{
+    width:inherit; /* Or auto */
+    margin:0 0px 5px 0; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+    font-size: 12px;
+}
+#page3 fieldset{
+	border: 1px solid #999;
+	padding:20px;
+	margin-bottom: 20px;
+}
+#page3 fieldset label{
+width: 144px;
+font-weight: normal;
+}
+#page3 fieldset select{
+width: 120px;
+}
+.responsive-image{
+	width: 100%;
+	height: auto;
+}
+#page label{
+	font-weight: normal;
+	margin-right: 40px;
+}
+#page .frage{
+	font-size: 20px;
+}
+
+.progress-bar,
+.slider-handle{
+	background: #ff8028;
+}
+.multi select{
+width: 100%;
+}
+.goodbye{
+	margin-top: 50px;
+}
