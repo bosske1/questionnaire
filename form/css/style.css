@@ -1,5 +1,9 @@
 body{
-font-family: Verdana, sans-serif;
+font-family: Calibri, sans-serif;
+}
+
+.please-answer {
+    color: red;
 }
 
 .mb-50{
@@ -156,7 +160,7 @@ width: 120px;
 
 .progress-bar,
 .slider-handle{
-	background: #ff8028;
+	background: #007F00;
 }
 .multi select{
 width: 100%;

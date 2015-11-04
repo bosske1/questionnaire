@@ -17,6 +17,7 @@ $("#ex1").on("slide", function(slideEvt) {
         this.each(function () {
             $(this).empty();
             var barContainer = $("<div>").addClass("progress active");
+            var answerText = $("#answer_text");
             var bar = $("<div>").addClass("progress-bar").addClass(settings.baseStyle)
                 .attr("role", "progressbar")
                 .attr("aria-valuenow", "0")
@@ -45,6 +46,10 @@ $("#ex1").on("slide", function(slideEvt) {
                        .addClass(settings.completeStyle);
 
                     settings.onFinish.call(this);
+
+                    //
+                    answerText.html('Bitte entscheiden Sie sich!');
+                    answerText.addClass('please-answer');
                 }
 
             }, 250);

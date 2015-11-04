@@ -2,75 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2876107-1874-4f8c-8b94-2e372e8d42e6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Quest/img/Logo-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/web/img/Logo-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LandingPage/img/PerScreen-Logo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/web/img/PerScreen-Logo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LandingPage/img/PerScreen-Logo2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/web/img/PerScreen-Logo2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LandingPage/img/ch.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/web/img/ch.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LandingPage/img/num.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/web/img/num.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LandingPage/img/topPage.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/web/img/topPage.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/form/AddQuestionnaireView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/admin/Admin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/services/CollectionDataContainer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/admin/Dashboard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/services/DashboardViewsBuilder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/form/EditQuestionnaireView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/services/OptionsBuilder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/form/QuestionEdit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/admin/table/QuestionRow.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Controller/QuestionnaireCategoriesController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/collections/QuestionnaireCategory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/models/QuestionnaireCategory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Controller/QuestionnaireCategoryController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/admin/table/QuestionnaireRow.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/admin/table/Questionnaires.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Controller/QuestionnairesController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/admin/table/Questions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Controller/QuestionsController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/admin.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/admin_router.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/dashboard.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question_checkbox.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/question_edit.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question_feedback.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question_input.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question_radio.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/question_row.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question_select.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question_slider.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/questionnaire_add.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/questionnaire_row.html.twig" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LandingPage/img/logo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LandingPage/img/logo.jpg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LandingPage/img/logo1.jpg.jpg" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/questionnaires.html.twig" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/questionnaires_old.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/questions.html.twig" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/questions_old.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Controller/HomeController.php" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Controller/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/collections/Question.js" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/collections/Question.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Controller/QuestionController.php" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Controller/QuestionController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/collections/Questionnaire.js" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/collections/Questionnaire.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Controller/QuestionnaireController.php" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Controller/QuestionnaireController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/admin/QuestionnairesAdmin.js" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/admin/QuestionnairesAdmin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/admin/QuestionsAdmin.js" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/admin/QuestionsAdmin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/app/Resources/views/admin_base.html.twig" afterPath="$PROJECT_DIR$/symfony/app/Resources/views/admin_base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/web/css/home_style.css" afterPath="$PROJECT_DIR$/symfony/web/css/home_style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandingPage/index.html" afterPath="$PROJECT_DIR$/LandingPage/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Default/index_admin.html.twig" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Default/index_admin.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Default/index_home.html.twig" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Default/index_home.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question.html.twig" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/question_add.html.twig" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/question_add.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/questionnaires.html.twig" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/questionnaires.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/questions.html.twig" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/questions.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/router.js" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandingPage/css/style.css" afterPath="$PROJECT_DIR$/LandingPage/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/web/css/style.css" afterPath="$PROJECT_DIR$/symfony/web/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form/index.html" afterPath="$PROJECT_DIR$/form/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form/index2.html" afterPath="$PROJECT_DIR$/form/index2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form/index3.html" afterPath="$PROJECT_DIR$/form/index3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form/index4.html" afterPath="$PROJECT_DIR$/form/index4.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form/index5.html" afterPath="$PROJECT_DIR$/form/index5.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form/index6.html" afterPath="$PROJECT_DIR$/form/index6.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form/index7.html" afterPath="$PROJECT_DIR$/form/index7.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form/index8.html" afterPath="$PROJECT_DIR$/form/index8.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form/index9.html" afterPath="$PROJECT_DIR$/form/index9.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form/js/scripts.js" afterPath="$PROJECT_DIR$/form/js/scripts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form/css/style.css" afterPath="$PROJECT_DIR$/form/css/style.css" />
     </list>
     <ignored path="questionnaire.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,91 +36,100 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Tree.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/Tree.js">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/form/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1044">
+            <state line="24" column="21" selection-start="997" selection-end="997" vertical-scroll-proportion="-16.0" vertical-offset="0" max-vertical-offset="1098">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tree.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Tree/tree.html.twig">
+      <file leaf-file-name="index2.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/form/index2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+            <state line="24" column="82" selection-start="1044" selection-end="1044" vertical-scroll-proportion="-16.0" vertical-offset="0" max-vertical-offset="1242">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/symfony/web/css/style.css">
+      <file leaf-file-name="scripts.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/form/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="21" selection-start="243" selection-end="243" vertical-scroll-proportion="0.27906978" vertical-offset="0" max-vertical-offset="7992">
+            <state line="19" column="46" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="1494">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tree.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/models/Tree.js">
+      <file leaf-file-name="index3.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/form/index3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="38" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="864">
+            <state line="47" column="55" selection-start="2406" selection-end="2406" vertical-scroll-proportion="25.88889" vertical-offset="1545" max-vertical-offset="2916">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Question.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/Question.js">
+      <file leaf-file-name="index4.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/form/index4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2304">
+            <state line="70" column="10" selection-start="2730" selection-end="2769" vertical-scroll-proportion="-31.444445" vertical-offset="411" max-vertical-offset="1674">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tree.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/collections/Tree.js">
+      <file leaf-file-name="index5.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/form/index5.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2592">
+            <state line="70" column="49" selection-start="2536" selection-end="2575" vertical-scroll-proportion="-31.444445" vertical-offset="411" max-vertical-offset="1674">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuestionController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Controller/QuestionController.php">
+      <file leaf-file-name="index6.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/form/index6.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2862">
+            <state line="70" column="51" selection-start="2814" selection-end="2814" vertical-scroll-proportion="-31.444445" vertical-offset="411" max-vertical-offset="1674">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Default/index.html.twig">
+      <file leaf-file-name="index7.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/form/index7.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1404">
+            <state line="69" column="51" selection-start="2755" selection-end="2755" vertical-scroll-proportion="-31.444445" vertical-offset="393" max-vertical-offset="1656">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuestionSlider.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionSlider.js">
+      <file leaf-file-name="index8.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/form/index8.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="25" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
+            <state line="80" column="51" selection-start="3403" selection-end="3403" vertical-scroll-proportion="-30.962963" vertical-offset="604" max-vertical-offset="1854">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="question.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question.html.twig">
+      <file leaf-file-name="index9.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/form/index9.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="306">
+            <state line="27" column="27" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.3847981" vertical-offset="0" max-vertical-offset="1263">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/form/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="14" selection-start="44" selection-end="57" vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="3150">
               <folding />
             </state>
           </provider>
@@ -210,6 +161,17 @@
         <option value="$PROJECT_DIR$/symfony/web/bundles/questionnaire/js/question/app/views/questions/QuestionSlider.js" />
         <option value="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question.html.twig" />
         <option value="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionSlider.js" />
+        <option value="$PROJECT_DIR$/form/index.html" />
+        <option value="$PROJECT_DIR$/form/index2.html" />
+        <option value="$PROJECT_DIR$/form/index3.html" />
+        <option value="$PROJECT_DIR$/form/index9.html" />
+        <option value="$PROJECT_DIR$/form/css/style.css" />
+        <option value="$PROJECT_DIR$/form/js/scripts.js" />
+        <option value="$PROJECT_DIR$/form/index4.html" />
+        <option value="$PROJECT_DIR$/form/index5.html" />
+        <option value="$PROJECT_DIR$/form/index6.html" />
+        <option value="$PROJECT_DIR$/form/index7.html" />
+        <option value="$PROJECT_DIR$/form/index8.html" />
       </list>
     </option>
   </component>
@@ -635,6 +597,74 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="questionnaire" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="questionnaire" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="form" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="questionnaire" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="questionnaire" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="form" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="questionnaire" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="questionnaire" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="form" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="questionnaire" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="questionnaire" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="form" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -745,61 +775,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/symfony/web/bundles/questionnaire/js/question/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symfony/web/bundles/questionnaire/js/question/app/views/questions/QuestionRadio.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symfony/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symfony/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/form/AddView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/models/Questionnaire.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Admin/questionnaires.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/admin/QuestionnairesAdmin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Quest/form2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Entity/Question.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symfony/web/bundles/questionnaire/js/question/module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/symfony/web/bundles/questionnaire/js/question/app/views/questions/QuestionCheckbox.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
@@ -975,7 +950,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/models/Tree.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="38" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="864">
+        <state line="28" column="38" selection-start="866" selection-end="866" vertical-scroll-proportion="0.3906977" vertical-offset="0" max-vertical-offset="1290">
           <folding />
         </state>
       </provider>
@@ -1015,7 +990,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/symfony/web/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="21" selection-start="243" selection-end="243" vertical-scroll-proportion="0.27906978" vertical-offset="0" max-vertical-offset="7992">
+        <state line="32" column="21" selection-start="384" selection-end="384" vertical-scroll-proportion="0.44651163" vertical-offset="0" max-vertical-offset="7992">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="82" selection-start="1044" selection-end="1044" vertical-scroll-proportion="-16.0" vertical-offset="0" max-vertical-offset="1242">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form/index3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="55" selection-start="2406" selection-end="2406" vertical-scroll-proportion="25.88889" vertical-offset="1545" max-vertical-offset="2916">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="21" selection-start="997" selection-end="997" vertical-scroll-proportion="-16.0" vertical-offset="0" max-vertical-offset="1098">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="14" selection-start="44" selection-end="57" vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="3150">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="46" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="1494">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form/index4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="10" selection-start="2730" selection-end="2769" vertical-scroll-proportion="-31.444445" vertical-offset="411" max-vertical-offset="1674">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form/index5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="49" selection-start="2536" selection-end="2575" vertical-scroll-proportion="-31.444445" vertical-offset="411" max-vertical-offset="1674">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form/index6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="51" selection-start="2814" selection-end="2814" vertical-scroll-proportion="-31.444445" vertical-offset="411" max-vertical-offset="1674">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form/index7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="51" selection-start="2755" selection-end="2755" vertical-scroll-proportion="-31.444445" vertical-offset="393" max-vertical-offset="1656">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form/index8.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="51" selection-start="3403" selection-end="3403" vertical-scroll-proportion="-30.962963" vertical-offset="604" max-vertical-offset="1854">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form/index9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="27" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.3847981" vertical-offset="0" max-vertical-offset="1263">
           <folding />
         </state>
       </provider>
