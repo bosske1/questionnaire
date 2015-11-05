@@ -1,0 +1,136 @@
+<script type="text/template" id="tpl-question-registration">
+    <div class="container">
+        <div class="row mb-50" >
+            <div class="col-md-12">
+                <a href="index.html"><img class="logo" src="img/logo.svg" width="150" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <section id="page3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Stenger Datenschutz ist zugesichert!</h2>
+                    <p>Die Datenauswertung erfolgt anonym mittels Computer. Ihre persönlichen Daten werden nach der Auswertung der Ergebnisse gelöscht</p>
+                    <fieldset>
+                        <legend>Ihre entscheidungen</legend>
+                        <div class="form-group">
+                            <input type="checkbox"> Ich trage die Kosten fur die Personlichkeitsprofilanalyse selbst.<br />
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox"> Ich möchte die Ergebnisse dieses Screening auch fur Bewerbungen nutzen.<br />
+                        </div>
+                        <div class="form-group">
+                            <label for="r1" style="width:350px;">Ich wünsche eine Interpretation der Ergebnisse.</label><br />
+                            <input type="radio" name="r1">&nbsp;<small>Ja = Die Ergebnisse der Persönlichkeitsprofilanalyse werden nur mir, dem Auftraggeber und dem Interpreter übermittelt.</small>
+                            <br />
+                            <input type="radio" name="r1">&nbsp;<small>Nein = Die Ergebnisse der Persönlichkeitsprofilanalyse werden nur mir und dem Auftraggeber übermittelt.</small>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Personliche Daten</legend>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="anrede">Anrede: *</label>
+                                <select name="anrede" id="anrede">
+                                    <option value="">Herr</option>
+                                    <option value="">Frau</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="titel">Titel:</label>
+                                <select name="titel" id="">
+                                    <option value=""></option>
+                                    <option value="">Lorem ipsum</option>
+                                    <option value="">Lorem ipsum</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="vorname">Vorname: *</label>
+                                <input type="text" name="vorname">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="weitere">Weiterer Vorname:</label>
+                                <input type="text" name="weitere">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="nachname">Nachname: *</label>
+                                <input type="text" name="nachname">
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+
+                            <div class="form-group">
+                                <label for="geburtstag">Geburtstag:</label>
+                                <input type="text" id="geburtstag">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="strase">Straße und Hausnummer: *</label>
+                                <input type="text" name="strase">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="ort">Ort: *</label>
+                                <input type="text" name="ort">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="postleitzahl">Postleitzahl: *</label>
+                                <input type="text" name="postleitzahl">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="land">Land:</label>
+                                <input type="text" name="land" placeholder="Deutschland">
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="telefon">Telefon:</label>
+                                <input type="text" name="telefon">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mobiltelefon">Mobiltelefon:</label>
+                                <input type="text" name="mobiltelefon">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">E-Mail:</label>
+                                <input type="text" name="email">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="clearfix"></div>
+            <div class="row weiter">
+                <div class="col-md-12 text-right">
+                    <a id="nextQuestionBtn" class="button">Weiter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</script>
+<script>
+    function initRegistration() {
+        $( "#geburtstag" ).datepicker({
+            dateFormat: 'dd.mm.yy.'
+        });
+        $( "#anrede" ).prop('selectedIndex', -1);
+        $( "#anrede" ).selectmenu();
+    }
+</script>
