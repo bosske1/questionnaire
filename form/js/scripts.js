@@ -1,14 +1,3 @@
-// Bootstrap slider
-$('#ex1').slider({
-    formatter: function(value) {
-        return 'Current value: ' + value;
-    }
-});
-$("#ex1").on("slide", function(slideEvt) {
-    $("#ex1SliderVal").text(slideEvt.value);
-});
-
-
 // Progress timer
     (function ($) {
     $.fn.progressTimer = function (options) {

@@ -11,6 +11,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="css/jquery-ui.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -54,8 +55,7 @@
                <div class="col-md-4">
                  <div class="form-group">
                    <label for="anrede">Anrede: *</label>
-                   <select name="anrede" id="">
-                     <option value=""></option>
+                   <select name="anrede" id="anrede">
                      <option value="">Herr</option>
                      <option value="">Frau</option>
                    </select>
@@ -90,9 +90,7 @@
 
                 <div class="form-group">
                  <label for="geburtstag">Geburtstag:</label>
-                 <select name="geburtstag" id="">
-                   <option value="">21.05.2013.</option>
-                 </select>
+                 <input type="text" id="geburtstag">
                </div>
 
                <div class="form-group">
@@ -138,7 +136,7 @@
        </div>
      </div>
    </section>
-   <section class="login">
+   <footer>
      <div class="container">
       <div class="clearfix"></div>
       <div class="row weiter">
@@ -147,11 +145,22 @@
         </div>
       </div>
     </div>
-  </section> 
+  </footer> 
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
+   <script>
+  $(function() {
+    $( "#geburtstag" ).datepicker({
+      dateFormat: 'dd.mm.yy.'
+    });
+    $( "#anrede" ).prop('selectedIndex', -1)
+    $( "#anrede" ).selectmenu();
+
+  });
+  </script>
 </body>
 </html>
