@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap/bootstrap.min.css') }}">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery/jquery-ui.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery/jquery-ui-slider-pips.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
     {% endblock %}
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
@@ -19,12 +20,12 @@
         {% block body %}{% endblock %}
         {% block javascripts %}
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script type="text/javascript" src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
             <script type="text/javascript" src="{{ asset('js/jquery/jquery-ui.min.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('js/jquery/jquery-ui-slider-pips.js') }}"></script>
             <script type="text/javascript" src="{{ asset('js/jquery/jquery.serializeObject.min.js') }}"></script>
             <script type="text/javascript" src="{{ asset('js/underscore.js') }}"></script>
             <script type="text/javascript" src="{{ asset('js/backbone.js') }}"></script>
-            <script type="text/javascript" src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
-            <script type="text/javascript" src="{{ asset('js/bootstrap/bootstrap-slider.min.js') }}"></script>
             <script type="text/javascript" src="{{ asset('js/scripts.js') }}"></script>
 
         {% endblock %}

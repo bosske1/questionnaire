@@ -15,16 +15,17 @@ Question.Views.Question = Backbone.View.extend({
 
         this.$el.html(html);
 
+        return this;
+    },
+
+    getTickLength: function() {
         var timeLimit = this.question.tickLength;
 
         if (isNaN(timeLimit) || timeLimit == 0) {
             timeLimit = this.timeLimit;
         }
 
-
-        this.startCountdown(timeLimit);
-
-        return this;
+        return timeLimit;
     },
 
     postRender: function() {
@@ -32,14 +33,9 @@ Question.Views.Question = Backbone.View.extend({
     },
 
     getQuestion: function(){
+        debugger;
         var nextQuestionId = this.question.nextQuestionId,
             router = new Question.Router;
-
-        if(this.getTimeLimitReached()){
-            //time limit was reached before answering
-            this.setErrorMessage('time limit reached before answering').showErrorMessage();
-            return false;
-        }
 
         this.submitAnswer();
 
@@ -59,28 +55,6 @@ Question.Views.Question = Backbone.View.extend({
 
     isValid: function(){
         return true;
-    },
-
-    startCountdown: function(duration){
-        var me = this,
-            timer = duration;
-
-        countdownInterval = setInterval(function () {
-            if (--timer < 0) {
-                timer = duration;
-            }
-
-            var secondsLeft = me.timeLimit - timer;
-            var progressBarValue = secondsLeft * 100 / me.timeLimit;
-            me.setProgressBarValue(progressBarValue);
-
-            if(timer == 0){
-                me.setTimeLimitReached(true);
-
-                clearInterval(countdownInterval);
-            }
-
-        }, 1000);
     },
 
     setTimeLimitReached: function(isReached){

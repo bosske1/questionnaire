@@ -6,7 +6,6 @@
         this.each(function () {
             $(this).empty();
             var barContainer = $("<div>").addClass("progress active");
-            var answerText = $("#answer_text");
             var bar = $("<div>").addClass("progress-bar").addClass(settings.baseStyle)
                 .attr("role", "progressbar")
                 .attr("aria-valuenow", "0")
@@ -35,10 +34,6 @@
                        .addClass(settings.completeStyle);
 
                     settings.onFinish.call(this);
-
-                    //
-                    answerText.html('Bitte entscheiden Sie sich!');
-                    answerText.addClass('please-answer');
                 }
 
             }, 250);
@@ -51,8 +46,13 @@
     $.fn.progressTimer.defaults = {
         timeLimit: 60,  //total number of seconds
         warningThreshold: 5,  //seconds remaining triggering switch to warning color
-        onFinish: function () {},  //invoked once the timer expires
-    baseStyle: '',  //bootstrap progress bar style at the beginning of the timer
+        onFinish: function () {
+            var answerText = $("#answer_text");
+            answerText.html('Bitte entscheiden Sie sich!');
+            answerText.addClass('please-answer');
+        },  //invoked once the timer expires
+
+        baseStyle: '',  //bootstrap progress bar style at the beginning of the timer
         warningStyle: 'progress-bar-danger',  //bootstrap progress bar style in the warning phase
         completeStyle: 'progress-bar-success'  //bootstrap progress bar style at completion of timer
     };

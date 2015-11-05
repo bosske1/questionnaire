@@ -24,5 +24,10 @@ Question.Views.QuestionCheckbox = Question.Views.Question.extend({
         }
 
         return isSomethingChecked;
+    },
+
+    postRender: function() {
+        var tickLength = this.getTickLength();
+        initTimer(tickLength);
     }
 });

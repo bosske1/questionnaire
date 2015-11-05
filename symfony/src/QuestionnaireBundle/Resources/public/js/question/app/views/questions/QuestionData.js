@@ -1,6 +1,6 @@
 Question.Views.QuestionData = Question.Views.Question.extend({
 
-    type: 'checkbox',
+    type: 'data',
     errorMessage: null,
 
     initialize: function() {
