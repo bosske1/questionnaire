@@ -5,5 +5,10 @@ Question.Views.QuestionRadio = Question.Views.Question.extend({
 
     initialize: function() {
         this.template= _.template($('#tpl-question-radio').html());
+    },
+
+    postRender: function() {
+        var tickLength = this.getTickLength();
+        initTimer(tickLength);
     }
 });

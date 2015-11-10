@@ -1,5 +1,12 @@
+/**** BOOTSTRAP ADDONS ****/
+@media (min-width: 1441px) {
+  .container {
+    width: 1470px;
+  }
+}
 body{
 font-family: Calibri, sans-serif;
+font-size: 16px;
 }
 
 .please-answer {
@@ -21,63 +28,34 @@ font-family: Calibri, sans-serif;
 	top:20px;
 }
 .header{
-margin-top:30vh;
-text-align: center;
+margin-top:25vh;
+position: relative;
 }
 .header h1{
-	font-size:5em;
+	font-size:6em;
 	color:#30388b;	
 	font-weight: bold;
-	float: right;
-	margin:-10px 0;
+	position:absolute;
 }
-.header h1 span{
+.header h1.first-row{
+left:0px;
+}
+.header h1.second-row{
 	color:#ff8028;
-	float: right;
-	font-size: 1.5em;
+	font-size:9em;
+	left:345px;
+	top:60px;
 }
-.header h1:first-child{
-	float:left;
-}
-
-select{
-	min-width: 120px;
-}
-
-
-section.login{
-position: absolute;
-bottom: 40px;	
-width: 100%;
-}
-section.login .weiter input{
-	width: 200px;
-	padding:3px 10px;
-	margin:0px 50px;
-	
-}
-section.login .button{
-	background: #fff;
-	border: none;
-	color:#30388b;
-	padding:3px 20px 4px 20px;
-    outline: 1px solid #999;
-    outline-offset: 2px;
-    text-decoration: none;
-}
-section.login .button:hover{
-	background: #ff8028;
-}
-
-section .col-md-2{
-	font-weight: bold;
+.header h1.third-row{
+left:135px;
+	top:175px;
 }
 .circle{
   width:80px;
 height:80px;
 position: absolute;
-bottom: -100px;
-right:50px;
+top: 290px;
+left:380px;
 z-index: -1;
   border-radius:100%;
 	background-image: radial-gradient(center center, circle cover, #fff, #ff8028);
@@ -89,6 +67,40 @@ z-index: -1;
 	background-position: -20px -70px
 
 }
+select{
+	min-width: 120px;
+}
+
+
+footer{
+position: absolute;
+bottom: 40px;	
+width: 100%;
+}
+footer .weiter input{
+	width: 200px;
+	padding:3px 10px;
+	margin:0px 50px;
+	
+}
+footer .button{
+	background: #fff;
+	border: none;
+	color:#d63a3a;
+	padding:3px 20px 4px 20px;
+    outline: 1px solid #999;
+    outline-offset: 2px;
+    text-decoration: none;
+}
+footer .button:hover{
+	background: #ff8028;
+	color:#30388b;
+}
+
+section .col-md-2{
+	font-weight: bold;
+}
+
 
 #page2{
 	margin-top: 20vh;
@@ -132,7 +144,7 @@ height:16px;
     width:inherit; /* Or auto */
     margin:0 0px 5px 0; /* To give a bit of padding on the left and right */
     border-bottom:none;
-    font-size: 12px;
+    font-size: 0.9em;
 }
 #page3 fieldset{
 	border: 1px solid #999;
@@ -156,6 +168,7 @@ width: 120px;
 }
 #page .frage{
 	font-size: 20px;
+	font-weight: bold;
 }
 
 .progress-bar,
@@ -167,4 +180,30 @@ width: 100%;
 }
 .goodbye{
 	margin-top: 50px;
+}
+#geburtstag{
+	background: url(../images/calendar.png) no-repeat;
+	background-position: 130px 3px;
+}
+#anrede-button .ui-icon{
+background: url(../images/arrow.png) no-repeat;
+right: 0.1em;
+}
+#anrede-button .ui-selectmenu-text{
+	padding: 1px 5px;
+	font-size: 14px;
+}
+.intermezzo{
+	background: #ff8028;
+	color:#30388b;
+	padding:100px 50px;
+
+}
+.intermezzo h1{
+	font-size: 3em;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{
+background: #007F00;	
+border: 1px solid #007F00;
+outline: none;
 }
