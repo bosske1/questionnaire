@@ -1,6 +1,6 @@
 Question.Views.QuestionRegistration = Question.Views.Question.extend({
 
-    type: 'checkbox',
+    type: 'registration',
     errorMessage: null,
 
     initialize: function() {
