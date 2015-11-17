@@ -1,0 +1,90 @@
+<script type="text/template" id="tpl-question-group_fixed">
+    <div class="top-left"></div>
+    <div class="top-right"></div>
+    <div class="bottom-left"></div>
+    <div class="bottom-right"></div>
+    <div id="wrapper2">
+        <div id="wrapper3">
+            <div class="container">
+                <div class="row mb-100" >
+                    <div class="col-md-12">
+                        <a href="#"><img class="logo" src="img/logo.svg" width="150" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <section class="multi" id="page">
+                <div class="container">
+                    <div class="row mb-20">
+                        <div class="col-md-2">
+                            <p>Frage 120:</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Können Sie gut schlafen? - Wie steht es mit Ihrem Allgemeinbefinden? Wählen Sie einfach 'Ja' oder 'Nein'.</p>
+                            <select>
+                                <option value="Ja">Ja</option>
+                                <option value="Nein">Nein</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-20">
+                        <div class="col-md-2">
+                            <p>Frage 121:</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Haben Sie oft Kopf- oder Magenschmerzen? - Wie steht es mit Ihrem Allgemeinbefinden? Wählen Sie einfach 'Ja' oder 'Nein'.</p>
+                            <select>
+                                <option value="Ja">Ja</option>
+                                <option value="Nein">Nein</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-20">
+                        <div class="col-md-2">
+                            <p>Frage 122:</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Essen Sie gern Zucker oder Süßigkeiten? - Wie steht es mit Ihrem Allgemeinbefinden? Wählen Sie einfach 'Ja' oder 'Nein'.</p>
+                            <select>
+                                <option value="Ja">Ja</option>
+                                <option value="Nein">Nein</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-20">
+                        <div class="col-md-2">
+                            <p>Frage 123:</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Rauchen Sie mehr als drei Zigaretten pro Tag? - Wie steht es mit Ihrem Allgemeinbefinden? Wählen Sie einfach 'Ja' oder 'Nein'.</p>
+                            <select>
+                                <option value="Ja">Ja</option>
+                                <option value="Nein">Nein</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-20">
+                        <div class="col-md-2">
+                            <p>Frage 124:</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Verlangt es Ihre Position oder allgemeine Lebenssituation, dass Sie mehr als dreimal pro Woche Alkohol zu sich nehmen? - Wie steht es mit Ihrem Allgemeinbefinden?</p>
+                            <select>
+                                <option value="Ja">Ja</option>
+                                <option value="Nein">Nein</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="progressTimer"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                {% include 'QuestionnaireBundle:Question:question_button_next_with_counter.html.twig' %}
+            </footer>
+        </div>
+    </div>
+</script>

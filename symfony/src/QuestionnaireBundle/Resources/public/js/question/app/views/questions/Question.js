@@ -46,7 +46,9 @@ Question.Views.Question = Backbone.View.extend({
             return false;
         }
 
-        router.question(nextQuestionId);
+        router.navigate('question/' + nextQuestionId, {trigger: true});
+
+        //router.question(nextQuestionId);
     },
 
     submitAnswer: function() {
