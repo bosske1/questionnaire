@@ -2,6 +2,7 @@ Question.Router = Backbone.Router.extend({
     routes: {
         'home': 'home',
         'question': 'question',
+        'question/:id' : 'question',
         'registration': 'registration',
         'login': 'login',
         'admin': 'adminPage',
