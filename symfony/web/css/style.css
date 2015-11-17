@@ -4,7 +4,7 @@
 }
 
 body{
-    font-family: Calibri, sans-serif;
+    font-family: Calibri, Roboto, sans-serif;
     font-size: 16px;
 }
 
@@ -159,6 +159,10 @@ footer .button{
     outline-offset: 2px;
     text-decoration: none;
     cursor: pointer;
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
 }
 footer .button:hover{
     background: #ff8028;
@@ -220,7 +224,7 @@ section .col-md-2{
     margin-bottom: 20px;
 }
 #page3 fieldset label{
-    width: 144px;
+    width: 130px;
     font-weight: normal;
 }
 #page3 fieldset select{
