@@ -132,7 +132,8 @@ class QuestionController extends Controller
             $questionData['potentialAnswers'][] = array(
                 'id' 			=> $potentialAnswer->getId(),
                 'answer' 		=> $potentialAnswer->getAnswer(),
-                'questionId' 	=> $question->getId()
+                'questionId' 	=> $question->getId(),
+	            'nextQuestionId'=> $potentialAnswer->getNextQuestionId()
             );
         }
 

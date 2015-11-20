@@ -34,7 +34,7 @@ Question.Views.Question = Backbone.View.extend({
 
     getQuestion: function(){
         debugger;
-        var nextQuestionId = this.question.nextQuestionId,
+        var nextQuestionId = this.getNextQuestionId(),
             router = new Question.Router;
 
         this.submitAnswer();
@@ -53,6 +53,11 @@ Question.Views.Question = Backbone.View.extend({
 
     submitAnswer: function() {
         //basically does nothing, should be overwritten in the child classes...
+    },
+
+    getNextQuestionId: function() {
+        // Can be overwritten if needed:
+        return this.question.nextQuestionId;
     },
 
     isValid: function(){

@@ -34,10 +34,10 @@
                             <p>Antwort:</p>
                         </div>
                         <div class="col-md-6 col-md-offset-1">
-                            <select class="form-control form-control-4 col-md-6 col-sm-6 col-xs-6">
+                            <select id="answer-select" class="form-control form-control-4 col-md-6 col-sm-6 col-xs-6">
                                 <% _.each(question.potentialAnswers, function(answer, key){ %>
 
-                                <option value="<%= answer.answer %>"><%= answer.answer %></option>
+                                <option value="<%= answer.id %>"><%= answer.answer %></option>
 
                                 <% }); %>
                             </select>

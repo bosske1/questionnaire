@@ -1,4 +1,5 @@
 function initTimer(tickLength) {
+    $('#timeInfoSpan').html(tickLength);
     $.fn.progressTimer = function (options) {
         var settings = $.extend({}, $.fn.progressTimer.defaults, options);
 

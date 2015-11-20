@@ -10,5 +10,10 @@ Question.Views.QuestionRadio = Question.Views.Question.extend({
     postRender: function() {
         var tickLength = this.getTickLength();
         initTimer(tickLength);
+    },
+
+    getNextQuestionId: function() {
+        // Can be overwritten if needed:
+        return this.question.nextQuestionId;
     }
 });

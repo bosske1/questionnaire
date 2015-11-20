@@ -39,6 +39,11 @@ class PotentialAnswer {
 	protected $questionId;
 
 	/**
+	 * @ORM\Column(type="integer", nullable=true)
+	 */
+	protected $nextQuestionId;
+
+	/**
 	 * @ORM\ManyToOne(targetEntity="Question", inversedBy="potentialAnswers")
 	 * @ORM\JoinColumn(name="question_id", referencedColumnName="id")
 	 */
@@ -152,5 +157,28 @@ class PotentialAnswer {
     public function getQuestion()
     {
         return $this->question;
+    }
+
+    /**
+     * Set nextQuestionId
+     *
+     * @param integer $nextQuestionId
+     * @return PotentialAnswer
+     */
+    public function setNextQuestionId($nextQuestionId)
+    {
+        $this->nextQuestionId = $nextQuestionId;
+
+        return $this;
+    }
+
+    /**
+     * Get nextQuestionId
+     *
+     * @return integer 
+     */
+    public function getNextQuestionId()
+    {
+        return $this->nextQuestionId;
     }
 }
