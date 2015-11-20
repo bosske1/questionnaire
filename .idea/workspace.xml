@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2876107-1874-4f8c-8b94-2e372e8d42e6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/Question.js" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/Question.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionSelect.js" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionSelect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question_input.html.twig" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question_input.html.twig" />
     </list>
     <ignored path="questionnaire.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,10 +35,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Question.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Question.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/Question.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="28" selection-start="707" selection-end="707" vertical-scroll-proportion="0.37072244" vertical-offset="417" max-vertical-offset="1944">
+            <state line="34" column="28" selection-start="707" selection-end="707" vertical-scroll-proportion="0.0" vertical-offset="417" max-vertical-offset="1944">
               <folding />
             </state>
           </provider>
@@ -58,6 +57,15 @@
         <entry file="file://$PROJECT_DIR$/symfony/web/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="1" column="40" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1296">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="question_radio.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question_radio.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="28" selection-start="1130" selection-end="1209" vertical-scroll-proportion="-15.333333" vertical-offset="0" max-vertical-offset="1206">
               <folding />
             </state>
           </provider>
@@ -108,6 +116,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="question_input.html.twig" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question_input.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="107" selection-start="832" selection-end="832" vertical-scroll-proportion="0.65267175" vertical-offset="0" max-vertical-offset="1080">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="question_select.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question_select.html.twig">
           <provider selected="true" editor-type-id="text-editor">
@@ -148,6 +165,7 @@
         <option value="$PROJECT_DIR$/symfony/web/js/scripts.js" />
         <option value="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionSelect.js" />
         <option value="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/Question.js" />
+        <option value="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question_input.html.twig" />
       </list>
     </option>
   </component>
@@ -955,20 +973,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question_input.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question_radio.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question_feedback.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -1032,13 +1036,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionInput.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="5" selection-start="477" selection-end="690" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/symfony/web/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="40" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1296">
@@ -1055,7 +1052,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/Question.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="28" selection-start="707" selection-end="707" vertical-scroll-proportion="0.37072244" vertical-offset="417" max-vertical-offset="1944">
+        <state line="34" column="28" selection-start="707" selection-end="707" vertical-scroll-proportion="0.0" vertical-offset="417" max-vertical-offset="1944">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionInput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="5" selection-start="477" selection-end="690" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question_radio.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="28" selection-start="1130" selection-end="1209" vertical-scroll-proportion="-15.333333" vertical-offset="0" max-vertical-offset="1206">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question_input.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="107" selection-start="832" selection-end="832" vertical-scroll-proportion="0.65267175" vertical-offset="0" max-vertical-offset="1080">
           <folding />
         </state>
       </provider>
