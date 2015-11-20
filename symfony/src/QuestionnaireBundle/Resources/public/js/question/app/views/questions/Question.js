@@ -33,7 +33,6 @@ Question.Views.Question = Backbone.View.extend({
     },
 
     getQuestion: function(){
-        debugger;
         var nextQuestionId = this.getNextQuestionId(),
             router = new Question.Router;
 

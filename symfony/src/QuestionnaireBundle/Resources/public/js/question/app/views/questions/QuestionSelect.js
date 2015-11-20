@@ -17,7 +17,10 @@ Question.Views.QuestionSelect = Question.Views.Question.extend({
         // Can be overwritten if needed:
         var selectedPotentialAnswer = this.getSelectedAnswer();
 
-        if (typeof selectedPotentialAnswer != 'undefined' && selectedPotentialAnswer.nextQuestionId != 0 && !isNaN(selectedPotentialAnswer.nextQuestionId)) {
+        if (typeof selectedPotentialAnswer != 'undefined'
+            && selectedPotentialAnswer.nextQuestionId != null
+            && selectedPotentialAnswer.nextQuestionId != 0
+            && !isNaN(selectedPotentialAnswer.nextQuestionId)) {
             return selectedPotentialAnswer.nextQuestionId;
         }
 
