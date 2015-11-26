@@ -235,6 +235,13 @@ section .col-md-2{
     height: auto;
     max-height: 300px;
 }
+
+.responsive-image-multi{
+    height: auto;
+    max-height: 300px;
+    padding-left: 25px;
+}
+
 #page label{
     font-weight: normal;
     margin-right: 20px;
