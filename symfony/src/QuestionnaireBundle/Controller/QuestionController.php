@@ -174,7 +174,8 @@ class QuestionController extends Controller
 	 * @param Question $question
 	 * @return array
 	 */
-    private function prepareQuestion(Question $question){
+    private function prepareQuestion(Question $question)
+    {
         $questionData = array();
 
         $questionData['id'] 		= $question->getId();

@@ -17,6 +17,9 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Question
 {
+	const REGISTRATION = 'registration';
+	const GROUP_FIX = 'groupFix';
+
 	/**
 	 * @ORM\Column(type="integer")
 	 * @ORM\Id
