@@ -41,7 +41,7 @@
                         </div>
                         <div class="col-md-8 col-md-offset-1">
                             <% _.each(question.potentialAnswers, function(answer, key){ %>
-                            <input type="radio" name="answer" id="optionsRadios_<%= answer.id %>" value="<%= answer.answer %>"> <label for="answer"><%= answer.answer %></label>
+                            <input type="radio" name="answer" id="optionsRadios_<%= answer.id %>" value="<%= answer.realAnswer %>"> <label for="answer"><%= answer.answer %></label>
                             <% }); %>
                         </div>
                     </div>

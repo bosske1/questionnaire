@@ -29,6 +29,11 @@ class PotentialAnswer {
 	protected $answer;
 
 	/**
+	 * @ORM\Column(type="text")
+	 */
+	protected $realAnswer;
+
+	/**
 	 * @ORM\Column(type="datetime")
 	 */
 	protected $createdAt;
@@ -181,4 +186,25 @@ class PotentialAnswer {
     {
         return $this->nextQuestionId;
     }
+
+	/**
+	 * @return mixed
+	 */
+	public function getRealAnswer()
+	{
+		return $this->realAnswer;
+	}
+
+	/**
+	 * @param string $realAnswer
+	 * @return $this
+	 */
+	public function setRealAnswer($realAnswer)
+	{
+		$this->realAnswer = $realAnswer;
+
+		return $this;
+	}
+
+
 }

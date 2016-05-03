@@ -26,6 +26,10 @@ questionnaires_get:
     path:     /questionnaires/get
     defaults: { _controller: QuestionnaireBundle:Questionnaires:get }
 
+questionnaires_submit:
+    path:     /questionnaires/submitQuestionnaire/{id}
+    defaults: { _controller: QuestionnaireBundle:Questionnaires:submitQuestionnaire }
+
 questionnaire_create:
     path:     /questionnaire/create
     defaults: { _controller: QuestionnaireBundle:Questionnaire:create }

@@ -19,6 +19,7 @@ class Question
 {
 	const REGISTRATION = 'registration';
 	const GROUP_FIX = 'groupFix';
+	const FINISHED = 'finished';
 
 	/**
 	 * @ORM\Column(type="integer")

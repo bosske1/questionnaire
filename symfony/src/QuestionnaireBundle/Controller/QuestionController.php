@@ -193,7 +193,8 @@ class QuestionController extends Controller
                 'id' 			=> $potentialAnswer->getId(),
                 'answer' 		=> $potentialAnswer->getAnswer(),
                 'questionId' 	=> $question->getId(),
-	            'nextQuestionId'=> $potentialAnswer->getNextQuestionId()
+	            'nextQuestionId'=> $potentialAnswer->getNextQuestionId(),
+	            'realAnswer'    => $potentialAnswer->getRealAnswer()
             );
         }
 
