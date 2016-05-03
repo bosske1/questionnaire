@@ -94,6 +94,7 @@ class RegistrationController extends Controller
 			$userRegistration->setResultsUse($answer['results_use']);
 			$userRegistration->setSalutation($answer['salutation']);
 			$userRegistration->setTitle($answer['title']);
+			$userRegistration->setTown($answer['town']);
 
 			$em = $this->getDoctrine()->getManager();
 			$em->persist($userRegistration);
