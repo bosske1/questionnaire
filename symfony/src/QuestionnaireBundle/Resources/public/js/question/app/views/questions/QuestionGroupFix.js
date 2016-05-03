@@ -14,5 +14,17 @@ Question.Views.QuestionGroupFix = Question.Views.Question.extend({
     postRender: function() {
         var tickLength = this.getTickLength();
         initTimer(tickLength);
+    },
+    
+    submitAnswer: function() {
+        var questions = this.$('select');
+        var answers = {};
+
+        _.each(questions, function(questionSelect) {
+            answers[$(questionSelect).attr('id')] = $(questionSelect).val();
+        });
+
+        $.post('/question/submitMultiAnswer', {questionId: this.question.id, answers: answers, type: this.type});
+
     }
 });

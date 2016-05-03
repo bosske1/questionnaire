@@ -3,9 +3,11 @@
 namespace QuestionnaireBundle\Controller;
 
 use AppBundle\Entity\Answer;
+use AppBundle\Entity\MultiAnswer;
 use AppBundle\Entity\PotentialAnswer;
 use AppBundle\Entity\Question;
 use AppBundle\Entity\QuestionAttachment;
+use AppBundle\Entity\User;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -68,6 +70,58 @@ class QuestionController extends Controller
 			$em->persist($questionAnswer);
 			$em->flush();
 
+
+			return new JsonResponse(array('success' => 1, 'message'=> 'answer saved'));
+		}
+
+		return new JsonResponse(array('success' => 0, 'message'=> 'some data is missing'));
+	}
+
+	/**
+	 * @param Request $request
+	 * @return JsonResponse
+	 */
+	public function submitMultiAnswerAction(Request $request)
+	{
+		$answers = $request->get('answers');
+		$questionId = $request->get('questionId');
+		$type = $request->get('type');
+
+		if (!empty($questionId) && is_array($answers) && !empty($type)) {
+			$em = $this->getDoctrine()->getManager();
+
+			$repository = $this->getDoctrine()
+				->getRepository('AppBundle:Question');
+
+			/**
+			 * @var Question $question
+			 */
+			$question = $repository->findOneBy(array(
+				'id' => $questionId
+			));
+
+			$repository = $this->getDoctrine()
+				->getRepository('AppBundle:User');
+
+			/**
+			 * @var User $user
+			 */
+			$user = $repository->findOneBy(array(
+				'id' => 1
+			));
+
+			foreach($answers as $answerKey => $answer) {
+				$questionAnswer = new MultiAnswer();
+				$questionAnswer->setAnswer($answer);
+				$questionAnswer->setCreatedAt(new \DateTime());
+				$questionAnswer->setQuestion($question);
+				$questionAnswer->setUser($user);
+				$questionAnswer->setAnswerKey($answerKey);
+
+				$em->persist($questionAnswer);
+			}
+
+			$em->flush();
 
 			return new JsonResponse(array('success' => 1, 'message'=> 'answer saved'));
 		}

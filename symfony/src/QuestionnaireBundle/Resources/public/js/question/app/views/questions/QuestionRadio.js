@@ -15,5 +15,10 @@ Question.Views.QuestionRadio = Question.Views.Question.extend({
     getNextQuestionId: function() {
         // Can be overwritten if needed:
         return this.question.nextQuestionId;
+    },
+
+    getValue: function() {
+        // let's find the selected radio button:
+        return this.$("input:radio[name ='answer']:checked").val();
     }
 });

@@ -38,8 +38,6 @@ Question.Views.Question = Backbone.View.extend({
 
         this.submitAnswer();
 
-
-
         if(!this.isValid()){
             this.showErrorMessage();
             return false;
@@ -51,7 +49,13 @@ Question.Views.Question = Backbone.View.extend({
     },
 
     submitAnswer: function() {
-        //basically does nothing, should be overwritten in the child classes...
+        var answer = this.getValue();
+
+        $.post('/question/submitAnswer', {questionId: this.question.id, answer: answer, type: this.type});
+    },
+
+    getValue: function() {
+        return '';
     },
 
     getNextQuestionId: function() {

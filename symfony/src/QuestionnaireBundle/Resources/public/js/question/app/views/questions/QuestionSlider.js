@@ -20,5 +20,11 @@ Question.Views.QuestionSlider = Question.Views.Question.extend({
 
         var tickLength = this.getTickLength();
         initTimer(tickLength);
+    },
+
+    getValue: function() {
+        var answer = this.$( ".slider" ).slider( "option", "value" );
+
+        return answer;
     }
 });

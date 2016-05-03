@@ -31,7 +31,7 @@ Question.Views.QuestionCheckbox = Question.Views.Question.extend({
         initTimer(tickLength);
     },
 
-    submitAnswer: function() {
-        //basically does nothing, should be overwritten in the child classes...
+    getValue: function() {
+        //
     }
 });

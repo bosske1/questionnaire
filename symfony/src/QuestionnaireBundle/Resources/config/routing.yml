@@ -50,6 +50,10 @@ question_submit:
     path:     /question/submitAnswer
     defaults: { _controller: QuestionnaireBundle:Question:submitAnswer }
 
+question_submit_multi:
+    path:     /question/submitMultiAnswer
+    defaults: { _controller: QuestionnaireBundle:Question:submitMultiAnswer }
+
 question_create:
     path:     /question/create
     defaults: { _controller: QuestionnaireBundle:Question:create }

@@ -34,7 +34,7 @@ Question.Views.QuestionSelect = Question.Views.Question.extend({
         return _.find(me.question.potentialAnswers, function(potentialAnswer){ return potentialAnswer.id == answerId; });
     },
 
-    submitAnswer: function() {
+    getValue: function() {
         var selectedPotentialAnswer = this.getSelectedAnswer();
 
         var answer = '';
@@ -43,6 +43,6 @@ Question.Views.QuestionSelect = Question.Views.Question.extend({
             answer =  selectedPotentialAnswer.answer;
         }
 
-        $.post('/question/submitAnswer', {questionId: this.question.id, answer: answer, type: this.type});
+        return answer;
     }
 });

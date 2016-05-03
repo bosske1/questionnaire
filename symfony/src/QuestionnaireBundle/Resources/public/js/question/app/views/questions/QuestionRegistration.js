@@ -36,8 +36,6 @@ Question.Views.QuestionRegistration = Question.Views.Question.extend({
             costs_onme: this.$('#costs_onme').is(':checked') ? 1 : 0
         };
 
-        debugger;
-
         $.post('/registration/submitRegistration', {questionId: this.question.id, answer: data, type: this.type});
 
     }
