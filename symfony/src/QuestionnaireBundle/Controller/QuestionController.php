@@ -32,6 +32,10 @@ class QuestionController extends Controller
 		return new JsonResponse($preparedData);
 	}
 
+	/**
+	 * @param Request $request
+	 * @return JsonResponse
+	 */
 	public function submitAnswerAction(Request $request)
 	{
 		$answer = $request->get('answer');
@@ -112,9 +116,10 @@ class QuestionController extends Controller
 		}
 	}
 
-    /**
-     * @param $question
-     */
+	/**
+	 * @param Question $question
+	 * @return array
+	 */
     private function prepareQuestion(Question $question){
         $questionData = array();
 

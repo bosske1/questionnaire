@@ -18,6 +18,10 @@ registration_register:
     path:     /registration/register
     defaults: { _controller: QuestionnaireBundle:Registration:register }
 
+registration_submit:
+    path:     /registration/submitRegistration
+    defaults: { _controller: QuestionnaireBundle:Registration:submitRegistration }
+
 questionnaires_get:
     path:     /questionnaires/get
     defaults: { _controller: QuestionnaireBundle:Questionnaires:get }

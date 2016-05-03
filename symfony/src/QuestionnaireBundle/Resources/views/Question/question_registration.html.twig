@@ -21,16 +21,16 @@
                             <fieldset>
                                 <legend>Ihre Entscheidungen</legend>
                                 <div class="form-group">
-                                    <input type="checkbox"> Ich trage die Kosten für die Persönlichkeitsanalyse selbst.<br />
+                                    <input type="checkbox" name="costs_onme" id="costs_onme"> Ich trage die Kosten für die Persönlichkeitsanalyse selbst.<br />
                                 </div>
                                 <div class="form-group">
-                                    <input type="checkbox"> Ich möchte die Ergebnisse diese Screenings auch für Bewerbungen nutzen.<br />
+                                    <input type="checkbox" name="results_use" id="results_use"> Ich möchte die Ergebnisse diese Screenings auch für Bewerbungen nutzen.<br />
                                 </div>
                                 <div class="form-group">
-                                    <label for="r1" style="width:350px;">Ich wünsche eine Interpretation der Ergebnisse.</label><br />
-                                    <input type="radio" name="r1">&nbsp;<small>Ja = Die Ergebnisse der Persönlichkeitsprofilanalyse werden nur mir, dem Auftraggeber und dem Interpreter übermittelt.</small>
+                                    <label for="order_analysis" style="width:350px;">Ich wünsche eine Interpretation der Ergebnisse.</label><br />
+                                    <input type="radio" name="order_analysis" value="1">&nbsp;<small>Ja = Die Ergebnisse der Persönlichkeitsprofilanalyse werden nur mir, dem Auftraggeber und dem Interpreter übermittelt.</small>
                                     <br />
-                                    <input type="radio" name="r1">&nbsp;<small>Nein = Die Ergebnisse der Persönlichkeitsprofilanalyse werden nur mir und dem Auftraggeber übermittelt.</small>
+                                    <input type="radio" name="order_analysis" value="0">&nbsp;<small>Nein = Die Ergebnisse der Persönlichkeitsprofilanalyse werden nur mir und dem Auftraggeber übermittelt.</small>
                                 </div>
                             </fieldset>
 
@@ -38,81 +38,81 @@
                                 <legend>Persönliche Daten</legend>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="anrede">Anrede: *</label>
-                                        <select name="anrede" id="anrede">
-                                            <option value="">Herr</option>
-                                            <option value="">Frau</option>
+                                        <label for="salutation">Anrede: *</label>
+                                        <select name="salutation" id="salutation">
+                                            <option value="herr">Herr</option>
+                                            <option value="frau">Frau</option>
                                         </select>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="titel">Titel:</label>
-                                        <select name="titel" id="">
+                                        <label for="title">Titel:</label>
+                                        <select name="title" id="title">
                                             <option value=""></option>
-                                            <option value="">Lorem ipsum</option>
-                                            <option value="">Lorem ipsum</option>
+                                            <option value="mag.">Mag</option>
+                                            <option value="dr.">Dr</option>
                                         </select>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="vorname">Vorname: *</label>
-                                        <input type="text" name="vorname">
+                                        <label for="firstname">Vorname: *</label>
+                                        <input type="text" name="firstname" id="firstname">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="weitere">Weiterer Vorname:</label>
-                                        <input type="text" name="weitere">
+                                        <label for="further_name">Weiterer Vorname:</label>
+                                        <input type="text" name="further_name" id="further_name">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="nachname">Nachname: *</label>
-                                        <input type="text" name="nachname">
+                                        <label for="lastname">Nachname: *</label>
+                                        <input type="text" name="lastname" id="lastname">
                                     </div>
 
                                 </div>
                                 <div class="col-md-4">
 
                                     <div class="form-group">
-                                        <label for="geburtstag">Geburtstag:</label>
-                                        <input type="text" id="geburtstag">
+                                        <label for="birthday">Geburtstag:</label>
+                                        <input type="text" id="birthday" name="birthday">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="strase">Straße und Hausnummer: *</label>
-                                        <input type="text" name="strase">
+                                        <label for="address">Straße und Hausnummer: *</label>
+                                        <input type="text" name="address" id="address">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="ort">Ort: *</label>
-                                        <input type="text" name="ort">
+                                        <label for="town">Ort: *</label>
+                                        <input type="text" name="town" id="town">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="postleitzahl">Postleitzahl: *</label>
-                                        <input type="text" name="postleitzahl">
+                                        <label for="postal_code">Postleitzahl: *</label>
+                                        <input type="text" name="postal_code" id="postal_code">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="land">Land:</label>
-                                        <input type="text" name="land" placeholder="Deutschland">
+                                        <label for="country">Land:</label>
+                                        <input type="text" name="country" id="country" placeholder="Deutschland">
                                     </div>
 
 
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="telefon">Telefon:</label>
-                                        <input type="text" name="telefon">
+                                        <label for="phone">Telefon:</label>
+                                        <input type="text" name="phone" id="phone">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="mobiltelefon">Mobiltelefon:</label>
-                                        <input type="text" name="mobiltelefon">
+                                        <label for="mobile">Mobiltelefon:</label>
+                                        <input type="text" name="mobile" id="mobile">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="email">E-Mail:</label>
-                                        <input type="text" name="email">
+                                        <input type="text" name="email" id="email">
                                     </div>
                                 </div>
                             </fieldset>

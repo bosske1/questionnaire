@@ -60,7 +60,7 @@ class Answer
 	 * Set user
 	 *
 	 * @param \AppBundle\Entity\User $user
-	 * @return Questionnaire
+	 * @return Answer
 	 */
 	public function setUser(\AppBundle\Entity\User $user = null)
 	{
