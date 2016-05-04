@@ -142,7 +142,7 @@ class QuestionnairesController extends Controller
             }
         } else {
             $itemNode = $rootNode->addChild('Antwort');
-            $itemNode->addAttribute('ID', $question->getTitle());
+            $itemNode->addAttribute('ID', $question->getDescription());
             $itemNode->addChild('Ergebnis', $answer);
         }
     }
