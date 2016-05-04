@@ -6,6 +6,7 @@ use AppBundle\Entity\Question;
 use AppBundle\Entity\User;
 use AppBundle\Entity\UserRegistration;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 
 class RegistrationController extends Controller
@@ -79,22 +80,22 @@ class RegistrationController extends Controller
 			$userRegistration->setCreatedAt(new \DateTime());
 			$userRegistration->setQuestion($question);
 			$userRegistration->setUser($user);
-			$userRegistration->setAddress($answer['address']);
-			$userRegistration->setBirthday(new \DateTime($answer['birthday']));
+			$userRegistration->setAddress($this->getData($answer['address']));
+			$userRegistration->setBirthday($this->getBirthday($answer['birthday']));
 			$userRegistration->setCostsOnme($answer['costs_onme']);
-			$userRegistration->setCountry($answer['country']);
-			$userRegistration->setEmail($answer['email']);
-			$userRegistration->setFirstname($answer['firstname']);
-			$userRegistration->setLastname($answer['lastname']);
-			$userRegistration->setMiddlename($answer['further_name']);
-			$userRegistration->setMobile($answer['mobile']);
-			$userRegistration->setOrderAnalisys($answer['order_analysis']);
-			$userRegistration->setPhone($answer['phone']);
-			$userRegistration->setPostalCode($answer['postal_code']);
+			$userRegistration->setCountry($this->getData($answer['country']));
+			$userRegistration->setEmail($this->getData($answer['email']));
+			$userRegistration->setFirstname($this->getData($answer['firstname']));
+			$userRegistration->setLastname($this->getData($answer['lastname']));
+			$userRegistration->setMiddlename($this->getData($answer['further_name']));
+			$userRegistration->setMobile($this->getData($answer['mobile']));
+			$userRegistration->setOrderAnalisys($this->getOptionData($answer,'order_analysis'));
+			$userRegistration->setPhone($this->getData($answer['phone']));
+			$userRegistration->setPostalCode($this->getData($answer['postal_code']));
 			$userRegistration->setResultsUse($answer['results_use']);
-			$userRegistration->setSalutation($answer['salutation']);
-			$userRegistration->setTitle($answer['title']);
-			$userRegistration->setTown($answer['town']);
+			$userRegistration->setSalutation($this->getData($answer['salutation']));
+			$userRegistration->setTitle($this->getData($answer['title']));
+			$userRegistration->setTown($this->getData($answer['town']));
 
 			$em = $this->getDoctrine()->getManager();
 			$em->persist($userRegistration);
@@ -105,5 +106,17 @@ class RegistrationController extends Controller
 		}
 
 		return new JsonResponse(array('success' => 0, 'message'=> 'some data is missing'));
+	}
+
+	private function getOptionData($answer, $key) {
+		return isset($answer[$key]) ? $answer[$key] : 'Keine Antwort';
+	}
+
+	private function getData($answer) {
+		return empty($answer) ? 'Keine Antwort' : $answer;
+	}
+
+	private function getBirthday($answer) {
+		return empty($answer) ? 'Keine Antwort' : new \DateTime($answer);
 	}
 }

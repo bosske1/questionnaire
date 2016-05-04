@@ -44,7 +44,11 @@ class QuestionController extends Controller
 		$questionId = $request->get('questionId');
 		$type = $request->get('type');
 
-		if (!empty($questionId) && !empty($answer) && !empty($type)) {
+		if (empty($answer)) {
+			$answer = 'Keine Antwort';
+		}
+
+		if (!empty($questionId)) {
 
 			$repository = $this->getDoctrine()
 				->getRepository('AppBundle:Question');
