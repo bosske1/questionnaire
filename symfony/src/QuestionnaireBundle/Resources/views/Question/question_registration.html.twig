@@ -49,8 +49,8 @@
                                         <label for="title">Titel:</label>
                                         <select name="title" id="title">
                                             <option value=""></option>
-                                            <option value="mag.">Mag</option>
-                                            <option value="dr.">Dr</option>
+                                            <option value="Prof.">Prof.</option>
+                                            <option value="Dr.">Dr.</option>
                                         </select>
                                     </div>
 
@@ -135,10 +135,10 @@
 </script>
 <script>
     function initRegistration() {
-        $( "#geburtstag" ).datepicker({
+        $( "#birthday" ).datepicker({
             dateFormat: 'dd.mm.yy.'
         });
-        $( "#anrede" ).prop('selectedIndex', -1);
-        $( "#anrede" ).selectmenu();
+        $( "#salutation" ).prop('selectedIndex', -1);
+        //$( "#salutation" ).selectmenu();
     }
 </script>
