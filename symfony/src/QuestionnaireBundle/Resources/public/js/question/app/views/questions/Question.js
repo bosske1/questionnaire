@@ -28,6 +28,20 @@ Question.Views.Question = Backbone.View.extend({
         return timeLimit;
     },
 
+    initTimer: function() {
+        var tickLength = this.getTickLength();
+        setTimeout(function() {
+            $('#footer_options_row').show();
+            initTimer(tickLength);
+        }, 300);
+    },
+
+    enableNext: function() {
+        if ($('#nextQuestionBtn').hasClass('disabled_button')) {
+            $('#nextQuestionBtn').toggleClass('disabled_button button');
+        }
+    },
+
     postRender: function() {
 
     },
@@ -48,10 +62,15 @@ Question.Views.Question = Backbone.View.extend({
         //router.question(nextQuestionId);
     },
 
+	/**
+     *
+     */
     submitAnswer: function() {
-        var answer = this.getValue();
+        if (this.isValid()) {
+            var answer = this.getValue();
 
-        $.post('/question/submitAnswer', {questionId: this.question.id, answer: answer, type: this.type});
+            $.post('/question/submitAnswer', {questionId: this.question.id, answer: answer, type: this.type});
+        }
     },
 
     getValue: function() {

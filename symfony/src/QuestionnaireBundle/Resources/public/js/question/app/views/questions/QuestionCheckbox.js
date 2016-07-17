@@ -27,8 +27,14 @@ Question.Views.QuestionCheckbox = Question.Views.Question.extend({
     },
 
     postRender: function() {
-        var tickLength = this.getTickLength();
-        initTimer(tickLength);
+        //var tickLength = this.getTickLength();
+        //initTimer(tickLength);
+
+        var me = this;
+
+        $(".checkbox_answers").click(function() {me.enableNext();});
+
+        this.initTimer();
     },
 
     getValue: function() {

@@ -12,8 +12,14 @@ Question.Views.QuestionGroupFix = Question.Views.Question.extend({
     },
 
     postRender: function() {
-        var tickLength = this.getTickLength();
-        initTimer(tickLength);
+        var me = this;
+        setTimeout(function() {
+            me.enableNext();
+        }, 30001);
+        //var tickLength = this.getTickLength();
+        //initTimer(tickLength);
+
+        this.initTimer();
     },
     
     submitAnswer: function() {

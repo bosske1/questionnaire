@@ -39,9 +39,9 @@
                         <div class="col-md-2">
                             <p>Antwort:</p>
                         </div>
-                        <div class="col-md-8 col-md-offset-1">
+                        <div class="col-md-8 col-md-offset-1" id="radion_answer">
                             <% _.each(question.potentialAnswers, function(answer, key){ %>
-                            <input type="radio" name="answer" id="optionsRadios_<%= answer.id %>" value="<%= answer.realAnswer %>"> <label for="answer"><%= answer.answer %></label>
+                            <input class="radio_answers" type="radio" name="answer" id="optionsRadios_<%= answer.id %>" value="<%= answer.realAnswer %>"> <label for="answer"><%= answer.answer %></label>
                             <% }); %>
                         </div>
                     </div>

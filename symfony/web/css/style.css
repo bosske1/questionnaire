@@ -150,6 +150,16 @@ footer .weiter input{
     margin:0px 50px;
 
 }
+footer .disabled_button{
+    background: #fff;
+    border: none;
+    color:#A9A9A9;
+    padding:3px 20px 4px 20px;
+    outline: 1px solid #999;
+    outline-offset: 2px;
+    text-decoration: none;
+    cursor: text;
+}
 footer .button{
     background: #fff;
     border: none;

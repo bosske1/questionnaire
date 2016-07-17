@@ -3,13 +3,24 @@ Question.Views.QuestionRadio = Question.Views.Question.extend({
     type: 'radio',
     errorMessage: null,
 
+    somethingSelected: false,
+
     initialize: function() {
         this.template= _.template($('#tpl-question-radio').html());
     },
 
+    isValid: function(){
+        return this.somethingSelected;
+    },
+
     postRender: function() {
-        var tickLength = this.getTickLength();
-        initTimer(tickLength);
+        var me = this;
+
+        $(".radio_answers").click(function() {me.somethingSelected = true; me.enableNext();});
+
+        //var tickLength = this.getTickLength();
+        //initTimer(tickLength);
+        this.initTimer();
     },
 
     getNextQuestionId: function() {

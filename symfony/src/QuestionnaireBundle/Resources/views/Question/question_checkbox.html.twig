@@ -35,7 +35,7 @@
                         </div>
                         <div class="col-md-8 col-md-offset-1">
                             <% _.each(question.potentialAnswers, function(answer, key){ %>
-                            <input type="checkbox" name="answer" id="optionsRadios_<%= answer.id %>" value="<%= answer.id %>"> <label for="answer"><%= answer.answer %></label>
+                            <input type="checkbox" class="checkbox_answers" name="answer" id="optionsRadios_<%= answer.id %>" value="<%= answer.id %>"> <label for="answer"><%= answer.answer %></label>
                             <% }); %>
                         </div>
                     </div>
