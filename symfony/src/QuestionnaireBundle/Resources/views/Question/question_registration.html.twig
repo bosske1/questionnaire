@@ -135,9 +135,17 @@
 </script>
 <script>
     function initRegistration() {
-        $( "#birthday" ).datepicker({
-            dateFormat: 'dd.mm.yy.'
+
+
+
+        $( "#birthday" ).datetimepicker({
+            format: 'DD.MM.YYYY.',
+            widgetPositioning: {
+                vertical: 'auto',
+                horizontal: 'right'
+            }
         });
+
         $( "#salutation" ).prop('selectedIndex', -1);
         //$( "#salutation" ).selectmenu();
     }
