@@ -1,5 +1,6 @@
 Question.Router = Backbone.Router.extend({
     routes: {
+        '': 'landing',
         'home': 'home',
         'question': 'question',
         'question/:id' : 'question',
@@ -20,6 +21,10 @@ Question.Router = Backbone.Router.extend({
 
     goBack: function(){
         window.history.back();
+    },
+
+    landing: function() {
+        window.location = 'http://perscreen-basic.de/landing/index.html';
     },
 
     question: function(questionId) {
