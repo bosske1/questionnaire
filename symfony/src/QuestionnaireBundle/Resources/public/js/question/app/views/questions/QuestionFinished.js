@@ -4,6 +4,6 @@ Question.Views.QuestionFinished = Question.Views.Question.extend({
     errorMessage: null,
 
     initialize: function() {
-        this.template= _.template($('#tpl-question-finished').html());
+        window.location = 'http://perscreen-basic.de/landing/index.html';
     }
 });

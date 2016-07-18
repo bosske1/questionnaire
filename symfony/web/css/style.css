@@ -297,3 +297,9 @@ section .col-md-2{
     border: 1px solid #007F00;
     outline: none;
 }
+
+
+
+.ui-widget-content {
+    background: #0000FF;
+}
