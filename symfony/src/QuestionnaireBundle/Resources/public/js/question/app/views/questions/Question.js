@@ -33,7 +33,7 @@ Question.Views.Question = Backbone.View.extend({
         setTimeout(function() {
             $('#footer_options_row').show();
             initTimer(tickLength);
-        }, 300);
+        }, 30000);
     },
 
     enableNext: function() {
@@ -50,16 +50,14 @@ Question.Views.Question = Backbone.View.extend({
         var nextQuestionId = this.getNextQuestionId(),
             router = new Question.Router;
 
-        this.submitAnswer();
-
         if(!this.isValid()){
             this.showErrorMessage();
             return false;
+        } else {
+            this.submitAnswer();
+
+            router.navigate('question/' + nextQuestionId, {trigger: true});
         }
-
-        router.navigate('question/' + nextQuestionId, {trigger: true});
-
-        //router.question(nextQuestionId);
     },
 
 	/**
