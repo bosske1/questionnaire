@@ -94,9 +94,11 @@ class QuestionnairesController extends Controller
                 'id' => 1
             ));
 
-            echo $this->createXML($questionnaire, $user);
+            $xml = $this->createXML($questionnaire, $user);
 
+            mail('katy.krebs@exordium.de', 'Fragebogen ausgefühlt', $xml);
 
+            echo $xml;
 
             return new JsonResponse(array('success' => 1, 'message'=> 'xml generated'));
         }
@@ -124,7 +126,7 @@ class QuestionnairesController extends Controller
             $question = $this->getNextQuestion($question, $user);
         }
 
-        echo $rootNode->asXML();
+        return $rootNode->asXML();
     }
 
     private function buildBlock(Question $question, User $user, $rootNode) {

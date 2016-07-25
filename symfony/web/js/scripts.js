@@ -57,11 +57,14 @@ function initTimer(tickLength) {
         completeStyle: 'progress-bar-success'  //bootstrap progress bar style at completion of timer
     };
 
-    $("#progressTimer").progressTimer({
-        timeLimit: tickLength,
-        warningThreshold: 10,
-        onFinish: function() {
+    setTimeout(function() {
+        $("#answer_text").removeClass('font-size-zero');
+        $("#progressTimer").progressTimer({
+            timeLimit: tickLength,
+            warningThreshold: 10,
+            onFinish: function() {
 
-        }
-    });
+            }
+        });
+    }, 30000);
 }

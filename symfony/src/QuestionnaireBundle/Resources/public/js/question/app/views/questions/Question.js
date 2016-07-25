@@ -30,10 +30,8 @@ Question.Views.Question = Backbone.View.extend({
 
     initTimer: function() {
         var tickLength = this.getTickLength();
-        setTimeout(function() {
-            $('#footer_options_row').show();
-            initTimer(tickLength);
-        }, 30000);
+        $('#footer_options_row').show();
+        initTimer(tickLength);
     },
 
     enableNext: function() {

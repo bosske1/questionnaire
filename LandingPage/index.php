@@ -1,3 +1,6 @@
+<?php
+$fake = 1;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +33,7 @@
   					<p>Entdecken Sie Ihre Stärken und Entwicklungspotenziale mit dem<br />
   						Persönlichkeits-Profil-Screening PerScreen [Basic].</p>
   						
-  						<form action="http://perscreen-basic.de/#question" method="post">
+  						<form action="http://fragebogen.perscreen-basic.de/#question" method="post">
   							<input type="text" name="name" placeholder="name">
   							<input type="text" name="e-mail" placeholder="e-mail">
   							<button>Login</button>
@@ -98,8 +101,8 @@
   									1991 bis 1996 durch Prof. a. D. Dr. Matthias Scharlach, orientiert es 
   									sich konsequent am Bedarf der Wirtschaft. Die Skalen des Verfahrens 
   									resultieren aus der Befragung von ca. 600 Unternehmen und 
-  									öffentlichen Einrichtungen. Gesucht wurden Persönlichkeitseigen-
-  									schaften, die aus Sicht der Unternehmen für Einstellungs- und 
+  									öffentlichen Einrichtungen. Gesucht wurden Persönlichkeitseigenschaften,
+									die aus Sicht der Unternehmen für Einstellungs- und
   									Personalentwicklungsentscheidungen am wichtigsten sind. Aus den 
   									über 300 genannten Begriffen und Beschreibungen ergaben sich 22 
   									Variablen, die am häufigsten übereinstimmend genannt wurden. 
@@ -134,7 +137,7 @@
   									</li>
   									<li>
   										<div class="circle">2</div>
-  										<p class="right">Durchführung der Befragung am PC</p>
+  										<p class="right">Durchführung der Befragung</p>
   									</li>
   									<li>
   										<div class="circle">3</div>
@@ -146,7 +149,7 @@
   									</li>
   									<li>
   										<div class="circle">5</div>
-  										<p class="left">Übersendung der Ergebnisdatei an<br />den Auftraggeber</p>
+  										<p class="left">Übersendung der Auswertung an<br />den Auftraggeber</p>
   									</li>
   									<li>
   										<div class="circle">6</div>

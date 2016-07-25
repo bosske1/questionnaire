@@ -303,3 +303,7 @@ section .col-md-2{
 .ui-widget-content {
     background: #0000FF;
 }
+
+.font-size-zero {
+    font-size: 0;
+}

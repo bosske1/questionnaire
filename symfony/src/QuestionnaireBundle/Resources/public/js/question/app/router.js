@@ -24,7 +24,7 @@ Question.Router = Backbone.Router.extend({
     },
 
     landing: function() {
-        window.location = 'http://perscreen-basic.de/landing/index.html';
+        window.location = 'http://perscreen-basic.de/index.html';
     },
 
     question: function(questionId) {
