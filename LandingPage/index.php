@@ -154,8 +154,7 @@ $fake = 1;
   									<li>
   										<div class="circle">6</div>
   										<p class="right">
-  											Analyse und Auswertung der Ergebnisse<br /> 
-  											durch einen geschulten Interpreter 
+											Analyse und Interpretation der Auswertung
   										</p>
   									</li>
   									<li>
