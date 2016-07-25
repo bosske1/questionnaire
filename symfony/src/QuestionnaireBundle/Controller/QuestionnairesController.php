@@ -133,7 +133,10 @@ class QuestionnairesController extends Controller
 
                 $subject = "Neue XML-Auswertung wurde generiert";
 
-                $this->sendEmail('bosske1@gmail.com', 'bosske1@live.com', $subject, $body, $filename);
+                $to = 'auswertung@perscreen.de';
+                $from = 'auswertung@perscreen.de';
+
+                $this->sendEmail($from, $to, $subject, $body, $filename);
 
                 return new JsonResponse(array('success' => 1, 'message'=> 'xml generated'));
             } catch (IOException $e) {
