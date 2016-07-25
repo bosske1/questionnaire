@@ -9,6 +9,8 @@ use AppBundle\Entity\Questionnaire;
 use AppBundle\Entity\User;
 use AppBundle\Entity\UserRegistration;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Filesystem\Exception\IOException;
+use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
@@ -74,6 +76,21 @@ class QuestionnairesController extends Controller
         return $questionnaireData;
     }
 
+    protected function sendEmail($from, $to, $subject, $body, $fileAttachment) {
+        $message = \Swift_Message::newInstance()
+            ->setSubject($subject)
+            ->setFrom($from)
+            ->setTo($to)
+            ->setBody(
+                $body,
+                'text/html'
+            )
+            ->attach(\Swift_Attachment::fromPath($fileAttachment))
+
+        ;
+        $this->get('mailer')->send($message);
+    }
+
     public function submitQuestionnaireAction($id) {
         if (!empty($id)) {
 
@@ -96,11 +113,27 @@ class QuestionnairesController extends Controller
 
             $xml = $this->createXML($questionnaire, $user);
 
-            mail('katy.krebs@exordium.de', 'Fragebogen ausgefühlt', $xml);
+            $filename = $this->container->getParameter('kernel.cache_dir') . '/quest/filename.xml';
 
-            echo $xml;
+            //Create your own folder in the cache directory
+            $fs = new Filesystem();
+            try {
+                $fs->mkdir(dirname($filename));
 
-            return new JsonResponse(array('success' => 1, 'message'=> 'xml generated'));
+                //Write your file
+                file_put_contents($filename, $xml);
+
+                //Read the content of your file
+                //echo file_get_contents($filename);
+
+                //mail('katy.krebs@exordium.de', 'Fragebogen ausgefühlt', $xml);
+
+                $this->sendEmail('bosske1@gmail.com', 'bosske1@live.com', 'Es gibt neue Fragebogen', 'Neue Fragebogen XML File generiert.', $filename);
+
+                return new JsonResponse(array('success' => 1, 'message'=> 'xml generated'));
+            } catch (IOException $e) {
+                return new JsonResponse(array('success' => 0, 'message'=> 'An error occured while creating your directory'));
+            }
         }
 
         return new JsonResponse(array('success' => 0, 'message'=> 'some data is missing'));
