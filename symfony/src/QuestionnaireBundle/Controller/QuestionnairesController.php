@@ -123,12 +123,17 @@ class QuestionnairesController extends Controller
                 //Write your file
                 file_put_contents($filename, $xml);
 
-                //Read the content of your file
-                //echo file_get_contents($filename);
+                /**
+                 * @var UserRegistration $registration
+                 */
+                $registration = $this->getUserRegistration($user);
 
-                //mail('katy.krebs@exordium.de', 'Fragebogen ausgefühlt', $xml);
+                $body = "Eine neue XML-Datei wurde aus dem PerScreen-Basic-Fragebogen generiert. <br />
+                            Name, Erstellungsdatum: {$registration->getFirstname()} {$registration->getLastname()}, " . date('d.m.Y');
 
-                $this->sendEmail('bosske1@gmail.com', 'bosske1@live.com', 'Es gibt neue Fragebogen', 'Neue Fragebogen XML File generiert.', $filename);
+                $subject = "Neue XML-Auswertung wurde generiert";
+
+                $this->sendEmail('bosske1@gmail.com', 'bosske1@live.com', $subject, $body, $filename);
 
                 return new JsonResponse(array('success' => 1, 'message'=> 'xml generated'));
             } catch (IOException $e) {
@@ -227,15 +232,10 @@ class QuestionnairesController extends Controller
     }
 
     private function parseRegistrationAnswer(Question $question, User $user) {
-        $repository = $this->getDoctrine()
-            ->getRepository('AppBundle:UserRegistration');
-
         /**
          * @var UserRegistration $registration
          */
-        $registration = $repository->findOneBy(array(
-            'userId' => $user->getId()
-        ));
+        $registration = $this->getUserRegistration($user);
 
         if (!empty($registration)) {
             return array(
@@ -284,5 +284,23 @@ class QuestionnairesController extends Controller
         }
 
         return $answers;
+    }
+
+    /**
+     * @param User $user
+     * @return UserRegistration
+     */
+    private function getUserRegistration(User $user) {
+        $repository = $this->getDoctrine()
+            ->getRepository('AppBundle:UserRegistration');
+
+        /**
+         * @var UserRegistration $registration
+         */
+        $registration = $repository->findOneBy(array(
+            'userId' => $user->getId()
+        ));
+
+        return $registration;
     }
 }
