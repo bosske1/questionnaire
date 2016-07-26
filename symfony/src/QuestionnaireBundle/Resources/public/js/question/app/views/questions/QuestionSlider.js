@@ -18,8 +18,8 @@ Question.Views.QuestionSlider = Question.Views.Question.extend({
 
         initSlider(parseInt(ticks[0]), parseInt(ticks[1]));
 
-        var tickLength = this.getTickLength();
-        initTimer(tickLength);
+        this.initTimer();
+        this.enableNext();
     },
 
     getValue: function() {

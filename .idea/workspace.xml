@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2876107-1874-4f8c-8b94-2e372e8d42e6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/router.js" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionFinished.js" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionFinished.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionSlider.js" afterPath="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionSlider.js" />
     </list>
     <ignored path="questionnaire.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -113,11 +111,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuestionFinished.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QuestionFinished.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/symfony/web/bundles/questionnaire/js/question/app/views/questions/QuestionFinished.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21694215">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionSlider.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionSlider.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6277533">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionRadio.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionRadio.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="91" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="91" />
               <folding />
             </state>
           </provider>
@@ -184,7 +202,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/services/CollectionDataContainer.js" />
-        <option value="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionSlider.js" />
         <option value="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionImg.js" />
         <option value="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Controller/QuestionnaireController.php" />
         <option value="$PROJECT_DIR$/symfony/src/AppBundle/Entity/Question.php" />
@@ -234,6 +251,7 @@
         <option value="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionFinished.js" />
         <option value="$PROJECT_DIR$/symfony/web/bundles/questionnaire/js/question/app/router.js" />
         <option value="$PROJECT_DIR$/symfony/web/bundles/questionnaire/js/question/app/views/questions/QuestionFinished.js" />
+        <option value="$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionSlider.js" />
       </list>
     </option>
   </component>
@@ -807,20 +825,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionRegistration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78015786">
-          <caret line="61" column="65" selection-start-line="61" selection-start-column="65" selection-end-line="61" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/views/Question/question_input.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionInput.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1137,8 +1141,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/symfony/web/bundles/questionnaire/js/question/app/views/questions/QuestionFinished.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21694215">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionRadio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="91" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/QuestionnaireBundle/Resources/public/js/question/app/views/questions/QuestionSlider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6277533">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
