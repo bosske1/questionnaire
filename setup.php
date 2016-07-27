@@ -23,8 +23,11 @@ var_dump(shell_exec('/usr/bin/php ' . $dir . '/../app/console assetic:dump --env
 
 $queries = array(
 	"UPDATE `question` SET `content`='Antworten Sie noch oder manipulieren Sie schon?' WHERE `id`='37';",
-	"INSERT INTO `question_potential_answer` (`question_id`, `answer`, `created_at`, `next_question_id`, `real_answer`) VALUES ('177', 'today', NOW(), '', 'today');
-"
+	"INSERT INTO `question_potential_answer` (`question_id`, `answer`, `created_at`, `next_question_id`, `real_answer`) VALUES ('177', 'today', NOW(), '', 'today');",
+	"INSERT INTO `question` (`created_by`, `questionnaire_id`, `title`, `description`, `content`, `type`, `created_at`, `next_question_id`, `tick_length`) VALUES ('1', '1', 'Before Stuff', 'Before', 'Einweisung', 'howto', '', '7', '60');",
+	"update question q1
+join question q2 on q2.type='howto'
+ set q1.next_question_id=q2.id WHERE q1.type='registration';"
 );
 
 $dbh = new PDO('mysql:host=localhost;dbname=usr_web4_5', 'web', 'jptr249689x');

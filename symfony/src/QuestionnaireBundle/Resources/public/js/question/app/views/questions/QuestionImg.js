@@ -8,8 +8,11 @@ Question.Views.QuestionImg = Question.Views.Question.extend({
     },
 
     postRender: function() {
-        var tickLength = this.getTickLength();
-        initTimer(tickLength);
+        var me = this;
+
+        $(".radion_img_answer").click(function() {me.somethingSelected = true; me.enableNext();});
+
+        me.initTimer();
     },
 
     getNextQuestionId: function() {

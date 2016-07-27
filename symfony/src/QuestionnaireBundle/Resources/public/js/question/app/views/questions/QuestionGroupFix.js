@@ -3,6 +3,8 @@ Question.Views.QuestionGroupFix = Question.Views.Question.extend({
     type: 'groupFix',
     errorMessage: null,
 
+    fixAnswers: ['FR11601', 'FR11602', 'FR11603', 'FR11604', 'FR11605', 'FR11606'],
+
     initialize: function() {
         this.template= _.template($('#tpl-question-group_fixed').html());
     },
@@ -13,9 +15,7 @@ Question.Views.QuestionGroupFix = Question.Views.Question.extend({
 
     postRender: function() {
         var me = this;
-        setTimeout(function() {
-            me.enableNext();
-        }, 30001);
+        me.enableNext();
         //var tickLength = this.getTickLength();
         //initTimer(tickLength);
 
@@ -26,8 +26,8 @@ Question.Views.QuestionGroupFix = Question.Views.Question.extend({
         var questions = this.$('select');
         var answers = {};
 
-        _.each(questions, function(questionSelect) {
-            answers[$(questionSelect).attr('id')] = $(questionSelect).val();
+        _.each(this.fixAnswers, function(fixAnswer) {
+            answers[fixAnswer] = $("input:radio[name ='" + fixAnswer + "']:checked").val();
         });
 
         $.post('/question/submitMultiAnswer', {questionId: this.question.id, answers: answers, type: this.type});
