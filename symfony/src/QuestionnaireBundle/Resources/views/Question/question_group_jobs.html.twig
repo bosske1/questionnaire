@@ -1,0 +1,115 @@
+<script type="text/template" id="tpl-question-group_jobs">
+    <div class="top-left"></div>
+    <div class="top-right"></div>
+    <div class="bottom-left"></div>
+    <div class="bottom-right"></div>
+    <div id="wrapper2">
+        <div id="wrapper3">
+            <div class="container">
+                <div class="row mb-100" >
+                    <div class="col-md-12">
+                        <a href="#"><img class="logo" src="img/logo-perscreen.jpg" width="150" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <section class="multi" id="page">
+                <div class="container">
+                    <div class="row mb-20">
+                        <div class="col-md-2">
+                            <p>Frage 117:</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>In welcher Branche/in welchem Berufsfeld würden Sie gern tätig sein? Lesen Sie sich die folgende Liste durch und markieren Sie bitte eine von Ihnen bevorzugte Branche.</p>
+                            <select id="FR11700" class="group_fix_answers">
+                                <option value="0"></option>
+                                <option value="1">Architektur und Bauwesen</option>
+                                <option value="2">Auslandsdienst</option>
+                                <option value="3">Banken und Finanzen</option>
+                                <option value="4">Bildung und Erziehung von Kindern und Jugendlichen</option>
+                                <option value="5">Buchhaltung</option>
+                                <option value="6">Chemie</option>
+                                <option value="7">Consulting</option>
+                                <option value="8">Datenverarbeitung und -übertragung</option>
+                                <option value="9">Einkauf</option>
+                                <option value="10">Energiewirtschaft</option>
+                                <option value="11">Erwachsenenbildung</option>
+                                <option value="12">Fremdsprachen</option>
+                                <option value="13">Forschung und Entwicklung</option>
+                                <option value="14">Forstarbeit</option>
+                                <option value="15">Freies Gewerbe</option>
+                                <option value="16">Handel</option>
+                                <option value="17">Hochschulwesen</option>
+                                <option value="18">Ingenieurwesen</option>
+                                <option value="19">Kunst</option>
+                                <option value="20">Lagerhaltung</option>
+                                <option value="21">Landwirtschaft</option>
+                                <option value="22">Landschaftsgestaltung</option>
+                                <option value="23">Medien</option>
+                                <option value="24">Medizin</option>
+                                <option value="25">Ökologie/Umweltschutz</option>
+                                <option value="26">Politik</option>
+                                <option value="27">Produktion</option>
+                                <option value="28">Public Relations</option>
+                                <option value="29">Recht</option>
+                                <option value="30">Sekretariat/Büro</option>
+                                <option value="31">Selbständiger Unternehmer</option>
+                                <option value="32">Sozialarbeit</option>
+                                <option value="33">Steuern</option>
+                                <option value="34">Studium</option>
+                                <option value="35">Transport</option>
+                                <option value="36">Verkauf</option>
+                                <option value="37">Verwaltung, Sonstige (außer o.g. freie Wirtschaft)</option>
+                                <option value="38">Verwaltung, Sonstige (außer o.g. Staatsdienst)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-20">
+                        <div class="col-md-2">
+                            <p>Frage 118:</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Ausgehend von Ihrem derzeitigen Wissen und Können, welche wäre Ihre Wunschposition in der von Ihnen gewählten Branche? Wählen Sie bitte eine Position aus.</p>
+                            <select id="FR11800" class="group_fix_answers">
+                                <option value="0"></option>
+                                <option value="1">Arbeiter, Angestellter, Mitarbeiter ohne Leitungserfahrung</option>
+                                <option value="2">Unteres Management (Vorarbeiter, Schichtführer, Gruppenleiter, Assistenzfunktion u.a.m.)</option>
+                                <option value="3">Mittleres Management (Direktor, Fachbereichsleiter, Filialleiter, Dekan, u.a.m.)</option>
+                                <option value="4">Oberes Management (Präsident, Aufsichtsratsvorsitzender, Geschäftsführer, u.a.m.)</option>
+                                <option value="5">Gesellschafter/Aktionär</option>
+                                <option value="6">Eigentümer</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-20">
+                        <div class="col-md-2">
+                            <p>Frage 119:</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>In welchem Tätigkeitsverhältnis befinden Sie sich zurzeit?</p>
+                            <select id="FR11900" class="group_fix_answers">
+                                <option value="0"></option>
+                                <option value="1">Arbeiter</option>
+                                <option value="2">Angestellter</option>
+                                <option value="3">Beamter</option>
+                                <option value="4">Selbständiger</option>
+                                <option value="5">Schüler/Student</option>
+                                <option value="6">Auszubildender in der betrieblichen Ausbildung</option>
+                                <option value="7">Erwerbslos mit oder ohne Leistungsbezug</option>
+                                <option value="8">Teilnehmer einer geförderten Maßnahme</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="progressTimer"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                {% include 'QuestionnaireBundle:Question:question_button_next_with_counter.html.twig' %}
+            </footer>
+        </div>
+    </div>
+</script>
